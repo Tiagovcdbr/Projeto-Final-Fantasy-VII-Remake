@@ -6,13 +6,15 @@ import styled from 'styled-components';
 const Header = () => {
   return(
       <ContainerBar>
+      <div className='square-logo'>
         <img src='/assets/square_logo.png' />
+      </div>
         <div className='bar-items'>
-        <img src='/assets/cart2.png' />
-        <img src='assets/login.png' />      
+          <img src='/assets/cart2.png' />
+          <img src='assets/login.png' />      
           <h2>Support</h2>
-            <h2>Store</h2>
-            <h2>News</h2>
+          <h2>Store</h2>
+          <h2>News</h2>
           <h2>Top Games</h2>
         </div>
         <ContainerHeader>
@@ -45,6 +47,12 @@ const ContainerBar = styled.div`
   width: 100%;
   height: 40px;
   background-color: black;
+
+  .square-logo img {
+    position: relative;
+    cursor: pointer;
+    width: 180px;
+  }
 
   .bar-items {
     position: relative;
@@ -90,6 +98,24 @@ const ContainerBar = styled.div`
         display:none;
       }
     }
+
+    @media(max-width: 750px) {
+      .bar-items img {
+        display: flex;
+        position: relative;
+        width: 20px;
+      }
+    }
+
+    @media(max-width: 750px) {
+      .square-logo {
+        height: 40px;
+
+        img {
+          width: 140px;
+        }
+      }
+    }
 `;
 
 const ContainerHeader = styled.section`
@@ -106,10 +132,15 @@ const ContainerHeader = styled.section`
       z-index: 10000;
       cursor: pointer;
     }
+
+    @media(max-width: 430px) {
+      img {
+        display: none;
+      }
+    }
 `;
 
 const ContainerItems = styled.div`
-
   width: 60%;
   height: 100%;
   display: flex;
@@ -121,6 +152,18 @@ const ContainerItems = styled.div`
       height: 55px;
       margin-top: 18px;
       margin-left: -80px;
+    }
+
+    @media(max-width: 1316px) {
+      img {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        height: 90px;
+        margin: 0 155px;        
+      }
     }
 
       @media(max-width: 750px) {
@@ -260,14 +303,21 @@ export const ContainerDown = styled.div`
       justify-content: center;
       cursor: pointer;
       text-align: center;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: .6s;
+        }
     }
 
     img {
+      object-fit: contain;
       position: absolute;
       width: 75px;
       height: 100px;
       margin-left: 32rem;
       margin-top: -50px;
+      z-index: 1;
     }
 
       @media(max-width: 1316px) {
