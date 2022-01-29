@@ -1,4 +1,3 @@
-import React from 'react';
 
 import styled from 'styled-components';
 
@@ -46,7 +45,7 @@ const Main = () => {
           </div>
           <div className='play-btn-home'>
             <img className='play-btn' src='/assets/play_btn.png' alt='/' />
-            <h3 className='trailler-title'>The Game Awards 2019 Trailler</h3>
+            <h3 className='trailler-title'>Tokyo Game Show 2019 Trailler</h3>
           </div>
           <div className='video-border-decoration-top-left'>
             <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
@@ -82,7 +81,7 @@ const Main = () => {
             <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
           </div>
         </div>
-      </ContentTraillers>      
+      </ContentTraillers>     
     </Container>
   )
 };
@@ -186,10 +185,12 @@ const ContentTraillers = styled.div`
   position: absolute;
   margin-left: -50px;
   bottom: 0;
-  display: inline-block;
+  max-width: 1200px;
+  right: 0;
+  
   
     .video-thumb {
-      float: right;
+      display: inline-block;
       padding: 0;
       margin-left: 40px;
       max-width: 300px;
@@ -210,7 +211,7 @@ const ContentTraillers = styled.div`
         height: 280px;
         margin-top: 50px;
         top: 600px;
-        margin-right: 220px;
+        margin: 0 auto;
         display: block;
         justify-content: space-around;
         -webkit-transition: all .33s ease-in-out;
@@ -255,7 +256,7 @@ const ContentTraillers = styled.div`
         height: 280px;
         margin-top: 50px;
         top: 600px;
-        margin-right: 15px;
+        margin-right: 70px;
         display: block;
         justify-content: space-around;
         -webkit-transition: all .33s ease-in-out;
@@ -272,7 +273,7 @@ const ContentTraillers = styled.div`
         top: 600px;
         align-items: center;
         justify-content: center;
-        margin-right: -15px;
+        margin-right: 40px;
         display: block;
         justify-content: space-around;
         -webkit-transition: all .33s ease-in-out;
@@ -289,7 +290,7 @@ const ContentTraillers = styled.div`
         top: 400px;
         align-items: center;
         justify-content: center;
-        margin-right: 20px;
+        margin-right: 80px;
         display: block;
         justify-content: space-around;
         -webkit-transition: all .33s ease-in-out;
