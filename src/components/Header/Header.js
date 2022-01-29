@@ -184,13 +184,12 @@ const ContainerItems = styled.div`
       h2 {
       cursor: pointer;
       display: flex;
-      width: 100%;
+      width: 120px;
       text-align: center;
       white-space: nowrap;
       height: 45px;
       margin: 16px 22px;
-      padding: 1px 8px;
-      font-family: MyriadPro-Cond,Arial,sans-serif;
+      padding: 1px 8px;     
       font-size: 14px;
       text-transform: uppercase;
       align-items: center;
@@ -205,10 +204,11 @@ const ContainerItems = styled.div`
           content: "";
           position: absolute;
           top: 0;
-          left: -5px;
+          margin-left: -145px;
+          margin-top: 55px;
           width: 2px;
           background-color: #000;
-          height: 100%;
+          height: 48px;
         }
 
         &:hover {         
@@ -224,7 +224,7 @@ const ContainerItems = styled.div`
     h3 {
       cursor: pointer;
       display: flex;
-      width: 100%;
+      width: 10;
       text-align: center;
       white-space: nowrap;
       height: 45px;
@@ -259,6 +259,10 @@ const ContainerItems = styled.div`
           background: linear-gradient(90deg,#05254e 0,#05254e 95%,rgba(5,32,72,1));        
           color: #ffffff;
         }                
+    }
+
+    @media(max-width: 1530px) {
+      display: none;
     }
       @media(max-width: 1316px) {
         h2, h3 {

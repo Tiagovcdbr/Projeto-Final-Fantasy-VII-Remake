@@ -11,7 +11,7 @@ const Main = () => {
         autoplay='1'
         allowfullscreen="1"
         loop
-        muted
+        
       />
       <ContainerLogo>
         <div className='logo'>
@@ -297,6 +297,28 @@ const ContentTraillers = styled.div`
       opacity: 1;
       -webkit-transition: opacity .3s;
       transition: opacity .3s;
+    }
+
+    @media(max-width: 1050px) {
+      .video-thumb {
+        right: 17px;
+      }
+    }
+
+    @media(max-width: 1038px) {
+      .video-thumb {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 1px;
+        display: block;
+        -webkit-transition: all .33s ease-in-out !important;
+        transition: all .33s ease-in-out !important;
+
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
 `;
 
