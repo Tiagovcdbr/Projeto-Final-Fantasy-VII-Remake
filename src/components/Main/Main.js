@@ -13,6 +13,11 @@ const Main = () => {
         loop
         muted
       />
+      <ContainerLogo>
+        <div className='logo'>
+          <img src='/assets/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='logo' />
+        </div>
+      </ContainerLogo>      
     </Container>
   )
 };
@@ -22,7 +27,6 @@ export default Main;
 const Container = styled.section`
   overflow: hidden;
   object-fit: cover;
-  height: 100%;
   width: 100%;
   opacity: 0.9;
 
@@ -58,6 +62,66 @@ const Container = styled.section`
       margin-top: 128px;
     }
   }
+
 `
+
+const ContainerLogo = styled.div`  
+  .logo img {
+    position: absolute;
+    width: 44rem;
+    margin-left: 67rem;
+    margin-top: 150px;   
+  }
+
+  @media(max-width: 1640px) {
+    .logo img {
+      margin-left: 55rem;
+    }
+  }
+
+  @media(max-width: 1450px) {
+    .logo img {
+      margin-left: 45rem;
+    }
+  }
+
+  @media(max-width: 1286px) {
+    .logo img {
+      margin-left: 29rem;
+    }
+  }
+
+  @media(max-width: 1030px) {
+    .logo img {
+      margin-left: 15rem;
+    }
+  }
+
+  @media(max-width: 806px) {
+    .logo img {
+      margin-left: 4rem;
+    }
+  }
+
+  @media(max-width: 626px) {
+    .logo img {
+      display: flex;
+      margin-left: -50px;
+    }
+  }
+
+  @media(max-width: 510px) {
+    .logo img {
+      display: flex;
+      margin-left: -130px
+    }
+  }
+
+  @media(max-width: 440px) {
+    .logo img {
+      display: none;
+    }
+  }
+`;
 
 

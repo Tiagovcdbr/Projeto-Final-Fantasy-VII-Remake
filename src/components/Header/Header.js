@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-
 import styled from 'styled-components';
+
 
 const Header = () => {
   return(
@@ -76,7 +76,7 @@ const ContainerBar = styled.div`
       cursor: pointer;
       float: right;
       align-items: center;
-      margin: 10px 30px;  
+      margin: 10px 27px;  
       text-transform: uppercase;    
       font-family: proxima-nova, sans-serif;
       
@@ -294,7 +294,7 @@ export const ContainerDown = styled.div`
     overflow: hidden;
 
     h2 {
-      font-size: 1.3em;
+      font-size: 1.4em;
       font-weight: 700;
       font-family: MyriadPro-Cond,Arial,sans-serif;
       text-transform: uppercase;
