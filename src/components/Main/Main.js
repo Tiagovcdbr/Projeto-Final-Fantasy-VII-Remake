@@ -21,7 +21,7 @@ const Main = () => {
       <ContentTraillers>
         <div className='video-thumb'>
           <div className='video-still'>
-            <img src='/assets/the-game-awards-2019-trailer-still.jpg' alt='/' />
+            <img className='trailler-1' src='/assets/the-game-awards-2019-trailer-still.jpg' alt='/' />
           </div>
           <div className='play-btn-home'>
             <img className='play-btn' src='/assets/play_btn.png' alt='/' />
@@ -110,21 +110,21 @@ const Container = styled.section`
             linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   }
 
-  @media(max-width: 752px) {
+  @media(max-width: 1100px) {
     .video-bg {
       position: absolute;
       width: 100%;
-      height: 100%;
-      margin-top: 128px;
+      height: 50%;
+      margin-top: 142px;
     }
   }
 
-  @media(max-width: 440px) {
+  @media(max-width: 750px) {
     .video-bg {
       position: absolute;
       width: 100%;
-      height: 100%;
-      margin-top: 128px;
+      height: 50%;
+      margin-top: 132px;
     }
   }
 
@@ -136,80 +136,184 @@ const ContainerLogo = styled.div`
     width: 44rem;
     right: 0;
     margin-right: 170px;
-    margin-top: 235px;   
+    margin-top: 200px;   
   }
 
-  @media(max-width: 1038px) {
+  @media(max-width: 1100px) {
     .logo img {
-      margin-top: 100px
+      margin-top: 10px;
     }
   }
 
-  @media(max-width: 970px) {
+  @media(max-width: 964px) {
     .logo img {
-      margin: 100px 120px;
+      margin-top: 10px;
+      margin-right: 120px;
     }
   }
 
   @media(max-width: 800px) {
     .logo img {
-      margin: 100px 90px;
+      margin-top: 10px;
+      margin-right: 25px;
     }
   }
 
-  @media(max-width: 700px) {
+  @media(max-width: 730px) {
     .logo img {
-      margin: 100px 5px;
+      margin-top: 10px;
+      margin-right: 50px;
     }
   }
 
-  @media(max-width: 576px) {
+  @media(max-width: 640px) {
     .logo img {
-      display: flex;
-      left: -90px;
+      margin-top: 10px;
+      margin-right: -30px;
     }
   }
 
-  @media(max-width: 500px) {
+  @media(max-width: 580px) {
     .logo img {
-      display: none;
+      margin-top: 10px;
+      margin-right: -50px;
     }
   }
 `;
 
 const ContentTraillers = styled.div`
   width: 100%;
-  max-width: 1080px;
   position: absolute;
-  right: 0;
+  margin-left: -50px;
   bottom: 0;
-
+  display: inline-block;
+  
     .video-thumb {
-      width: calc(33% - 40px);
+      float: right;
       padding: 0;
       margin-left: 40px;
       max-width: 300px;
+      width: 100%;
       height: 169px;
       position: relative;
-      display: inline-block;
       z-index: 0;
       cursor: pointer;
       border: 2px solid #1e9de3;
-      width: 100%;
       -webkit-transition: all .33s ease-in-out;
       transition: all .33s ease-in-out;
     }
 
+    @media(max-width: 1100px) {
+      .video-thumb {
+        position: relative;
+        max-width: 500px;
+        height: 280px;
+        margin-top: 50px;
+        top: 600px;
+        margin-right: 220px;
+        display: block;
+        justify-content: space-around;
+        -webkit-transition: all .33s ease-in-out;
+        transition: all .33s ease-in-out;
+      }
+    }
+
+    @media(max-width: 964px) {
+      .video-thumb {
+        position: relative;
+        max-width: 500px;
+        height: 280px;
+        margin-top: 50px;
+        top: 600px;
+        margin-right: 180px;
+        display: block;
+        justify-content: space-around;
+        -webkit-transition: all .33s ease-in-out;
+        transition: all .33s ease-in-out;
+      }
+    }
+
+    @media(max-width: 800px) {
+      .video-thumb {
+        position: relative;
+        max-width: 500px;
+        height: 280px;
+        margin-top: 50px;
+        top: 600px;
+        margin-right: 90px;
+        display: block;
+        justify-content: space-around;
+        -webkit-transition: all .33s ease-in-out;
+        transition: all .33s ease-in-out;
+      }
+    }
+
+    @media(max-width: 640px) {
+      .video-thumb {
+        position: relative;
+        max-width: 500px;
+        height: 280px;
+        margin-top: 50px;
+        top: 600px;
+        margin-right: 15px;
+        display: block;
+        justify-content: space-around;
+        -webkit-transition: all .33s ease-in-out;
+        transition: all .33s ease-in-out;
+      }
+    }
+
+    @media(max-width: 580px) {
+      .video-thumb {
+        position: relative;
+        max-width: 500px;
+        height: 280px;
+        margin-top: 50px;
+        top: 600px;
+        align-items: center;
+        justify-content: center;
+        margin-right: -15px;
+        display: block;
+        justify-content: space-around;
+        -webkit-transition: all .33s ease-in-out;
+        transition: all .33s ease-in-out;
+      }
+    }
+
+    @media(max-width: 550px) {
+      .video-thumb {
+        position: relative;
+        max-width: 400px;
+        height: 225px;
+        margin-top: 50px;
+        top: 400px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        display: block;
+        justify-content: space-around;
+        -webkit-transition: all .33s ease-in-out;
+        transition: all .33s ease-in-out;
+      }
+    }
+
     .video-still {
-      display: block !important;
+      overflow: hidden;
+      display: block;
       width: 100%;
       position: relative;
       overflow: hidden;
       margin-bottom: 0;
 
         img {
-          width: 300px;
+          width: 100%;
         }
+    }
+
+    @media(max-width: 1100px) {
+      .video-still { 
+        width: 100%;           
+      }
     }
 
     .play-btn-home {
@@ -309,28 +413,6 @@ const ContentTraillers = styled.div`
       opacity: 1;
       -webkit-transition: opacity .3s;
       transition: opacity .3s;
-    }
-
-    @media(max-width: 1050px) {
-      .video-thumb {
-        right: 17px;
-      }
-    }
-
-    @media(max-width: 1038px) {
-      .video-thumb {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-height: 1px;
-        display: block;
-        -webkit-transition: all .33s ease-in-out !important;
-        transition: all .33s ease-in-out !important;
-
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
     }
 `;
 
