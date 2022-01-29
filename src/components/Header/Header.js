@@ -154,29 +154,51 @@ const ContainerItems = styled.div`
       margin-left: -80px;
     }
 
-    @media(max-width: 1316px) {
+    @media(max-width: 1550px) {
       img {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 280px;
-        height: 90px;
-        margin: 0 155px;        
+        margin-left: -255px;
       }
     }
 
-      @media(max-width: 750px) {
-          img {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 250px;
-            height: 90px;
-            margin: 0;
-          }
+    @media(max-width:1504px) {
+      padding-left: 30px;
+    }
+
+    @media(max-width: 1420px) {
+        img {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 250px;
+          height: 90px;
+          margin: 0 140px;
         }
+      }
+
+      @media(max-width: 1060px) {
+        img {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 250px;
+          height: 90px;
+          margin: 0 10px;
+        }
+      }
+
+    @media(max-width: 750px) {
+        img {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 250px;
+          height: 90px;
+          margin: 0;
+        }
+      }
 
     .header-items {
       display: flex;
@@ -185,9 +207,9 @@ const ContainerItems = styled.div`
       cursor: pointer;
       display: flex;
       width: 120px;
+      height: 45px;
       text-align: center;
       white-space: nowrap;
-      height: 45px;
       margin: 16px 22px;
       padding: 1px 8px;     
       font-size: 14px;
@@ -261,10 +283,7 @@ const ContainerItems = styled.div`
         }                
     }
 
-    @media(max-width: 1530px) {
-      display: none;
-    }
-      @media(max-width: 1316px) {
+      @media(max-width: 1420px) {
         h2, h3 {
           display: none;
         }         

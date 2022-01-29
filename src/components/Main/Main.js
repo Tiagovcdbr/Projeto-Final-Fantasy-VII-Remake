@@ -11,7 +11,7 @@ const Main = () => {
         autoplay='1'
         allowfullscreen="1"
         loop
-        
+        muted
       />
       <ContainerLogo>
         <div className='logo'>
@@ -135,19 +135,31 @@ const ContainerLogo = styled.div`
     position: absolute;
     width: 44rem;
     right: 0;
-    margin-right: 120px;
-    margin-top: 240px;   
+    margin-right: 170px;
+    margin-top: 235px;   
+  }
+
+  @media(max-width: 1038px) {
+    .logo img {
+      margin-top: 100px
+    }
   }
 
   @media(max-width: 970px) {
     .logo img {
-      margin: 240px 25px;
+      margin: 100px 120px;
     }
   }
 
-  @media(max-width: 670px) {
+  @media(max-width: 800px) {
     .logo img {
-      margin: 240px 25px;
+      margin: 100px 90px;
+    }
+  }
+
+  @media(max-width: 700px) {
+    .logo img {
+      margin: 100px 5px;
     }
   }
 
