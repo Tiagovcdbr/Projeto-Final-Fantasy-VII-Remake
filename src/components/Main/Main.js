@@ -33,6 +33,54 @@ const Main = () => {
           <div className='video-border-decoration-top-right'>
             <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
           </div>
+          <div className='video-border-decoration-bottom-left'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
+          <div className='video-border-decoration-bottom-right'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
+        </div>
+        <div className='video-thumb'>
+          <div className='video-still'>
+            <img src='/assets/tokyo-game-show-trailer-still.jpg' alt='/' />
+          </div>
+          <div className='play-btn-home'>
+            <img className='play-btn' src='/assets/play_btn.png' alt='/' />
+            <h3 className='trailler-title'>The Game Awards 2019 Trailler</h3>
+          </div>
+          <div className='video-border-decoration-top-left'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
+          <div className='video-border-decoration-top-right'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
+          <div className='video-border-decoration-bottom-left'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
+          <div className='video-border-decoration-bottom-right'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
+        </div>
+        <div className='video-thumb'>
+          <div className='video-still'>
+            <img src='/assets/e3-long-trailer-still.jpg' alt='/' />
+          </div>
+          <div className='play-btn-home'>
+            <img className='play-btn' src='/assets/play_btn.png' alt='/' />
+            <h3 className='trailler-title'>E3 2019 Trailer</h3>
+          </div>
+          <div className='video-border-decoration-top-left'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
+          <div className='video-border-decoration-top-right'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
+          <div className='video-border-decoration-bottom-left'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
+          <div className='video-border-decoration-bottom-right'>
+            <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
+          </div>
         </div>
       </ContentTraillers>      
     </Container>
@@ -119,13 +167,15 @@ const ContainerLogo = styled.div`
 
 const ContentTraillers = styled.div`
   width: 100%;
-  max-width: 1050px;
+  max-width: 1080px;
   position: absolute;
   right: 0;
   bottom: 0;
 
     .video-thumb {
+      width: calc(33% - 40px);
       padding: 0;
+      margin-left: 40px;
       max-width: 300px;
       height: 169px;
       position: relative;
@@ -212,6 +262,35 @@ const ContentTraillers = styled.div`
       right: -20px;
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
+    }
+
+    .video-border-decoration {
+      opacity: 1;
+      -webkit-transition: opacity .3s;
+      transition: opacity .3s;
+    }
+
+    .video-border-decoration-bottom-left {
+      position: absolute;
+      bottom: -23.5px;
+      left: -20px;
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
+
+    .video-border-decoration {
+      opacity: 1;
+      -webkit-transition: opacity .3s;
+      transition: opacity .3s;
+    }
+
+
+    .video-border-decoration-bottom-right {
+      position: absolute;
+      bottom: -20.5px;
+      right: -22.5px;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
     }
 
     .video-border-decoration {
