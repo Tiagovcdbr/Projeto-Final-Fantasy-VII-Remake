@@ -24,7 +24,7 @@ const Main = () => {
           </div>
           <div className='play-btn-home'>
             <img className='play-btn' src='/assets/play_btn.png' alt='/' />
-            <h3 className='trailler-title'>The Game Awards 2019 Trailler</h3>
+            <h3 className='trailler-title'>The Game Awards 2019 Trailer</h3>
           </div>
           <div className='video-border-decoration-top-left'>
             <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
@@ -45,7 +45,7 @@ const Main = () => {
           </div>
           <div className='play-btn-home'>
             <img className='play-btn' src='/assets/play_btn.png' alt='/' />
-            <h3 className='trailler-title'>Tokyo Game Show 2019 Trailler</h3>
+            <h3 className='trailler-title'>Tokyo Game Show 2019 Trailer</h3>
           </div>
           <div className='video-border-decoration-top-left'>
             <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
@@ -81,7 +81,8 @@ const Main = () => {
             <img className='video-border-decoration' src='/assets/trailer_frame_corner.png' alt='/' />
           </div>
         </div>
-      </ContentTraillers>     
+      </ContentTraillers>
+    
     </Container>
   )
 };
@@ -92,14 +93,14 @@ const Container = styled.section`
   overflow: hidden;
   object-fit: cover;
   width: 100%;
-  opacity: 0.9;
+  opacity: 1;
 
   .video-bg {
     position: absolute;
-    max-width: 1900px;
+    
     width: 100%;
     height: 100%;
-    margin-top: 140px;
+    margin-top: 142px;
     background-color: #000;
 
     object-fit: cover;
@@ -147,35 +148,49 @@ const ContainerLogo = styled.div`
   @media(max-width: 964px) {
     .logo img {
       margin-top: 10px;
-      margin-right: 120px;
+      margin-right: 80px;
     }
   }
 
   @media(max-width: 800px) {
     .logo img {
       margin-top: 10px;
-      margin-right: 25px;
+      margin: 0 auto;
     }
   }
 
   @media(max-width: 730px) {
     .logo img {
       margin-top: 10px;
-      margin-right: 50px;
+      margin: 0;
     }
   }
 
   @media(max-width: 640px) {
     .logo img {
-      margin-top: 10px;
-      margin-right: -30px;
+      width: 550px;
+      margin-top: 50px;
+      margin: 0;
     }
   }
 
   @media(max-width: 580px) {
     .logo img {
       margin-top: 10px;
-      margin-right: -50px;
+    }
+  }
+
+  @media(max-width: 410px) {
+    .logo img {
+      width: 450px;
+      margin-top: 150px;
+      margin-right: -25px;
+    }
+  }
+
+  @media(max-width: 330px) {
+    .logo img {
+      display: none;
     }
   }
 `;
@@ -183,16 +198,16 @@ const ContainerLogo = styled.div`
 const ContentTraillers = styled.div`
   width: 100%;
   position: absolute;
-  margin-left: -50px;
+  margin-left: 20px;
   bottom: 0;
-  max-width: 1200px;
+  max-width: 1090px;
   right: 0;
-  
   
     .video-thumb {
       display: inline-block;
       padding: 0;
       margin-left: 40px;
+      margin-top: 100px;
       max-width: 300px;
       width: 100%;
       height: 169px;
@@ -209,9 +224,8 @@ const ContentTraillers = styled.div`
         position: relative;
         max-width: 500px;
         height: 280px;
-        margin-top: 50px;
         top: 600px;
-        margin: 0 auto;
+        margin: 50px auto;
         display: block;
         justify-content: space-around;
         -webkit-transition: all .33s ease-in-out;
@@ -290,7 +304,24 @@ const ContentTraillers = styled.div`
         top: 400px;
         align-items: center;
         justify-content: center;
-        margin-right: 80px;
+        margin-right: 70px;
+        display: block;
+        justify-content: space-around;
+        -webkit-transition: all .33s ease-in-out;
+        transition: all .33s ease-in-out;
+      }
+    }
+
+    @media(max-width: 410px) {
+      .video-thumb {
+        position: relative;
+        max-width: 250px;
+        height: 140px;
+        margin-top: 50px;
+        top: 250px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 70px;
         display: block;
         justify-content: space-around;
         -webkit-transition: all .33s ease-in-out;
@@ -312,8 +343,9 @@ const ContentTraillers = styled.div`
     }
 
     @media(max-width: 1100px) {
-      .video-still { 
-        width: 100%;           
+      .video-still {
+        width: 100%; 
+        position: absolute;          
       }
     }
 
@@ -416,5 +448,3 @@ const ContentTraillers = styled.div`
       transition: opacity .3s;
     }
 `;
-
-
