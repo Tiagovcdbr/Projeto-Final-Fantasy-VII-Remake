@@ -12,6 +12,12 @@ const Main = () => {
         loop
         muted
       />
+      <audio
+      src={"/assets/audio/Final Fantasy VII Remake [Title Screen Music].m4a"}
+      autoplay='1'
+      loop
+      muted
+      />
       <ContainerLogo>
         <div className='logo'>
           <img src='/assets/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='logo' />
@@ -82,7 +88,6 @@ const Main = () => {
           </div>
         </div>
       </ContentTraillers>
-    
     </Container>
   )
 };
