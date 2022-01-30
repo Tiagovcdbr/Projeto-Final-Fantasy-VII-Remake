@@ -13,7 +13,7 @@ const Main = () => {
         muted
       />
       <audio
-      src={"/assets/audio/Final Fantasy VII Remake [Title Screen Music].m4a"}
+      src={"/assets/audio/FFVII REMAKE - Opening-Intro-Bombing Mission Theme.mp3"}
       autoplay='1'
       loop
       muted

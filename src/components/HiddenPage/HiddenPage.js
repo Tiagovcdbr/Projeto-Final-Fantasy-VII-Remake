@@ -18,6 +18,12 @@ const HiddenPage = () => {
           <span className='left-diamond'>
             <img src='/assets/diamond_side_left.png' alt='/' />
           </span>
+          <span className='center-diamond'>
+            <img src='/assets/diamond.png' alt='/' />
+          </span>
+          <span className='right-diamond'>
+            <img src='/assets/diamond_side_right.png' alt='/' />
+          </span>
         </div>
       </StyleHeader>
     </Container>
@@ -136,19 +142,54 @@ const StyleHeader = styled.div`
     }
 
   .left-diamond img {
+    position: relative;
     margin-left: -22px;
-    margin-top: -15px;
+    top: -15px;
 
     background: radial-gradient(ellipse at center,#0d95ff 0,rgba(13,149,255,0) 60%);
-        background-color: rgba(0, 0, 0, 0);
-        background-position-x: 0%;
-        background-position-y: 0%;
-        background-repeat: repeat;
-        background-attachment: scroll;
-        background-image: radial-gradient(rgb(13, 149, 255) 0px, rgba(13, 149, 255, 0) 60%);
-        background-size: auto;
-        background-origin: padding-box;
-        background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: radial-gradient(rgb(13, 149, 255) 0px, rgba(13, 149, 255, 0) 60%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
   }
+
+  .center-diamond img {
+    position: relative;
+    margin-left: 442px;
+    top: -16px;
+
+    background: radial-gradient(ellipse at center,#0d95ff 0,rgba(13,149,255,0) 60%);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: radial-gradient(rgb(13, 149, 255) 0px, rgba(13, 149, 255, 0) 60%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+  }
+
+  .right-diamond img {
+    position: relative;
+    left: 448px;
+    top: -16px;
+
+    background: radial-gradient(ellipse at center,#0d95ff 0,rgba(13,149,255,0) 60%);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: radial-gradient(rgb(13, 149, 255) 0px, rgba(13, 149, 255, 0) 60%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+  }  
 `;
 
