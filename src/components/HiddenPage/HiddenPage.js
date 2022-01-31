@@ -25,7 +25,28 @@ const HiddenPage = () => {
             <img src='/assets/diamond_side_right.png' alt='/' />
           </span>
         </div>
-      </StyleHeader>
+        <div className='bg-history'>
+          <div className='info-history'>
+            <div className='top-border'>
+              <span className='left-diamond'>
+                <img src='/assets/diamond.png' alt='/' />
+              </span>
+              <span className='right-diamond'>
+                <img src='/assets/diamond.png' alt='/' />
+              </span>            
+            </div>          
+              <div className='text-history'>
+                <span>Mako─the lifeblood of the planet and the fuel that powers the city of Midgar...</span>          
+                <span></span>          
+                <span></span>          
+                <span></span>          
+                <span></span>          
+                <span></span>          
+                <span></span>          
+              </div>
+            </div>
+        </div>
+      </StyleHeader>        
     </Container>
   )
 };
@@ -38,19 +59,27 @@ const Container = styled.div`
   margin-top: 65rem;
 
   .container-hidden-image {
+    margin: 0;
     width: 100%;
     height: 100%;
   }
 
   .hidden-image img {    
     width: 100%;
-    height: 100vh;    
+    height: 100%;    
   }
 
   @media(max-width: 1900px) {
     width: 100%;
     height: 100vh;
-    margin-top: 960px;
+    margin-top: 950px;
+  }
+
+  @media(max-width: 1900px) {
+    .hidden-image img {
+      width: 100%;
+      height: 1300px;
+    }
   }
 
   @media(max-width: 1100px) {
@@ -68,7 +97,7 @@ const StyleHeader = styled.div`
   position: absolute;
   width: 100%;
   bottom: 0;
-  bottom: -229px;
+  bottom: -650px;
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;
@@ -104,7 +133,6 @@ const StyleHeader = styled.div`
         bottom: -50%;
         left: 25%;
         z-index: -1;
-
         
         background: -webkit-radial-gradient(center,ellipse cover,#0d95ff 0,rgba(13,149,255,0) 60%);
         background: -webkit-radial-gradient(center,ellipse,#0d95ff 0,rgba(13,149,255,0) 60%);
@@ -119,6 +147,11 @@ const StyleHeader = styled.div`
         background-origin: padding-box;
         background-clip: border-box;
       }
+  }
+
+  @media(max-width: 1900px) {
+    position: relative;
+    top: -50.5rem;
   }
 
   @media(max-width: 1100px) {
@@ -142,7 +175,7 @@ const StyleHeader = styled.div`
     }
 
   .left-diamond img {
-    position: relative;
+    position: absolute;
     margin-left: -22px;
     top: -15px;
 
@@ -159,8 +192,10 @@ const StyleHeader = styled.div`
   }
 
   .center-diamond img {
+    left: calc(50% - 19.5px);
     position: relative;
-    margin-left: 442px;
+    align-items: center;
+    justify-items: center;
     top: -16px;
 
     background: radial-gradient(ellipse at center,#0d95ff 0,rgba(13,149,255,0) 60%);
@@ -176,8 +211,8 @@ const StyleHeader = styled.div`
   }
 
   .right-diamond img {
-    position: relative;
-    left: 448px;
+    position: absolute;
+    right: -20px;
     top: -16px;
 
     background: radial-gradient(ellipse at center,#0d95ff 0,rgba(13,149,255,0) 60%);
@@ -190,6 +225,99 @@ const StyleHeader = styled.div`
     background-size: auto;
     background-origin: padding-box;
     background-clip: border-box;
+  }
+
+  .bg-history {
+    position: relative;
+    margin: 0 auto;
+    top: 37.5em;    
+    width: 660px;
+    height: 420px;
+    -webkit-transition: all .50s ease-in-out;
+      transition: all .50s ease-in-out;
+  }
+
+  @media(max-width: 1900px) {
+    .bg-history {
+      position: relative;
+      top: 740px;
+    }
+  }
+
+  @media(max-width: 1100px) {
+    .bg-history {
+      position: relative;
+      top: 850px;
+    }
+  }
+
+  @media(max-width: 640px) {
+    .bg-history {
+      width: 100%;
+      position: relative;
+      top: 850px;
+    }
+  }
+
+  @media(max-width: 550px) {
+    .bg-history {
+      top: 700px;
+    }
+  }
+  
+   .info-history {
+    position: relative;
+    width: 100%; 
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: end;
+    justify-content: flex-end;
+  }
+
+  .top-border {
+    margin: 0 auto;
+    width: 520px;
+    height: 2px;
+    position: relative;
+    background-color: #1e9de3;       
+  }
+
+  @media(max-width: 640px) {
+    .top-border {
+      width: 79%;
+    }
+  }
+
+  span.left-diamond img {
+    opacity: 1;
+    margin-top: -2px;
   }  
+
+  .text-history {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    background: -webkit-linear-gradient(top,rgba(5,37,78,.5),rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
+    background: linear-gradient(180deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
+
+    & span {
+    position: relative;
+    top: 2rem;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background: -webkit-linear-gradient(top,rgba(5,37,78,.5),rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
+    background: linear-gradient(180deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
+    }
+  }
 `;
 

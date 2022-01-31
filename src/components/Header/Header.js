@@ -1,28 +1,27 @@
-/* eslint-disable jsx-a11y/alt-text */
+
 import React from 'react';
 import styled from 'styled-components';
-
 
 const Header = () => {
   return(
       <ContainerBar>
       <div className='square-logo'>
-        <img src='/assets/square_logo.png' />
+        <img src='/assets/square_logo.png' alt='/' />
       </div>
         <div className='bar-items'>
-          <img src='/assets/cart2.png' />
-          <img src='assets/login.png' />      
+          <img src='/assets/cart2.png' alt='/' />
+          <img src='assets/login.png' alt='/' />      
           <h2>Support</h2>
           <h2>Store</h2>
           <h2>News</h2>
           <h2>Top Games</h2>
         </div>
         <ContainerHeader>
-            <img src='/assets/Final-Fantasy-VII-Remake-Logo-Transparent.png' />
+            <img src='/assets/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
           <ContainerItems>
-            <img src='/assets/logo_white.png' />
-              <div className='header-items'>
-                <h2>History</h2>
+            <img src='/assets/logo_white.png' alt='/' />
+              <div id='itemsHeader' className='header-items'>
+                <h2>Story</h2>
                   <h2>Characters</h2>
                   <h2>Mechanics</h2>
                   <h2>Media</h2>
@@ -34,7 +33,7 @@ const Header = () => {
           <ContainerDown>
             <div className='side-bar'>
               <h2>Buy Now</h2>
-              <img src='assets/capa.png' />
+              <img src='assets/capa.png' alt='/' />
             </div>
           </ContainerDown>
       </ContainerBar>
@@ -212,7 +211,7 @@ const ContainerItems = styled.div`
       white-space: nowrap;
       margin: 16px 22px;
       padding: 1px 8px;     
-      font-size: 14px;
+      font-size: 15px;
       text-transform: uppercase;
       align-items: center;
       justify-content: center;

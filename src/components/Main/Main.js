@@ -13,10 +13,10 @@ const Main = () => {
         muted
       />
       <audio
-      src={"/assets/audio/FFVII REMAKE - Opening-Intro-Bombing Mission Theme.mp3"}
-      autoplay='1'
-      loop
-      muted
+        src={"/assets/audio/FFVII REMAKE - Opening-Intro-Bombing Mission Theme.mp3"}
+        autoplay='1'
+        loop
+        muted
       />
       <ContainerLogo>
         <div className='logo'>
