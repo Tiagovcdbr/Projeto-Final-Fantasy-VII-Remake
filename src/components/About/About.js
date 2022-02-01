@@ -2,17 +2,17 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const HiddenPage = () => {
+const About = () => {
   return (
     <Container>
       <div className='container-hidden-image'>
         <div className='hidden-image'>
-          <img src='assets/bg_story_top.jpg' alt='/' />
+          <img src='assets/bg_home_story.jpg' alt='/' />
         </div>
       </div>
       <StyleHeader>
         <div className='text-header'>
-          <h2>Story</h2>
+          <h2>What is FINAL FANTASY VII Remake?</h2>
         </div>
         <div className='border-bottom'>
           <span className='left-diamond'>
@@ -36,13 +36,12 @@ const HiddenPage = () => {
               </span>            
             </div>          
               <div className='text-history'>
-                <span>Mako─the lifeblood of the planet and the fuel that powers the city of Midgar...</span>          
-                <span></span>          
-                <span></span>          
-                <span></span>          
-                <span></span>          
-                <span></span>          
-                <span></span>          
+                <span>The world has fallen under the control of the Shinra Electric Power Company, a shadowy corporation controlling the planet’s very life force as mako energy.</span>
+                         
+                <span>In the sprawling city of Midgar, an anti-Shinra organization calling themselves Avalanche have stepped up their resistance. Cloud Strife, a former member of Shinra’s elite SOLDIER unit now turned mercenary, lends his aid to the group, unaware of the epic consequences that await him.</span> 
+
+                <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project covers up to the party’s escape from Midgar, and goes deeper into the events occurring in Midgar than the original FINAL FANTASY VII.</span> 
+         
               </div>
             </div>
         </div>
@@ -51,12 +50,12 @@ const HiddenPage = () => {
   )
 };
 
-export default HiddenPage;
+export default About;
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  margin-top: 65rem;
+  margin-top: -5px;
 
   .container-hidden-image {
     margin: 0;
@@ -71,33 +70,45 @@ const Container = styled.div`
 
   @media(max-width: 1900px) {
     width: 100%;
-    height: 100vh;
-    margin-top: 950px;
+    height: 500px;
   }
 
   @media(max-width: 1900px) {
     .hidden-image img {
       width: 100%;
-      height: 1300px;
+      height: 800px;
+      top: 180px;
     }
   }
 
   @media(max-width: 1100px) {
       z-index: 1;
-      height: 100vh;
-      margin-top: 550px;  
+      height: 500px;
+      margin-top: 470px;  
+  }
+
+  @media(max-width: 1100px) {
+    .hidden-image img {
+      width: 100%;
+      height: 600px;
+      top: 180px;
+    }
   }
 
   @media(max-width: 750px) {
-    margin-top: 540px;
+    margin-top: 470px;
+  }
+
+  @media(max-width: 310px) {
+    width: 100%;
+    height: 500px;
   }
 `;
 
 const StyleHeader = styled.div`
   position: absolute;
   width: 100%;
-  bottom: 0;
-  bottom: -650px;
+  top: 135.5rem;
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;
@@ -150,8 +161,15 @@ const StyleHeader = styled.div`
   }
 
   @media(max-width: 1900px) {
+    .text-header {
+      position: relative;
+      margin-top: -500px;
+    }
+  }
+
+  @media(max-width: 1900px) {
     position: relative;
-    top: -50.5rem;
+    top: 0;
   }
 
   @media(max-width: 1100px) {
@@ -161,6 +179,7 @@ const StyleHeader = styled.div`
   }
 
   .border-bottom {
+    margin-top: 250px;
     height: 2px;
     width: 50%;
     margin: 0 auto;
@@ -230,24 +249,26 @@ const StyleHeader = styled.div`
   .bg-history {
     position: relative;
     margin: 0 auto;
-    top: 37.5em;    
+    top: 32rem;    
     width: 660px;
-    height: 420px;
-    -webkit-transition: all .50s ease-in-out;
-      transition: all .50s ease-in-out;
+    height: 300px;
+    -webkit-transition: all .33s ease-in-out;
+    transition: all .33s ease-in-out;
   }
 
   @media(max-width: 1900px) {
     .bg-history {
       position: relative;
-      top: 740px;
+      top: 26rem;
+      height: 320px;
     }
   }
 
   @media(max-width: 1100px) {
     .bg-history {
       position: relative;
-      top: 850px;
+      top: 300px;
+      height: 300px;
     }
   }
 
@@ -255,13 +276,38 @@ const StyleHeader = styled.div`
     .bg-history {
       width: 100%;
       position: relative;
-      top: 850px;
+      top: 300px;
+      height: 280px;
+    }
+  }
+
+  @media(max-width: 600px) {
+    .bg-history {
+      width: 100%;
+      position: relative;
+      top: 300px;
+      height: 280px;
     }
   }
 
   @media(max-width: 550px) {
     .bg-history {
-      top: 700px;
+      top: 250px;
+      height: 350px;
+    }
+  }
+
+  @media(max-width: 390px) {
+    .bg-history {
+      top: 50px;
+      height: 450px;
+    }
+  }
+
+  @media(max-width: 310px) {
+    .bg-history {
+      top: 40px;
+      height: 550px;
     }
   }
   
@@ -309,14 +355,12 @@ const StyleHeader = styled.div`
     background: linear-gradient(180deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
 
     & span {
-    position: relative;
-    top: 2rem;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    background: -webkit-linear-gradient(top,rgba(5,37,78,.5),rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
-    background: linear-gradient(180deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
+      position: relative;
+      top: 2rem;
+      margin: 6px auto;
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
     }
   }
 `;

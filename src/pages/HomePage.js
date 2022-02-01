@@ -1,12 +1,14 @@
 import React from 'react';
-import HiddenPage from '../components/HiddenPage/HiddenPage';
+import Story from '../components/Story/Story';
 import Main from '../components/Main/Main';
+import About from '../components/About/About'
 
 const Home = () => {
   return (
     <>
       <Main />
-      <HiddenPage />
+      <Story />
+      <About />
     </>
   )
 };

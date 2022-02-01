@@ -199,6 +199,30 @@ const ContainerItems = styled.div`
         }
       }
 
+      @media(max-width: 460px) {
+        img {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 250px;
+          height: 90px;
+          right: 50px;
+        }
+      }
+
+      @media(max-width: 260px) {
+        img {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 250px;
+          height: 90px;
+          right: 67px;
+        }
+      }
+
     .header-items {
       display: flex;
 
@@ -225,11 +249,11 @@ const ContainerItems = styled.div`
           content: "";
           position: absolute;
           top: 0;
-          margin-left: -145px;
-          margin-top: 55px;
+          margin-left: -148px;
+          margin-top: 57px;
           width: 2px;
           background-color: #000;
-          height: 48px;
+          height: 45px;
         }
 
         &:hover {         
@@ -330,6 +354,12 @@ export const ContainerDown = styled.div`
           transform: scale(1.2);
           transition: .6s;
         }
+    }
+
+    @media(max-width: 272px) {
+      h2 {
+        margin-left: 80px;
+      }
     }
 
     img {
