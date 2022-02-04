@@ -36,11 +36,17 @@ const About = () => {
               </span>            
             </div>          
               <div className='text-history'>
-                <span>The world has fallen under the control of the Shinra Electric Power Company, a shadowy corporation controlling the planet’s very life force as mako energy.</span>
+                <span>The world has fallen under the control of the Shinra Electric Power Company, a 
+                shadowy corporation controlling the planet’s very life force as mako energy.</span>
                          
-                <span>In the sprawling city of Midgar, an anti-Shinra organization calling themselves Avalanche have stepped up their resistance. Cloud Strife, a former member of Shinra’s elite SOLDIER unit now turned mercenary, lends his aid to the group, unaware of the epic consequences that await him.</span> 
+                <span>In the sprawling city of Midgar, an anti-Shinra organization calling themselves 
+                Avalanche have stepped up their resistance. Cloud Strife, a former member of Shinra’s 
+                elite SOLDIER unit now turned mercenary, lends his aid to the group, unaware of the epic 
+                consequences that await him.</span> 
 
-                <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project covers up to the party’s escape from Midgar, and goes deeper into the events occurring in Midgar than the original FINAL FANTASY VII.</span> 
+                <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project 
+                covers up to the party’s escape from Midgar, and goes deeper into the events occurring 
+                in Midgar than the original FINAL FANTASY VII.</span> 
          
               </div>
             </div>
