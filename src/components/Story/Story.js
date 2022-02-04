@@ -7,7 +7,7 @@ const Story = () => {
     <Container>
       <div className='container-hidden-image'>
         <div className='hidden-image'>
-          <img src='assets/bg_story_top.jpg' alt='/' />
+          <img src='assets/images/bg_story_top.jpg' alt='/' />
         </div>
       </div>
       <StyleHeader>
@@ -16,23 +16,23 @@ const Story = () => {
         </div>
         <div className='border-bottom'>
           <span className='left-diamond'>
-            <img src='/assets/diamond_side_left.png' alt='/' />
+            <img src='/assets/images/diamond_side_left.png' alt='/' />
           </span>
           <span className='center-diamond'>
-            <img src='/assets/diamond.png' alt='/' />
+            <img src='/assets/images/diamond.png' alt='/' />
           </span>
           <span className='right-diamond'>
-            <img src='/assets/diamond_side_right.png' alt='/' />
+            <img src='/assets/images/diamond_side_right.png' alt='/' />
           </span>
         </div>
         <div className='bg-history'>
           <div className='info-history'>
             <div className='top-border'>
               <span className='left-diamond'>
-                <img src='/assets/diamond.png' alt='/' />
+                <img src='/assets/images/diamond.png' alt='/' />
               </span>
               <span className='right-diamond'>
-                <img src='/assets/diamond.png' alt='/' />
+                <img src='/assets/images/diamond.png' alt='/' />
               </span>            
             </div>          
               <div className='text-history'>

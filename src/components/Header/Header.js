@@ -2,27 +2,33 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 const Header = () => {
   return(
       <ContainerBar>
       <div className='square-logo'>
-        <img src='/assets/square_logo.png' alt='/' />
+        <img src='/assets/images/square_logo.png' alt='/' />
       </div>
         <div className='bar-items'>
-          <img src='/assets/cart2.png' alt='/' />
-          <img src='assets/login.png' alt='/' />      
+          <img src='/assets/images/cart2.png' alt='/' />
+          <img src='assets/images/login.png' alt='/' />      
           <h2>Support</h2>
           <h2>Store</h2>
           <h2>News</h2>
           <h2>Top Games</h2>
         </div>
         <ContainerHeader>
-            <img src='/assets/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
+            <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
           <ContainerItems>
-            <img src='/assets/logo_white.png' alt='/' />
+            <img src='/assets/images/logo_white.png' alt='/' />
               <div id='itemsHeader' className='header-items'>
-                <h2>Story</h2>
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                  <h2>Story</h2>
+                </Link>
+                <Link to="/characters" style={{ textDecoration: 'none' }}>
                   <h2>Characters</h2>
+                </Link>
                   <h2>Mechanics</h2>
                   <h2>Media</h2>
                   <h2>Download Demo</h2>
@@ -33,7 +39,7 @@ const Header = () => {
           <ContainerDown>
             <div className='side-bar'>
               <h2>Buy Now</h2>
-              <img src='assets/capa.png' alt='/' />
+              <img src='assets/images/capa.png' alt='/' />
             </div>
           </ContainerDown>
       </ContainerBar>
@@ -232,6 +238,7 @@ const ContainerItems = styled.div`
       width: 120px;
       height: 45px;
       text-align: center;
+      text-decoration: none;
       white-space: nowrap;
       margin: 16px 22px;
       padding: 1px 8px;     
