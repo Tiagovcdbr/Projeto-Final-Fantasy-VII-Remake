@@ -1,9 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
+
+import Header from '../../../../components/Header/Header';
 
 const Cloud = () => {
   return (
-    <h2>Cloud seção</h2>
+    <Container>
+      <Header />
+    </Container>
   )
 };
 
 export default Cloud;
+
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+`;

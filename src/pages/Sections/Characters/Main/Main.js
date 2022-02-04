@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Header from '../../../../components/Header/Header';
 import styled from 'styled-components';
@@ -31,7 +31,9 @@ const Main = () => {
            <div className='container-characters'>
             <div className='heroes'>
               <div className='character-thumbnail-0'>
-                <img src='assets/cards/chara_thumb_cloud.png' alt='' />
+                <Link to="/cloud" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_cloud.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-1'>
                 <img src='assets/cards/chara_thumb_aerith.png' alt='' />
@@ -92,13 +94,11 @@ const Main = () => {
              </div>          
                <div className='text-history'>
 
-                 <span>The world has fallen under the control of the Shinra Electric Power Company, a 
-                 shadowy corporation controlling the planet’s very life force as mako energy.</span>
+                 <span>This section shows all the characters that exist in the game, click on the image 
+                 to access its information and get to know a little about these outstanding characters.</span>
                           
-                 <span>In the sprawling city of Midgar, an anti-Shinra organization calling themselves 
-                 Avalanche have stepped up their resistance. Cloud Strife, a former member of Shinra’s 
-                 elite SOLDIER unit now turned mercenary, lends his aid to the group, unaware of the epic 
-                 consequences that await him.</span> 
+                 <span>of this incredible game that is Final Fantasy VII Remake, being the first part of 
+                 an extensive game you will have many surprises and you will remember exciting moments</span> 
  
                  <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project 
                  covers up to the party’s escape from Midgar, and goes deeper into the events occurring 
@@ -145,11 +145,16 @@ const Container = styled.div`
     @media(max-width: 1100px) {
         z-index: 1;
         height: 100vh;
-        margin-top: 550px;  
+        margin-top: 142px;  
+    }
+
+    @media(max-width: 790px) {
+        z-index: 1;
+        height: 100vh;     
     }
 
     @media(max-width: 750px) {
-      margin-top: 540px;
+      margin-top: 133px;
     }
   }
 `;
@@ -304,6 +309,14 @@ const StyleHeader = styled.div`
     z-index: 1;
     flex-wrap: wrap;
     margin-top: 50px;
+  }
+
+  @media(max-width: 1100px) {
+    width: 100%;
+  }
+
+  @media(max-width: 750px) {
+    width: 100%;
   }
 
   .heroes {
@@ -605,7 +618,7 @@ const StyleHeader = styled.div`
   .bg-history {
     position: relative;
     margin: 0 auto;
-    top: 15rem;    
+    top: 10rem;    
     width: 660px;
     height: 300px;
     -webkit-transition: all .33s ease-in-out;
@@ -628,11 +641,27 @@ const StyleHeader = styled.div`
     }
   }
 
+  @media(max-width: 790px) {
+    .bg-history {
+      position: relative;
+      top: 200px;
+      height: 300px;
+    }
+  }
+
+  @media(max-width: 750px) {
+    .bg-history {
+      position: relative;
+      top: 150px;
+      height: 300px;
+    }
+  }
+
   @media(max-width: 640px) {
     .bg-history {
       width: 100%;
       position: relative;
-      top: 300px;
+      top: 80px;
       height: 280px;
     }
   }
@@ -641,21 +670,21 @@ const StyleHeader = styled.div`
     .bg-history {
       width: 100%;
       position: relative;
-      top: 300px;
+      top: 80px;
       height: 280px;
     }
   }
 
   @media(max-width: 550px) {
     .bg-history {
-      top: 250px;
+      top: 50px;
       height: 350px;
     }
   }
 
   @media(max-width: 390px) {
     .bg-history {
-      top: 50px;
+      display: none;
       height: 450px;
     }
   }
