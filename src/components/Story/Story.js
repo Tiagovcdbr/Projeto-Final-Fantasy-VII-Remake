@@ -48,8 +48,7 @@ const Story = () => {
                 <span>The bombing plunges the city into fiery chaos, and amidst the raging inferno, Cloud is 
                 tormented by visions of a bitter enemy long thought dead.</span> 
 
-                <span>After this hallucination fades, he meets a young woman selling flowers, who offers him 
-                a single yellow blossom. </span>   
+                <span>After this hallucination fades, he meets a young woman selling flowers, who offers him a single yellow blossom. </span>   
                        
                 <span>In that instant, a host of swirling shadows surround them.</span>  
 

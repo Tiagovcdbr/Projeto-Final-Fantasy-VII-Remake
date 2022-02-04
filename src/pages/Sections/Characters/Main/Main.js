@@ -79,7 +79,34 @@ const Main = () => {
               </div>
               </div>
             </div>
-           </div>        
+           </div> 
+           <div className='bg-history'>
+           <div className='info-history'>
+             <div className='top-border'>
+               <span className='left-diamond'>
+                 <img src='/assets/images/diamond.png' alt='/' />
+               </span>
+               <span className='right-diamond'>
+                 <img src='/assets/images/diamond.png' alt='/' />
+               </span>            
+             </div>          
+               <div className='text-history'>
+
+                 <span>The world has fallen under the control of the Shinra Electric Power Company, a 
+                 shadowy corporation controlling the planet’s very life force as mako energy.</span>
+                          
+                 <span>In the sprawling city of Midgar, an anti-Shinra organization calling themselves 
+                 Avalanche have stepped up their resistance. Cloud Strife, a former member of Shinra’s 
+                 elite SOLDIER unit now turned mercenary, lends his aid to the group, unaware of the epic 
+                 consequences that await him.</span> 
+ 
+                 <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project 
+                 covers up to the party’s escape from Midgar, and goes deeper into the events occurring 
+                 in Midgar than the original FINAL FANTASY VII.</span> 
+          
+               </div>
+             </div>
+         </div>       
         </StyleHeader>
     </Container>    
   )
@@ -111,8 +138,7 @@ const Container = styled.div`
     @media(max-width: 1900px) {
       .hidden-image img {
         width: 100%;
-        height: 1550px;
-        top: 180px;
+        height: 100%;
       }
     }
 
@@ -187,13 +213,13 @@ const StyleHeader = styled.div`
   @media(max-width: 1900px) {
     .text-header {
       position: relative;
-      margin-top: -90px;
+      margin-top: -115px;
     }
   }
 
   @media(max-width: 1900px) {
-    position: relative;
-    top: -50.5rem;
+    position: absolute;
+    top: 18.6rem;
   }
 
   @media(max-width: 1100px) {
@@ -573,6 +599,124 @@ const StyleHeader = styled.div`
     &:hover {
       background-color: rgb(31, 156, 134);
       transition: all .33s ease-in-out;
+    }
+  }
+
+  .bg-history {
+    position: relative;
+    margin: 0 auto;
+    top: 15rem;    
+    width: 660px;
+    height: 300px;
+    -webkit-transition: all .33s ease-in-out;
+    transition: all .33s ease-in-out;
+  }
+
+  @media(max-width: 1900px) {
+    .bg-history {
+      position: relative;
+      top: 15rem;
+      height: 320px;
+    }
+  }
+
+  @media(max-width: 1100px) {
+    .bg-history {
+      position: relative;
+      top: 300px;
+      height: 300px;
+    }
+  }
+
+  @media(max-width: 640px) {
+    .bg-history {
+      width: 100%;
+      position: relative;
+      top: 300px;
+      height: 280px;
+    }
+  }
+
+  @media(max-width: 600px) {
+    .bg-history {
+      width: 100%;
+      position: relative;
+      top: 300px;
+      height: 280px;
+    }
+  }
+
+  @media(max-width: 550px) {
+    .bg-history {
+      top: 250px;
+      height: 350px;
+    }
+  }
+
+  @media(max-width: 390px) {
+    .bg-history {
+      top: 50px;
+      height: 450px;
+    }
+  }
+
+  @media(max-width: 310px) {
+    .bg-history {
+      top: 40px;
+      height: 550px;
+    }
+  }
+  
+   .info-history {
+    position: relative;
+    width: 100%; 
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: end;
+    justify-content: flex-end;
+  }
+
+  .top-border {
+    margin: 0 auto;
+    width: 520px;
+    height: 2px;
+    position: relative;
+    background-color: #1e9de3;       
+  }
+
+  @media(max-width: 640px) {
+    .top-border {
+      width: 79%;
+    }
+  }
+
+  span.left-diamond img {
+    opacity: 1;
+    margin-top: -2px;
+  }  
+
+  .text-history {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    background: -webkit-linear-gradient(top,rgba(5,37,78,.5),rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
+    background: linear-gradient(180deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
+
+    & span {
+      position: relative;
+      top: 2rem;
+      margin: 6px auto;
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
     }
   }
 `;
