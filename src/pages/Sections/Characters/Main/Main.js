@@ -36,48 +36,76 @@ const Main = () => {
                 </Link>
               </div>
               <div className='character-thumbnail-1'>
-                <img src='assets/cards/chara_thumb_aerith.png' alt='' />
+                <Link to="/aerith" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_aerith.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-2'>
-                <img src='assets/cards/chara_thumb_tifa.png' alt='' />
+                <Link to="/tifa" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_tifa.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-3'>
-                <img src='assets/cards/chara_thumb_barret.png' alt='' />
+                <Link to="/barret" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_barret.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-4'>
-                <img src='assets/cards/chara_thumb_redxiii.png' alt='' />
+                <Link to="/redxiii" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_redxiii.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-5'>
-                <img src='assets/cards/chara_thumb_jessie.png' alt='' />
+                <Link to="/jessie" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_jessie.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-6'>
-                <img src='assets/cards/chara_thumb_wedge.png' alt='' />
+                <Link to="/wedge" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_wedge.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-7'>
-                <img src='assets/cards/chara_thumb_biggs.png' alt='' />
+                <Link to="/biggs" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_biggs.png' alt='' />
+                </Link>
               </div>
                 <div className='division'></div>
               <div className='villains'>
               <div className='character-thumbnail-villain-8'>
-              <img src='assets/cards/chara_thumb_sephiroth.png' alt='' />
+                <Link to="/sephiroth" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_sephiroth.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-villain-9'>
-                <img src='assets/cards/chara_thumb_reno.png' alt='' />
+                <Link to="/reno" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_reno.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-villain-10'>
-                <img src='assets/cards/chara_thumb_rude.png' alt='' />
+                <Link to="/rude" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_rude.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-villain-11'>
-                <img src='assets/cards/chara_thumb_shinra.png' alt='' />
+                <Link to="/president" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_shinra.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-villain-12'>
-                <img src='assets/cards/chara_thumb_heidegger.png' alt='' />
+                <Link to="/heidegger" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_heidegger.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-villain-13'>
-                <img src='assets/cards/chara_thumb_rocche.png' alt='' />
+                <Link to="/rocche" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_rocche.png' alt='' />
+                </Link>
               </div>
               <div className='character-thumbnail-villain-14'>
-                <img src='assets/cards/chara_thumb_hojo.png' alt='' />
+                <Link to="/hojo" style={{ textDecoration: 'none' }}>
+                  <img src='assets/cards/chara_thumb_hojo.png' alt='' />
+                </Link>
               </div>
               </div>
             </div>

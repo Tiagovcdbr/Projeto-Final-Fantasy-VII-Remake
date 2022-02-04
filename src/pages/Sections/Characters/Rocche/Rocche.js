@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Header from '../../../../components/Header/Header';
 
-const Rude = () => {
+const Rocche = () => {
   return (
     <Container>
       <Header />
@@ -11,7 +11,7 @@ const Rude = () => {
   )
 };
 
-export default Rude;
+export default Rocche;
 
 const Container = styled.div`
   width: 100%;
