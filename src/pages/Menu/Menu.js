@@ -203,6 +203,8 @@ const Container = styled.div`
     background: -webkit-linear-gradient(top,rgba(5,37,78,.5),rgba(5,37,78,.5) 45%,rgba(5,37,78,0));
     background: linear-gradient(140deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 15%,rgba(5,37,78,0));
 
+    text-shadow: 4px 2px 2px 4px #ffffff;
+
     span {
       color: #fff;
       font-weight: 700;      

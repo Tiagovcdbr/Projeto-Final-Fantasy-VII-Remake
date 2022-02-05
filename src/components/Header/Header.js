@@ -239,12 +239,12 @@ const ContainerItems = styled.div`
       h2 {
       cursor: pointer;
       display: flex;
-      width: 120px;
+      width: 140px;
       height: 45px;
       text-align: center;
       text-decoration: none;
       white-space: nowrap;
-      margin: 16px 22px;
+      margin: 16px 18px;
       padding: 1px 8px;     
       font-size: 15px;
       text-transform: uppercase;
@@ -254,13 +254,13 @@ const ContainerItems = styled.div`
       color: #ffffff;
       padding-left: 10px;
       opacity: 3s;
-      background: linear-gradient(90deg,#000 0,#000 75%,transparent);
+      background: linear-gradient(90deg,#000 0,#000 85%,transparent);
 
       &::before {
           content: "";
           position: absolute;
           top: 0;
-          margin-left: -148px;
+          margin-left: -150px;
           margin-top: 57px;
           width: 2px;
           background-color: #000;
@@ -284,7 +284,7 @@ const ContainerItems = styled.div`
       text-align: center;
       white-space: nowrap;
       height: 45px;
-      margin: 16px 22px;
+      margin: 16px 18px;
       padding: 1px 8px;
       font-family: MyriadPro-Cond,Arial,sans-serif;
       font-size: 14px;
