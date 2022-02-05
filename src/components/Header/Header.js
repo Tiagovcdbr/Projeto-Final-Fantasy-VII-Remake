@@ -19,7 +19,9 @@ const Header = () => {
           <h2>Top Games</h2>
         </div>
         <ContainerHeader>
+          <Link to="/" style={{ textDecoration: 'none' }}>
             <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
+          </Link>
           <ContainerItems>
             <img src='/assets/images/logo_white.png' alt='/' />
               <div id='itemsHeader' className='header-items'>

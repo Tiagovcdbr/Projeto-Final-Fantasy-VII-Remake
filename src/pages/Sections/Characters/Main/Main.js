@@ -11,7 +11,7 @@ const Main = () => {
         src={"/assets/audio/FF-VII_Remake_opening.m4a"}
         autoplay='1'
         loop
-        muted        
+                
       />
       <Header />
         <div className='container-hidden-image'>
@@ -771,7 +771,7 @@ const StyleHeader = styled.div`
     margin: 0 auto;
 
     background: -webkit-linear-gradient(top,rgba(5,37,78,.5),rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
-    background: linear-gradient(180deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
+    background: linear-gradient(120deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
 
     & span {
       position: relative;

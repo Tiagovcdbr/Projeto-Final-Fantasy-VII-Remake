@@ -10,7 +10,7 @@ const Main = () => {
         autoplay='1'
         allowfullscreen="1"
         loop
-        muted
+        
       />
       <audio
         src={"/assets/audio/FFVII REMAKE - Opening-Intro-Bombing Mission Theme.mp3"}

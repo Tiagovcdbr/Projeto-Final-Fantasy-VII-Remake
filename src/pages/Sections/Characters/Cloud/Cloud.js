@@ -11,7 +11,7 @@ const Cloud = () => {
         src={"/assets/audio/Final Fantasy VII Remake Main Theme.m4a"}
         autoplay='1'
         loop
-        muted        
+                
       />
     </Container>
   )
