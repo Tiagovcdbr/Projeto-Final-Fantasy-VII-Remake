@@ -73,7 +73,7 @@ const Container = styled.div`
     position: absolute;
     
     width: 100%;
-    height: 0.5%;
+    height: 0.50%;
     background-color: #000;
 
     object-fit: cover;
@@ -87,7 +87,7 @@ const Container = styled.div`
     position: absolute;
     
     width: 100%;
-    height: 0.5%;
+    height: 0.50%;
     bottom: 0;
     background-color: #000;
 

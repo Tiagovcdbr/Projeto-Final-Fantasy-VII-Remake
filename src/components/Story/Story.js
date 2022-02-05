@@ -74,6 +74,12 @@ const Container = styled.div`
     height: 100%;
   }
 
+  @media(max-width: 1900px) {
+    .container-hidden-image {
+      margin-top: -50px;
+    }
+  }
+
   .hidden-image img {    
     width: 100%;
     height: 100%;    
@@ -163,7 +169,7 @@ const StyleHeader = styled.div`
   @media(max-width: 1900px) {
     .text-header {
       position: relative;
-      margin-top: -90px;
+      margin-top: -40px;
     }
   }
 
