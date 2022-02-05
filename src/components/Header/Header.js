@@ -23,7 +23,7 @@ const Header = () => {
           <ContainerItems>
             <img src='/assets/images/logo_white.png' alt='/' />
               <div id='itemsHeader' className='header-items'>
-                <Link to="/" style={{ textDecoration: 'none' }}>
+                <Link to="home" style={{ textDecoration: 'none' }}>
                   <h2>Story</h2>
                 </Link>
                 <Link to="/main" style={{ textDecoration: 'none' }}>
