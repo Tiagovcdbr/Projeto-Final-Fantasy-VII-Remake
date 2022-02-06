@@ -215,7 +215,7 @@ const ContentTraillers = styled.div`
       margin-top: 100px;
       max-width: 300px;
       width: 100%;
-      height: 169px;
+      height: 170px;
       position: relative;
       z-index: 0;
       cursor: pointer;
@@ -426,7 +426,7 @@ const ContentTraillers = styled.div`
 
     .video-border-decoration-bottom-left {
       position: absolute;
-      bottom: -23.5px;
+      bottom: -25px;
       left: -20px;
       -webkit-transform: rotate(270deg);
       transform: rotate(270deg);
@@ -441,7 +441,7 @@ const ContentTraillers = styled.div`
 
     .video-border-decoration-bottom-right {
       position: absolute;
-      bottom: -20.5px;
+      bottom: -21px;
       right: -22.5px;
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg);

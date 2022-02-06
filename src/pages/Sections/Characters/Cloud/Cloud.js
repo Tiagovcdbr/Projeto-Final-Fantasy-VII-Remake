@@ -124,19 +124,48 @@ const Cloud = () => {
           </div>
        </div>  
        <ContainerCharacter>
-      <div className='container'>
-        <div className='character-art'>
-          <span className='lazy-image'>
-            <img src='/assets/images/characters_full_cloud.png' alt='/' />
-          </span>
+        <div className='container'>
+          <div className='character-art'>
+            <span className='lazy-image'>
+              <img src='/assets/images/characters_full_cloud.png' alt='/' />
+            </span>
+          </div>
+          <div className='character-text'>
+            <h2 className='character-name'>
+              <span className='first-name'>Cloud</span>
+              &nbsp;strife
+            </h2>
+            <div className='character-bio'>An ex-SOLDIER: first class, Cloud came to Midgar to start a new chapter of his life as a mercenary. At the invitation of his childhood friend,   Tifa, he accepted a job with Avalanche. He may bring his buster sword to bear against Shinra troopers, but he does not care for plight of the planet. For him, this is a job and nothing more.
+              <span className='top-diamond'>
+                <img src='/assets/images/diamond.png' alt='/' />
+              </span>
+              <span className='bottom-diamond'>
+                <img src='/assets/images/diamond.png' alt='/' />
+              </span>
+            </div> 
+            <div className='character-screenshots' >
+              <div className='space'>
+                <div className='video-thumb-screenshot'>
+                  <div className='video-still-house'>
+                    <img className='video-thumb-still' src='/assets/images/chara_cloud_screen_01.jpg' alt='/' />
+                  </div>
+                  <span className='video-border-top-left'>
+                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                  </span>
+                  <span className='video-border-top-right'>
+                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                  </span>
+                  <span className='video-border-bottom-left'>
+                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                  </span>
+                  <span className='video-border-bottom-right'>
+                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                  </span>
+                </div>
+              </div> 
+            </div>          
+          </div>
         </div>
-        <div className='character-text'>
-          <h2 className='character-name'>
-            <span className='first-name'>Cloud</span>
-            &nbsp;strife
-          </h2>
-        </div>
-      </div>
     </ContainerCharacter>     
     </StyleHeader>    
     </Container>
@@ -154,7 +183,7 @@ const Container = styled.div`
     
     width: 100%;
     height: 0.60%;
-    bottom: -487px;
+    bottom: -608px;
     background-color: #000;
 
     object-fit: cover;
@@ -172,7 +201,7 @@ const Container = styled.div`
 
   .hidden-image img {    
     width: 100%;
-    height: 1200px; 
+    height: 1320px; 
     margin-top: 142px;
     background-size: contain;
     
@@ -664,24 +693,21 @@ const StyleHeader = styled.div`
 
 const ContainerCharacter = styled.div`
   width: 100%;
-  max-width: 1100px;
   z-index: 0;
   position: relative;
 
   .container {
-    display: flex;
-    flex-direction: column;
-    -moz-box-align: center;
-    align-items: center;
-    -moz-box-pack: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: left;
-    padding: 0px 20px 20px;
     max-width: 1100px;
+    display: flex;
+    width: 50%;
+    -moz-box-align: center;
+    flex-wrap: wrap;
+    padding: 0px 20px 20px;
+    
     width: 100%;
     margin-left: calc(100% - 1100px);
     position: relative;
+    transition: 0.5s ease-in-out;
   }
 
   .character-art {
@@ -693,9 +719,9 @@ const ContainerCharacter = styled.div`
     transition: opacity 1.4s ease-in-out 1.6s,-webkit-transform 1.4s ease-in-out 1.6s;
     transition: transform 1.4s ease-in-out 1.6s,opacity 1.4s ease-in-out 1.6s;
     transition: transform 1.4s ease-in-out 1.6s,opacity 1.4s ease-in-out 1.6s,-webkit-transform 1.4s ease-in-out 1.6s;
-    top: -70px;
+    top: -45px;
     z-index: 0;
-    right: -60%;
+    right: 10%;
     position: absolute;
   }
   
@@ -706,37 +732,36 @@ const ContainerCharacter = styled.div`
     display: inline-block;
 
     img {
-      width: 90%;
+      width: 100%;
       margin-top: 50px;
     }
   }
 
   .character-text {
     position: relative;
+    top: 320px;
+    left: 200px;
     color: #fff;
     text-align: left;
-    left: 48rem;
-    top: -50px;
-
     width: 60%;
+    height: 550px;
     z-index: 1;
-    padding-bottom: 50px;
     -ms-flex-item-align: start;
     align-self: flex-start;
     -webkit-transition: opacity .4s ease-in-out .55s,-webkit-transform .4s ease-in-out .55s;
     transition: opacity .4s ease-in-out .55s,-webkit-transform .4s ease-in-out .55s;
     transition: transform .4s ease-in-out .55s,opacity .4s ease-in-out .55s;
     transition: transform .4s ease-in-out .55s,opacity .4s ease-in-out .55s,-webkit-transform .4s ease-in-out .55s;
-    margin: 30% auto;
   }
 
   .character-name {
     font-size: 2em;
     width: auto;
     max-width: 1100px;
-    margin: 0 0 30px;
+    margin: 0 30px;
     color: #fff;
     text-align: left;
+    margin-left: -5px;
     line-height: 1;
     display: inline-block;
     text-transform: none;
@@ -744,41 +769,166 @@ const ContainerCharacter = styled.div`
     overflow: hidden;
     z-index: 0;
     font-weight: 600;
-    text-shadow: 2px 2px 4px #000;    
+    transform: scaleY(1.2);
+    text-shadow: 2px 2px 4px #000; 
   }
 
   
 .character-name::after, .character-name::before {
-      width: 30%;
+      width: 100%;
       content: "";
       display: block;
       position: absolute;    
-      bottom: 0;
-      margin: 80px 10px;
 }
 
     .character-name::before {
       height: 2px;
       bottom: 0;
-      background: linear-gradient(90deg,rgba(129,205,243,0) 0,#81cdf3 25%,#81cdf3 75%,rgba(129,205,243,0));
+      margin-left: -20px;
+      background: linear-gradient(120deg,rgba(129,205,243,0) 0,#81cdf3 25%,#81cdf3 65%,rgba(129,205,243,0));
     }
 
       .character-name::after {
       height: 100px;
-      bottom: -20%;
-      z-index: -1;
+      bottom: -80%;
+      z-index: 1;
       background-color: rgba(0,0,0,0);
       background-position-x: 0%;
       background-position-y: 0%;
       background-repeat: repeat;
       background-attachment: scroll;
-      background-image: radial-gradient(rgb(13,149,255) 0px,rgba(13,149,255,0) 60%);
+      background-image: radial-gradient(rgb(13, 149, 255) 0px, rgba(13, 149, 255, 0) 60%);
       background-size: auto;
       background-origin: padding-box;
       background-clip: border-box;
+      margin-left: -20px;
     }
 
   .first-name {
+    font-family: MyriadPro-Cond,Arial,sans-serif;
     font-size: 1.5em;
   }
+
+  .character-bio {
+    top: 50px;
+    font-size: 1em;
+    border-left: 2px;
+    max-width: 800px;
+
+    background: linear-gradient(90deg,#05254e 0,rgba(5,37,78,0));
+
+    padding: 20px;
+    border-left: 2px solid #1e9de3;transition: transform .33s ease-in-out .66s,opacity .33s ease-in-out .66s,-webkit-transform .33s ease-in-out .66s;
+    position: relative; 
+
+    .top-diamond {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 0;
+      margin-left: -19px;
+      top: 0;
+      margin-top: -20px;
+    }
+
+    .bottom-diamond {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 0;
+      margin-left: -19px;
+      bottom: 0;
+      margin-bottom: -20px;
+    }
+  }
+
+  .character-screenshots {
+      width: 90%;
+      margin-top: 80px;
+      margin-left: -110px;
+    }
+
+    .space {
+      position: relative;
+      width: calc(100% - 62px);
+      margin: 30px auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .video-thumb-screenshot {
+      width: calc(50% - 10px);
+      padding: 0;
+      max-width: 470px;
+      margin: 0 auto;
+      position: relative;
+      display: inline-block;
+      zIndex: 0;
+      cursor: pointer;
+      border: 2px solid #27a7d1;
+      margin-bottom: 10px;
+    }
+
+    .video-still-house {
+      display: block !important;
+      width: 100%;
+      padding-top: 56.25%;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+
+    .video-thumb-still {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-right: -10px;
+      min-height: 1px;
+      display: block;
+      transition: all .33s ease-in-out !important;
+    }
+
+    .video-border-top-left {
+      position: absolute;
+      display: block !important;
+      height: 39px;
+      width: 39px;
+      left: 0;
+      margin-left: -22px;
+      top: 0;
+      margin-top: -22px;
+    }
+
+    .video-border-top-right {
+      position: absolute;
+      display: block !important;
+      height: 39px;
+      width: 39px;
+      right: 0;
+      margin-right: -21px;
+      top: 0;
+      margin-top: -23px;
+      transform: rotate(90deg);
+    }
+
+    .video-border-bottom-left {
+      position: absolute;
+      display: block !important;
+      height: 39px;
+      width: 39px;
+      bottom: -22px;
+      left: -22px;
+      transform: rotate(270deg);
+    }
+
+    .video-border-bottom-right {
+      position: absolute;
+      display: block !important;
+      height: 39px;
+      width: 39px;
+      bottom: -20.5px;
+      right: -23.5px;
+      transform: rotate(180deg);
+    }
 `;

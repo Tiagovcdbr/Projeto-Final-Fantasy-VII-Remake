@@ -28,25 +28,29 @@ const Menu = () => {
         loop
                       
       />
-      <div className='container-page'></div>
-        <div className='logo-image'>
-          <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
-        </div>
-        <div className='text-area'>
-          <div className='text'>
-            <span>Projeto Final Fantasy VII Remake feito por fã</span>
-            <span>© 1997, 2020 SQUARE ENIX CO., LTD. Todos os direitos 
-            e conteudos são reservados a empresa SQUARE ENIX</span>
-          </div>
-        </div>
-        <div className='button-menu'>
-          <Link to="/home" style={{ textDecoration: 'none' }}>
-            <button id="btn">Start</button>
-          </Link>
-        </div>
-          <div className='hand-menu'>
-            <img src='assets/images/hand.png' alt='/' />
+      <div className='container-page'>
+        <div className='bg-image'>
+          <img src='/assets/images/ff7_remake_bg_menu.png' alt='' />
+            <div className='logo-image'>
+              <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
+            </div>
+            <div className='text-area'>
+              <div className='text'>
+                <span>Projeto Final Fantasy VII Remake feito por fã</span>
+                <span>© 1997, 2020 SQUARE ENIX CO., LTD. Todos os direitos 
+                e conteudos são reservados a empresa SQUARE ENIX</span>
+              </div>
+            </div>
+            <div className='button-menu'>
+              <Link to="/home" style={{ textDecoration: 'none' }}>
+                <button id="btn">Start</button>
+              </Link>
+            </div>
+              <div className='hand-menu'>
+                <img src='assets/images/hand.png' alt='/' />
+            </div>
          </div>
+      </div>
     </Container>
   )
 };
@@ -55,18 +59,23 @@ export default Menu;
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
 
   .container-page {
     width: 100%;
     height: 100%;
-    background: url('/assets/images/ff7_remake_bg_menu.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center:
     transition: all .33s ease-in-out;
     object-fit: cover;
     -o-object-fit: cover;
+  }
+
+  .bg-image {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 
   .video-bg {
@@ -89,6 +98,7 @@ const Container = styled.div`
     width: 100%;
     height: 0.50%;
     bottom: 0;
+    margin-bottom: -109px;
     background-color: #000;
 
     object-fit: cover;
@@ -244,7 +254,8 @@ const Container = styled.div`
   }
 
   .hand-menu {
-    width: 5px;
+    width: 80px;
+    max-width: 80px;
     position: relative;
     top: -24rem;
     right: 150px;
@@ -252,7 +263,8 @@ const Container = styled.div`
     height: 0;
 
     img {
-      position: relative;
+      max-width: 150px;
+      position: absolute;
       width: 150px;
       cursor: pointer;      
     }

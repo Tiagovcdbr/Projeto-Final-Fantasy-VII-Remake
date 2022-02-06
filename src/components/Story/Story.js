@@ -259,6 +259,8 @@ const StyleHeader = styled.div`
     height: 400px;
     -webkit-transition: all .33s ease-in-out;
     transition: all .33s ease-in-out;
+
+    font-family: MyriadPro-Cond,Arial,sans-serif;
   }
 
   @media(max-width: 1900px) {
