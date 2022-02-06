@@ -162,9 +162,31 @@ const Cloud = () => {
                     <img src='/assets/images/trailer_frame_corner.png' alt='/' />
                   </span>
                 </div>
+                <div className='video-thumb-screenshot-2'>
+                  <div className='video-still-house'>
+                    <img className='video-thumb-still' src='/assets/images/chara_cloud_screen_02.jpg' alt='/' />
+                  </div>
+                  <span className='video-border-top-left'>
+                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                  </span>
+                  <span className='video-border-top-right'>
+                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                  </span>
+                  <span className='video-border-bottom-left'>
+                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                  </span>
+                  <span className='video-border-bottom-right'>
+                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                  </span>
+                </div>
               </div> 
             </div>          
           </div>
+        </div>
+        <div className='character-profile'>
+          <span className='image-background'>
+            <img src='/assets/images/characters_profile_cloud.png' alt='Cloud' />
+          </span>
         </div>
     </ContainerCharacter>     
     </StyleHeader>    
@@ -739,7 +761,7 @@ const ContainerCharacter = styled.div`
 
   .character-text {
     position: relative;
-    top: 320px;
+    top: 310px;
     left: 200px;
     color: #fff;
     text-align: left;
@@ -845,12 +867,11 @@ const ContainerCharacter = styled.div`
   .character-screenshots {
       width: 90%;
       margin-top: 80px;
-      margin-left: -110px;
     }
 
     .space {
       position: relative;
-      width: calc(100% - 62px);
+      width: calc(100% - 52px);
       margin: 30px auto;
       display: flex;
       flex-wrap: wrap;
@@ -861,9 +882,10 @@ const ContainerCharacter = styled.div`
       padding: 0;
       max-width: 470px;
       margin: 0 auto;
+      left: 10px;
       position: relative;
       display: inline-block;
-      zIndex: 0;
+      z-Index: 0;
       cursor: pointer;
       border: 2px solid #27a7d1;
       margin-bottom: 10px;
@@ -930,5 +952,96 @@ const ContainerCharacter = styled.div`
       bottom: -20.5px;
       right: -23.5px;
       transform: rotate(180deg);
+    }
+
+    .video-thumb-screenshot-2 {
+      width: calc(50% - 10px);
+      padding: 0;
+      max-width: 470px;
+      margin: 0 auto;
+      margin-right: -50px;
+      position: relative;
+      display: inline-block;
+      z-Index: 0;
+      cursor: pointer;
+      border: 2px solid #27a7d1;
+      margin-bottom: 10px;
+    }
+
+    .video-still-house {
+      display: block !important;
+      width: 100%;
+      padding-top: 56.25%;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+
+    .video-thumb-still {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-right: -10px;
+      min-height: 1px;
+      display: block;
+      transition: all .33s ease-in-out !important;
+    }
+
+    .video-border-top-left {
+      position: absolute;
+      display: block !important;
+      height: 39px;
+      width: 39px;
+      left: 0;
+      margin-left: -22px;
+      top: 0;
+      margin-top: -22px;
+    }
+
+    .video-border-top-right {
+      position: absolute;
+      display: block !important;
+      height: 39px;
+      width: 39px;
+      right: 0;
+      margin-right: -21px;
+      top: 0;
+      margin-top: -23px;
+      transform: rotate(90deg);
+    }
+
+    .video-border-bottom-left {
+      position: absolute;
+      display: block !important;
+      height: 39px;
+      width: 39px;
+      bottom: -22px;
+      left: -22px;
+      transform: rotate(270deg);
+    }
+
+    .video-border-bottom-right {
+      position: absolute;
+      display: block !important;
+      height: 39px;
+      width: 39px;
+      bottom: -20.5px;
+      right: -23.5px;
+      transform: rotate(180deg);
+    }
+
+    .character-profile {
+      position: absolute;
+      width: 50%;
+      top: -50px;
+      left: 0;
+      max-width: 817px;
+      z-index: -1;
+    }
+
+    .image-background {
+      color: transparent;
+      display: inline-block;
     }
 `;
