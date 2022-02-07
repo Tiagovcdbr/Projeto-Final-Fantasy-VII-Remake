@@ -780,6 +780,7 @@ const StyleHeader = styled.div`
       color: #fff;
       font-size: 14px;
       text-align: center;
+      font-family: MyriadPro-Cond,Arial,sans-serif;
     }
   }
 `;

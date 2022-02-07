@@ -132,6 +132,7 @@ const StyleHeader = styled.div`
     display: block;
     position: relative;
     color: #fff;
+    font-family: MyriadPro-Cond,Arial,sans-serif;
     text-transform: uppercase;
     padding: 10px 20px 5px;
     text-shadow: -1px -1px 4px #ff004f,-2px -2px 4px #000;
@@ -367,6 +368,7 @@ const StyleHeader = styled.div`
       color: #fff;
       font-size: 14px;
       text-align: center;
+      font-family: MyriadPro-Cond,Arial,sans-serif;
     }
   }
 `;

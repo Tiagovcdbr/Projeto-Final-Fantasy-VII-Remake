@@ -205,7 +205,7 @@ const Container = styled.div`
     
     width: 100%;
     height: 0.60%;
-    bottom: -608px;
+    bottom: -41.4rem;
     background-color: #000;
 
     object-fit: cover;
@@ -213,6 +213,18 @@ const Container = styled.div`
 
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%),
             linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  }
+
+  @media(max-width: 1850px) {
+    .video-bg_2 {
+      bottom: -44.8rem;
+    }
+  }
+
+  @media(max-width: 460px) {
+    .video-bg_2 {
+      bottom: -44.9rem;
+    }
   }
 
   .container-hidden-image {
@@ -223,37 +235,39 @@ const Container = styled.div`
 
   .hidden-image img {    
     width: 100%;
-    height: 1320px; 
+    height: 1375px; 
     margin-top: 142px;
     background-size: contain;
     
       @media(max-width: 1900px) {
-      width: 100%;
-      height: 100vh;
+      width: 100%;      
     }
 
     @media(max-width: 1900px) {
       .hidden-image img {
-        width: 100%;
-        height: 100%;
+        width: 100%;       
       }
     }
 
     @media(max-width: 1100px) {
-        z-index: 1;
-        height: 100vh;
-        margin-top: 142px;  
+        width: 100%;
     }
 
     @media(max-width: 790px) {
-        z-index: 1;
-        height: 100vh;     
+        z-index: 1;  
     }
 
     @media(max-width: 750px) {
       margin-top: 133px;
     }
   }
+
+  @media(max-width: 750px) {
+      .hidden-image img {
+        width: 100%;
+        height: 1385px;
+      }
+    }
 `;
 
 const StyleHeader = styled.div`
@@ -746,6 +760,30 @@ const ContainerCharacter = styled.div`
     right: 10%;
     position: absolute;
   }
+
+  @media(max-width: 930px) {
+    .character-art {
+      right: -250px;
+    }
+  }
+
+  @media(max-width: 930px) {
+    .character-art {
+      right: -170px;
+    }
+  }
+
+  @media(max-width: 670px) {
+    .character-art {
+      right: -250px;
+    }
+  }
+
+  @media(max-width: 600px) {
+    .character-art {
+      display: none;
+    }
+  }
   
   .lazy-image {
     width: 100%;
@@ -763,6 +801,7 @@ const ContainerCharacter = styled.div`
     position: relative;
     top: 310px;
     left: 200px;
+    font-family: MyriadPro-Cond,Arial,sans-serif;
     color: #fff;
     text-align: left;
     width: 60%;
@@ -776,8 +815,27 @@ const ContainerCharacter = styled.div`
     transition: transform .4s ease-in-out .55s,opacity .4s ease-in-out .55s,-webkit-transform .4s ease-in-out .55s;
   }
 
+  @media(max-width: 930px) {
+    .character-text {
+      left: 450px;
+    }
+  }
+
+  @media(max-width: 640px) {
+    .character-text {
+      margin-left: 180px;
+    }
+  }
+
+  @media(max-width: 460px) {
+    .character-text {
+      display: none;
+    }
+  }
+
   .character-name {
     font-size: 2em;
+    font-family: MyriadPro-Cond,Arial,sans-serif;
     width: auto;
     max-width: 1100px;
     margin: 0 30px;
@@ -796,12 +854,12 @@ const ContainerCharacter = styled.div`
   }
 
   
-.character-name::after, .character-name::before {
+  .character-name::after, .character-name::before {
       width: 100%;
       content: "";
       display: block;
       position: absolute;    
-}
+  }
 
     .character-name::before {
       height: 2px;
@@ -1040,8 +1098,62 @@ const ContainerCharacter = styled.div`
       z-index: -1;
     }
 
+    @media(max-width: 1100px) {
+      .character-profile {
+        position: absolute;
+        width: 100%;
+      }
+    }
+
+    @media(max-width: 605px) {
+      .character-profile {
+        overflow: hidden;
+        max-width: 450px;
+      }
+    }
+
+    @media(max-width: 460px) {
+      .character-profile {
+        overflow: hidden;
+        max-width: 370px;
+      }
+    }
+
+    @media(max-width: 375px) {
+      .character-profile {
+        margin-left: -100px;
+      }
+    }
+
+    @media(max-width: 300px) {
+      .character-profile {
+        display: none;
+      }
+    }
+
     .image-background {
       color: transparent;
       display: inline-block;
     }
+
+    @media(max-width: 605px) {
+      .image-background {
+        img {
+          width: 100px;
+        }
+      }
+    }
+
+    @media(max-width: 280px) {
+      .character-profile {
+        display: none;
+      }
+    }
+
+    @media(max-width: 1100px) {
+      .image-background img {
+        width: 600px;
+        margin-top: 40px;
+      }
+    }  
 `;

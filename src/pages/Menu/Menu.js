@@ -40,16 +40,13 @@ const Menu = () => {
                 <span>© 1997, 2020 SQUARE ENIX CO., LTD. Todos os direitos 
                 e conteudos são reservados a empresa SQUARE ENIX</span>
               </div>
-            </div>
-            <div className='button-menu'>
-              <Link to="/home" style={{ textDecoration: 'none' }}>
-                <button id="btn">Start</button>
-              </Link>
-            </div>
-              <div className='hand-menu'>
-                <img src='assets/images/hand.png' alt='/' />
-            </div>
+            </div>            
          </div>
+          <div className='button-menu'>
+            <Link to="/home" style={{ textDecoration: 'none' }}>
+              <button id="btn">Start</button>
+            </Link>
+          </div>
       </div>
     </Container>
   )
@@ -61,12 +58,23 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
 
+  @media(max-width: 1850px) {
+    width: 100%;
+  }
+
   .container-page {
     width: 100%;
     height: 100%;
     transition: all .33s ease-in-out;
     object-fit: cover;
     -o-object-fit: cover;
+  }
+
+  @media(max-width: 1850px) {
+    .container-page {
+    width: 100%;
+    height: 100%;
+    }
   }
 
   .bg-image {
@@ -77,6 +85,13 @@ const Container = styled.div`
       width: 100%;
     }
   }
+
+  @media(max-width: 1900px) {
+    .bg-image img {
+      width: 100%;
+      height: 1000px;
+  }
+}
 
   .video-bg {
     position: absolute;
@@ -108,6 +123,16 @@ const Container = styled.div`
             linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   }
 
+  @media(max-width: 1850px) {
+    .video-bg_2 {
+      width: 100%;
+      position: absolute;
+      height: 0.50%;
+      bottom: 0;
+      margin-bottom: -159px;
+    }
+  }
+
   .logo-image {
     width: 100%;
 
@@ -128,84 +153,120 @@ const Container = styled.div`
     }
   }
 
-  @media(max-width: 550px) {
+  @media(max-width: 560px) {
     .logo-image img {
-      width: 450px;
-      height: 300px;  
-      margin: 0 auto;  
+      width: 500px;
+      height: 350px;  
+      margin: 0 auto; 
+      margin-top: 100px; 
       transition: all .33s ease-in-out;
     }
   }
 
-  @media(max-width: 450px) {
+  @media(max-width: 430px) {
     .logo-image img {
-      width: 350px;
-      height: 200px;  
-      margin-top: 50px;  
+      width: 400px;
+      height: 350px;  
+      top: -80px;
+      left: -70px;
       transition: all .33s ease-in-out;
     }
   }
 
-  @media(max-width: 350px) {
+  @media(max-width: 370px) {
+    .logo-image img {
+      width: 400px;
+      height: 350px;  
+      margin-left: -10px;
+      right: 50px;
+        
+      transition: all .33s ease-in-out;
+    }
+  }
+
+  @media(max-width: 340px) {
     .logo-image img {
       width: 250px;
-      height: 150px;  
-      margin-top: 50px;
-      margin-left: 20px;  
-      transition: all .33s ease-in-out;
-    }
-  }
-
-  @media(max-width: 300px) {
-    .logo-image img {
-      display: none;
+      height: 250px;
+      bottom: 10px;
+      left: -10px;
     }
   }
 
   .text-area {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     margin-left: 160px;
-    top: -500px;
-    max-width: 460px;
-    height: 0; 
+    margin-top: -600px;
+    max-width: 460px; 
+  }
+
+  .button-menu {
+    margin-top: -25rem;
+    margin-left: 57rem;
+  }
+
+  .button-menu button {
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: MyriadPro-Cond,Arial,sans-serif;
+    cursor: pointer;
+  }
+
+  @media(max-width: 1850px) {
+    .button-menu {
+      position: absolute;
+      display: flex;
+      left:-600px;
+    }
+  }
+
+  @media(max-width: 640px) {
+    .button-menu {
+      position: absolute;
+      display: flex;
+      left:-800px;
+    }
+  }
+
+  span {
+    color: #fff;
+    font-weight: 700; 
+    font-family: MyriadPro-Cond,Arial,sans-serif;
   }
 
   @media(max-width: 780px) {
     .text-area {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
       right: 40px;
     }
   }
 
-  @media(max-width: 550px) {
+  @media(max-width: 560px) {
     .text-area {
-      right: 60px;
+      display: flex;
+      flex-direction: column;
+      right: 140px;
     }
   }
 
-  @media(max-width: 450px) {
+  @media(max-width: 575px) {
     .text-area {
-      justify-content: center;
-      max-width: 250px;
-      right: 80px;
-
-      span {
-        font-size: 14px;
-      }
+      display: flex;
+      justify-content: column;
+      right: 10px;
     }
   }
 
-  @media(max-width: 350px) {
+  @media(max-width: 475px) {
     .text-area {
-      justify-content: center;
-      max-width: 270px;
-      right: 80px;
-
-      span {
-        font-size: 14px;
-      }
-    }
+      display: none;
   }
 
   .text {
@@ -235,24 +296,6 @@ const Container = styled.div`
     }
   }
 
-  .button-menu {
-    width: 100px;
-    position: relative;
-    top: -325px;
-    margin: 0 auto;
-    height: 0;
-  }
-  
-    button {
-      width: 100px;
-      height: 30px;
-      font-weight: 700;
-      font-size: 18px; 
-      border-radius: 16px;
-      cursor: pointer;
-      transition: all .99s ease-in-out;
-  }
-
   .hand-menu {
     width: 80px;
     max-width: 80px;
@@ -265,8 +308,19 @@ const Container = styled.div`
     img {
       max-width: 150px;
       position: absolute;
-      width: 150px;
+      width: 15px;
       cursor: pointer;      
+    }
+  }
+
+  @media(max-width: 550px) {
+    .hand-menu {
+      width: 100%;
+      left: 100px;
+
+      img {
+        right: 120px;
+      }
     }
   }
 `;
