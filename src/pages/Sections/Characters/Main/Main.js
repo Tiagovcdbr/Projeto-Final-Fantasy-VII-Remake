@@ -7,11 +7,17 @@ import styled from 'styled-components';
 const Main = () => {
   return (    
     <Container>
+    <video
+        className='video-bg_2'
+        src={"/assets/video/lifestream.mp4"}
+        autoplay='1'
+        allowfullscreen="1"
+        loop    
+      />
     <audio
         src={"/assets/audio/FF-VII_Remake_opening.m4a"}
         autoplay='1'
-        loop
-                
+        loop                
       />
       <Header />
         <div className='container-hidden-image'>
@@ -152,6 +158,39 @@ export default Main;
 const Container = styled.div`
   width: 100%;
   height: 100%;
+
+  .video-bg_2 {
+    position: absolute;
+    
+    width: 100%;
+    height: 0.60%;
+    bottom: -20.35rem;
+    background-color: #000;
+
+    object-fit: cover;
+    -o-object-fit: cover;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  }
+
+  @media(max-width: 1850px) {
+    .video-bg_2 {
+      bottom: -11.7rem;
+    }
+  }
+
+  @media(max-width: 750px) {
+    .video-bg_2 {
+      bottom: -11.1rem;
+    }
+  }
+
+  @media(max-width: 460px) {
+    .video-bg_2 {
+      bottom: -11rem;
+    }
+  }
 
   .container-hidden-image {
     margin: 0;

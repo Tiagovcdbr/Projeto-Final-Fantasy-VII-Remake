@@ -185,7 +185,7 @@ const Tifa = () => {
         </div>
         <div className='character-profile'>
           <span className='image-background'>
-            <img src='/assets/images/characters_profile_tifa.png' alt='Cloud' />
+            <img src='/assets/images/characters_profile_tifa.png' alt='Tifa' />
           </span>
         </div>
     </ContainerCharacter>     

@@ -185,7 +185,7 @@ const Aerith = () => {
         </div>
         <div className='character-profile'>
           <span className='image-background'>
-            <img src='/assets/images/characters_profile_aerith.png' alt='Cloud' />
+            <img src='/assets/images/characters_profile_aerith.png' alt='Aerith' />
           </span>
         </div>
     </ContainerCharacter>     

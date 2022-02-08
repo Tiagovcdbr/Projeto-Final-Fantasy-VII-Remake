@@ -36,8 +36,8 @@ const Menu = () => {
             </div>
             <div className='text-area'>
               <div className='text'>
-                <span>Projeto Final Fantasy VII Remake feito por fã</span>
-                <span>© 1997, 2020 SQUARE ENIX CO., LTD. Todos os direitos 
+                <span>Projeto clone do site Final Fantasy VII Remake feito por um grande fã do jogo e franquia</span>
+                <span> © 1997, 2020 SQUARE ENIX CO., LTD. Todos os direitos 
                 e conteudos são reservados a empresa SQUARE ENIX</span>
               </div>
             </div>            

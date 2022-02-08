@@ -51,6 +51,13 @@ const About = () => {
               </div>
             </div>
         </div>
+        <video
+        className='video-bg_2'
+        src={"/assets/video/lifestream.mp4"}
+        autoplay='1'
+        allowfullscreen="1"
+        loop    
+          />
       </StyleHeader>        
     </Container>
   )
@@ -62,6 +69,69 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   margin-top: -5px;
+
+  .video-bg_2 {
+    position: absolute;
+    
+    width: 100%;
+    height: 1.3%;
+    bottom: -33.3rem;
+    background-color: #000;
+
+    object-fit: cover;
+    -o-object-fit: cover;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  }
+
+  @media(max-width: 1850px) {
+    .video-bg_2 {
+      bottom: -27.2rem;
+    }
+  }
+
+  @media(max-width: 1100px) {
+    .video-bg_2 {
+      bottom: -19rem;
+    }
+  }
+
+  @media(max-width: 750px) {
+    .video-bg_2 {
+      bottom: -19rem;
+    }
+  }
+
+  @media(max-width: 660px) {
+    .video-bg_2 {
+      bottom: -19rem;
+    }
+  }
+
+  @media(max-width: 640px) {
+    .video-bg_2 {
+      bottom: -20.2222rem;
+    }
+  }
+
+  @media(max-width: 550px) {
+    .video-bg_2 {
+      bottom: -16rem;
+    }
+  }
+
+  @media(max-width: 390px) {
+    .video-bg_2 {
+      bottom: -9.6rem;
+    }
+  }
+
+  @media(max-width: 310px) {
+    .video-bg_2 {
+      bottom: -3.5rem;
+    }
+  }
 
   .container-hidden-image {
     margin: 0;
