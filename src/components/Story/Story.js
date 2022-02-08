@@ -123,7 +123,7 @@ const StyleHeader = styled.div`
   animation-name: react-reveal-607813993386296-1;
 
   .text-header h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     width: 100%;
     max-width: 1100px;
     text-align: center;

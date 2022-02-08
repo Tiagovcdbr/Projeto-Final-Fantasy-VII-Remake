@@ -8,11 +8,11 @@ const Header = () => {
   return(
       <ContainerBar>
       <div className='square-logo'>
-        <img src='/assets/images/square_logo.png' alt='/' />
+        <img src='/assets/images/square_logo.png' alt='' />
       </div>
         <div className='bar-items'>
-          <img src='/assets/images/cart2.png' alt='/' />
-          <img src='assets/images/login.png' alt='/' />      
+          <img src='/assets/images/cart2.png' alt='' />
+          <img src='assets/images/login.png' alt='' />      
           <h2>Support</h2>
           <h2>Store</h2>
           <h2>News</h2>
@@ -20,10 +20,10 @@ const Header = () => {
         </div>
         <ContainerHeader>
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
+            <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='' />
           </Link>
           <ContainerItems>
-            <img src='/assets/images/logo_white.png' alt='/' />
+            <img src='/assets/images/logo_white.png' alt='' />
               <div id='itemsHeader' className='header-items'>
                 <Link to="home" style={{ textDecoration: 'none' }}>
                   <h2>Story</h2>
@@ -43,7 +43,7 @@ const Header = () => {
           <ContainerDown>
             <div className='side-bar'>
               <h2>Buy Now</h2>
-              <img src='assets/images/capa.png' alt='/' />
+              <img src='assets/images/capa.png' alt='' />
             </div>
           </ContainerDown>
       </ContainerBar>
@@ -349,6 +349,7 @@ export const ContainerDown = styled.div`
 
   .side-bar {
     overflow: hidden;
+    left: 0;
 
     h2 {
       font-size: 1.4em;
@@ -388,6 +389,13 @@ export const ContainerDown = styled.div`
           margin-left: 1px;
         }
       } 
+
+      @media(max-width: 1100px) {
+      img {
+        position: absolute;
+        margin-left: 1px;
+      }
+    } 
 
       @media(max-width: 750px) {
       img {

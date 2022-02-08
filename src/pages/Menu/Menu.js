@@ -224,7 +224,7 @@ const Container = styled.div`
     cursor: pointer;
     border-width: 3px;
     border-style: solid;
-    border-color: #0d95ff;
+    border-color: #009080;
     border-radius: 12px;
     transition: all .66s ease-out;
 
@@ -241,7 +241,7 @@ const Container = styled.div`
       display: flex;
       left:-600px;
       bottom: 80px;
-      border-color: #008080;
+      border-color: #009080;
     }
   }
 
