@@ -2,17 +2,17 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const About = () => {
+const TacticalMode = () => {
   return (
     <Container>
       <div className='container-hidden-image'>
         <div className='hidden-image'>
-          <img src='assets/images/bg_home_story.jpg' alt='/' />
+          <img src='' alt='/' />
         </div>
       </div>
       <StyleHeader>
         <div className='text-header'>
-          <h2>What is FINAL FANTASY VII Remake?</h2>
+          <h2>TACTICAL MODE</h2>
         </div>
         <div className='border-bottom'>
           <span className='left-diamond'>
@@ -36,46 +36,35 @@ const About = () => {
               </span>            
             </div>          
               <div className='text-history'>
-                <span>The world has fallen under the control of the Shinra Electric Power Company, a 
-                shadowy corporation controlling the planet’s very life force as mako energy.</span>
-                         
-                <span>In the sprawling city of Midgar, an anti-Shinra organization calling themselves 
-                Avalanche have stepped up their resistance. Cloud Strife, a former member of Shinra’s 
-                elite SOLDIER unit now turned mercenary, lends his aid to the group, unaware of the epic 
-                consequences that await him.</span> 
-
-                <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project 
-                covers up to the party’s escape from Midgar, and goes deeper into the events occurring 
-                in Midgar than the original FINAL FANTASY VII.</span> 
+                <span>When accessing your commands menu in battle, time slows down 
+                dramatically, giving you the freedom to develop and carry out a plan 
+                of attack. Take this opportunity to use your ATB charges to employ 
+                a variety of abilities, magic, items, and limit breaks. Adapt to the 
+                strengths and weaknesses of your enemies, and take control of the 
+                tide of battle.</span>
          
               </div>
             </div>
         </div>
-        <video
-        className='video-bg_2'
-        src={"/assets/video/lifestream.mp4"}
-        autoplay='1'
-        allowfullscreen="1"
-        loop    
-          />
       </StyleHeader>        
     </Container>
   )
 };
 
-export default About;
+export default TacticalMode;
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
-  margin-top: -5px;
+  height: 80%;
+  max-height: 1100px;
+  position: relative;
 
-  .video-bg_2 {
+{/*    .video-bg_2 {
     position: absolute;
     
     width: 100%;
     height: 1.3%;
-    bottom: -33.6rem;
+    bottom: -26.6rem;
     background-color: #000;
 
     object-fit: cover;
@@ -85,9 +74,9 @@ const Container = styled.div`
             linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   }
 
-  @media(max-width: 1850px) {
+  @media(max-width: 1870px) {
     .video-bg_2 {
-      bottom: -27.2rem;
+      bottom: -19.5rem;
     }
   }
 
@@ -131,17 +120,30 @@ const Container = styled.div`
     .video-bg_2 {
       bottom: -3.5rem;
     }
-  }
+  }  */}
 
   .container-hidden-image {
+
+    background-image: url("/assets/images/bg_mechanics_tactical.jpg");
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    position: relative;
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: 80vh;
   }
 
-  .hidden-image img {    
+  .hidden-image {  
     width: 100%;
-    height: 100%;    
+    height: 80vh;
+    
+    img {      
+      width: 100%;
+      height: 100%;
+      min-height: 85%;      
+    }
   }
 
   @media(max-width: 1900px) {
@@ -159,8 +161,7 @@ const Container = styled.div`
 
   @media(max-width: 1100px) {
       z-index: 1;
-      height: 500px;
-      margin-top: 470px;  
+      height: 500px;  
   }
 
   @media(max-width: 1100px) {
@@ -172,7 +173,10 @@ const Container = styled.div`
   }
 
   @media(max-width: 750px) {
-    margin-top: 470px;
+    .hidden-image {
+      position: relative;
+      margin-top: -8px;
+    }
   }
 
   @media(max-width: 310px) {
@@ -184,7 +188,7 @@ const Container = styled.div`
 const StyleHeader = styled.div`
   position: absolute;
   width: 100%;
-  top: 135.5rem;
+  top: 0;
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;
@@ -193,11 +197,12 @@ const StyleHeader = styled.div`
   animation-name: react-reveal-607813993386296-1;
 
   .text-header h2 {
-    font-size: 1.7em;
+    font-size: 1.9em;
     width: 100%;
     max-width: 1100px;
     text-align: center;
     margin: 0 auto;
+    top: 0;
     line-height: 1;
     display: block;
     position: relative;
@@ -237,21 +242,33 @@ const StyleHeader = styled.div`
       }
   }
 
-  @media(max-width: 1900px) {
+  @media(max-width: 1850px) {
     .text-header {
       position: relative;
       margin-top: -500px;
     }
   }
 
-  @media(max-width: 1900px) {
+  @media(max-width: 1850px) {
     position: relative;
-    top: 0;
+    top: -11rem;
   }
 
   @media(max-width: 1100px) {
-    .text-header h2 {
-      display: none;
+    position: relative;
+  }
+
+  @media(max-width: 1100px) {
+    .text-header {
+      position: relative;
+      top: 0;
+    }
+  }
+
+  @media(max-width: 750px) {
+    .text-header {
+      position: relative;
+      top: 0;
     }
   }
 
@@ -266,7 +283,7 @@ const StyleHeader = styled.div`
 
     @media(max-width: 1100px) {
       .border-bottom {
-        display: none;
+        width: 50%;
       }
     }
 
@@ -326,26 +343,26 @@ const StyleHeader = styled.div`
   .bg-history {
     position: relative;
     margin: 0 auto;
-    top: 32rem;    
+    top: 27rem;    
     width: 660px;
-    height: 300px;
+    height: 140px;
     -webkit-transition: all .33s ease-in-out;
     transition: all .33s ease-in-out;
   }
 
-  @media(max-width: 1900px) {
+  @media(max-width: 1850px) {
     .bg-history {
       position: relative;
       top: 26rem;
-      height: 320px;
+      height: 180px;
     }
   }
 
   @media(max-width: 1100px) {
     .bg-history {
       position: relative;
-      top: 300px;
-      height: 300px;
+      top: 26rem;
+      height: 180px;
     }
   }
 
@@ -353,8 +370,8 @@ const StyleHeader = styled.div`
     .bg-history {
       width: 100%;
       position: relative;
-      top: 300px;
-      height: 280px;
+      top: 26rem;
+      height: 180px;
     }
   }
 
@@ -362,29 +379,29 @@ const StyleHeader = styled.div`
     .bg-history {
       width: 100%;
       position: relative;
-      top: 300px;
-      height: 280px;
+      top: 26rem;
+      height: 180px;
     }
   }
 
   @media(max-width: 550px) {
     .bg-history {
-      top: 250px;
-      height: 350px;
+      top: 26rem;
+      height: 180px;
     }
   }
 
   @media(max-width: 390px) {
     .bg-history {
-      top: 50px;
-      height: 450px;
+      top: 22rem;
+      height: 250px;
     }
   }
 
   @media(max-width: 310px) {
     .bg-history {
-      top: 40px;
-      height: 550px;
+      top: 22rem;
+      height: 250px;
     }
   }
   
