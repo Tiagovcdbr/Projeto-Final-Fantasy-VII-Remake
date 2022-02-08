@@ -20,6 +20,7 @@ import Sephiroth from '../pages/Sections/Characters/Sephiroth/Sephiroth';
 import President from '../pages/Sections/Characters/President/President';
 import Hojo from '../pages/Sections/Characters/Hojo/Hojo';
 import Menu from '../pages/Menu/Menu';
+import Rufus from '../pages/Sections/Characters/Rufus/Rufus';
 
 const Routes = () => {
   return (
@@ -45,6 +46,7 @@ const Routes = () => {
         <Route component={President} path="/president" exact />
         <Route component={Hojo} path="/hojo" exact />
         <Route component={Sephiroth} path="/sephiroth" exact />
+        <Route component={Rufus} path="/rufus" exact />
       </Switch>
     </BrowserRouter>
   )

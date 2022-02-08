@@ -120,6 +120,11 @@ const Tifa = () => {
                 <img src='assets/cards/chara_thumb_hojo.png' alt='' />
               </Link>
             </div>
+            <div className='character-thumbnail-villain-15'>
+              <Link to="/rufus" style={{ textDecoration: 'none' }}>
+                <img src='assets/cards/characters_full_rufus.png' alt='' />
+              </Link>
+            </div>
             </div>
           </div>
        </div>  
@@ -707,6 +712,26 @@ const StyleHeader = styled.div`
   }
 
   .character-thumbnail-villain-14 {
+    border: 4px solid #808d8d;
+
+    cursor: pointer;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: relative;
+    max-width: 70px;
+    z-index: 1;
+    flex-wrap: wrap;
+
+    &:hover {
+      background-color: rgb(31, 156, 134);
+      transition: all .33s ease-in-out;
+    }
+  }
+
+  .character-thumbnail-villain-15 {
     border: 4px solid #808d8d;
 
     cursor: pointer;
