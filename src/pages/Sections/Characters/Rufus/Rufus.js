@@ -1152,6 +1152,10 @@ const ContainerCharacter = styled.div`
     .image-background {
       color: transparent;
       display: inline-block;
+
+      img {
+        width: 100%;
+      }
     }
 
     @media(max-width: 605px) {
