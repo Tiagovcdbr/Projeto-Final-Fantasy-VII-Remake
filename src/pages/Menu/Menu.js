@@ -210,10 +210,20 @@ const Container = styled.div`
   .button-menu button {
     width: 80px;
     height: 30px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     font-family: MyriadPro-Cond,Arial,sans-serif;
     cursor: pointer;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #0d95ff;
+    border-radius: 12px;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+      transition: all .66s ease-in-out;
+    }
   }
 
   @media(max-width: 1850px) {
@@ -221,6 +231,7 @@ const Container = styled.div`
       position: absolute;
       display: flex;
       left:-600px;
+      border-color: #008080;
     }
   }
 
