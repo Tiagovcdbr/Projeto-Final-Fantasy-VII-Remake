@@ -36,9 +36,17 @@ const Menu = () => {
             </div>
             <div className='text-area'>
               <div className='text'>
-                <span>Projeto clone do site Final Fantasy VII Remake feito por um grande fã do jogo e franquia</span>
+              <span> Todo conteúdo utilizado nesse projeto acadêmico, são reservados as empresas
+              SQUARE ENIX & Sony Computer Entertainment Inc.</span><br /><br />
+
+                <span>Projeto clone do site Final Fantasy VII Remake feito por um 
+                grande fã do jogo e franquia</span>
+
                 <span> © 1997, 2020 SQUARE ENIX CO., LTD. Todos os direitos 
-                e conteudos são reservados a empresa SQUARE ENIX</span>
+                e conteudos são reservados a empresa SQUARE ENIX</span><br /><br />
+
+                <span>PlayStation" e o logotipo "PS" são marcas registradas e 
+                  "PS4" é uma marca comercial da Sony Computer Entertainment Inc.</span>
               </div>
             </div>            
          </div>
@@ -212,12 +220,13 @@ const Container = styled.div`
     height: 30px;
     font-size: 22px;
     font-weight: 600;
-    font-family: MyriadPro-Cond,Arial,sans-serif;
+    font-family: 'MyriadPro-Cond', Arial, sans-serif;
     cursor: pointer;
     border-width: 3px;
     border-style: solid;
     border-color: #0d95ff;
     border-radius: 12px;
+    transition: all .66s ease-out;
 
     &:hover {
       background-color: #000;
@@ -231,6 +240,7 @@ const Container = styled.div`
       position: absolute;
       display: flex;
       left:-600px;
+      bottom: 80px;
       border-color: #008080;
     }
   }
@@ -277,13 +287,20 @@ const Container = styled.div`
 
   @media(max-width: 475px) {
     .text-area {
+      right: 70px;
+      max-width: 300px;
+      font-size: 12px;
+  }
+
+  @media(max-width: 400px) {
+    .text-area {
       display: none;
   }
 
   .text {
     height: 65px;
-    background: -webkit-linear-gradient(top,rgba(5,37,78,.5),rgba(5,37,78,.5) 45%,rgba(5,37,78,0));
-    background: linear-gradient(140deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 15%,rgba(5,37,78,0));
+    background: -webkit-linear-gradient(top,rgba(5,37,78,.5),rgba(5,37,78,.5) 85%,rgba(5,37,78,0));
+    background: linear-gradient(140deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
 
     text-shadow: 4px 2px 2px 4px #ffffff;
 
@@ -300,10 +317,10 @@ const Container = styled.div`
     }
   }
 
-  @media(max-width: 350px) {
+  @media(max-width: 475px) {
     .text {
       right: 40px;
-      height: 150px;
+      height: 210px;
     }
   }
 
