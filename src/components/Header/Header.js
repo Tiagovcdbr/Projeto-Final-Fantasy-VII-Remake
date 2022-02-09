@@ -384,22 +384,21 @@ export const ContainerDown = styled.div`
       z-index: 1;
     }
 
+    @media(max-width: 1415px) {
+        img {
+          margin-left: 0px;
+        }
+      } 
+
       @media(max-width: 1316px) {
         img {
-          margin-left: 1px;
+          margin-left: 0px;
         }
       } 
 
       @media(max-width: 1100px) {
       img {
-        position: absolute;
-        margin-left: 1px;
-      }
-    } 
-
-      @media(max-width: 750px) {
-      img {
-        margin-left: 1px;
+        z-index: 9;
       }
     } 
   }   

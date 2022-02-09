@@ -7,7 +7,7 @@ const BattleSystem = () => {
     <Container>
       <div className='container-hidden-image'>
         <div className='hidden-image'>
-          <img src='' alt='/' />
+          <img src='' alt='' />
         </div>
       </div>
       <StyleHeader>
@@ -199,7 +199,7 @@ const StyleHeader = styled.div`
   animation-name: react-reveal-607813993386296-1;
 
   .text-header h2 {
-    font-size: 1.9em;
+    font-size: 1.8em;
     width: 100%;
     max-width: 1100px;
     text-align: center;
@@ -271,6 +271,12 @@ const StyleHeader = styled.div`
     .text-header {
       position: relative;
       top: 0;
+    }
+  }
+
+  @media(max-width: 400px) {
+    .text-header {
+      display: none;
     }
   }
 
@@ -355,7 +361,7 @@ const StyleHeader = styled.div`
   @media(max-width: 1850px) {
     .bg-history {
       position: relative;
-      top: 26rem;
+      top: 17rem;
       height: 180px;
     }
   }
@@ -363,8 +369,8 @@ const StyleHeader = styled.div`
   @media(max-width: 1100px) {
     .bg-history {
       position: relative;
-      top: 26rem;
-      height: 180px;
+      top: 16rem;
+      height: 160px;
     }
   }
 
@@ -372,7 +378,7 @@ const StyleHeader = styled.div`
     .bg-history {
       width: 100%;
       position: relative;
-      top: 26rem;
+      top: 16rem;
       height: 180px;
     }
   }
@@ -381,28 +387,28 @@ const StyleHeader = styled.div`
     .bg-history {
       width: 100%;
       position: relative;
-      top: 26rem;
+      top: 16rem;
       height: 180px;
     }
   }
 
   @media(max-width: 550px) {
     .bg-history {
-      top: 26rem;
+      top: 16rem;
       height: 180px;
     }
   }
 
   @media(max-width: 390px) {
     .bg-history {
-      top: 22rem;
+      top: 12rem;
       height: 250px;
     }
   }
 
   @media(max-width: 310px) {
     .bg-history {
-      top: 22rem;
+      top: 12rem;
       height: 250px;
     }
   }

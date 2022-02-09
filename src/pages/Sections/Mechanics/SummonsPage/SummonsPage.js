@@ -6,13 +6,6 @@ import styled from 'styled-components';
 const SummonsPage = () => {
   return (    
     <Container>
-    <video
-        className='video-bg_2'
-        src={"/assets/video/lifestream.mp4"}
-        autoplay='1'
-        allowfullscreen="1"
-        loop    
-      />
     <audio
         src={""}
         autoplay='1'
@@ -110,8 +103,15 @@ const SummonsPage = () => {
           
                </div>
              </div>
-         </div>       
+         </div>     
         </StyleHeader>
+        <video
+          className='video-bg_2'
+          src={"/assets/video/lifestream.mp4"}
+          autoplay='1'
+          allowfullscreen="1"
+          loop    
+        />  
     </Container>    
   )
 };
@@ -126,10 +126,9 @@ const Container = styled.div`
 
   .video-bg_2 {
     position: absolute;
-    
+    top: 326rem;
     width: 100%;
     height: 0.60%;
-    top: 437.8rem;
     background-color: #000;
 
     object-fit: cover;
@@ -141,13 +140,14 @@ const Container = styled.div`
 
   @media(max-width: 1850px) {
     .video-bg_2 {
-      bottom: -11.7rem;
+      bottom: 0;
+      margin-top: -189px;
     }
   }
 
   @media(max-width: 750px) {
     .video-bg_2 {
-      bottom: -11.1rem;
+      margin-top: -262px;
     }
   }
 
@@ -168,16 +168,22 @@ const Container = styled.div`
     height: 100%; 
     margin-top: 142px;
     
-      @media(max-width: 1900px) {
+      @media(max-width: 1850px) {
       width: 100%;
-      height: 100vh;
+      height: 100%;
     }
 
-    @media(max-width: 1900px) {
+    @media(max-width: 1850px) {
       .hidden-image img {
         width: 100%;
         height: 100%;
       }
+    }
+
+    @media(max-width: 1850px) {
+        z-index: 1;
+        height: 100vh;
+        margin-top: 142px;  
     }
 
     @media(max-width: 1100px) {
@@ -260,14 +266,21 @@ const StyleHeader = styled.div`
     }
   }
 
-  @media(max-width: 1900px) {
+  @media(max-width: 1850px) {
     position: absolute;
-    top: 18.6rem;
+    bottom: 0;
+    margin-top: -91.5rem;
+  }
+
+  @media(max-width: 750px) {
+    position: absolute;
+    bottom: 0;
+    margin-top: -95.5rem;
   }
 
   @media(max-width: 1100px) {
     .text-header h2 {
-      display: none;
+      
     }
   }
 
@@ -281,7 +294,7 @@ const StyleHeader = styled.div`
 
     @media(max-width: 1100px) {
       .border-bottom {
-        display: none;
+        
       }
     }
 
@@ -700,19 +713,19 @@ const StyleHeader = styled.div`
     transition: all .33s ease-in-out;
   }
 
-  @media(max-width: 1900px) {
+  @media(max-width: 1850px) {
     .bg-history {
       position: relative;
       top: 15rem;
-      height: 320px;
+      height: 200px;
     }
   }
 
   @media(max-width: 1100px) {
     .bg-history {
       position: relative;
-      top: 300px;
-      height: 300px;
+      top: 270px;
+      height: 220px;
     }
   }
 
@@ -727,8 +740,8 @@ const StyleHeader = styled.div`
   @media(max-width: 750px) {
     .bg-history {
       position: relative;
-      top: 150px;
-      height: 300px;
+      top: 180px;
+      height: 180px;
     }
   }
 
@@ -736,8 +749,8 @@ const StyleHeader = styled.div`
     .bg-history {
       width: 100%;
       position: relative;
-      top: 80px;
-      height: 280px;
+      top: 190px;
+      height: 190px;
     }
   }
 
@@ -745,15 +758,21 @@ const StyleHeader = styled.div`
     .bg-history {
       width: 100%;
       position: relative;
-      top: 80px;
-      height: 280px;
+      top: 200px;
+      height: 180px;
     }
   }
 
   @media(max-width: 550px) {
     .bg-history {
-      top: 50px;
-      height: 350px;
+      top: 220px;
+      height: 190px;
+    }
+  }
+  @media(max-width: 450px) {
+    .bg-history {
+      top: 110px;
+      height: 190px;
     }
   }
 

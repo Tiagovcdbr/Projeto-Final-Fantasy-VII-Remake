@@ -176,7 +176,7 @@ const Container = styled.div`
       width: 400px;
       height: 350px;  
       top: -80px;
-      left: -70px;
+      left: -10px;
       transition: all .33s ease-in-out;
     }
   }
@@ -197,7 +197,7 @@ const Container = styled.div`
       width: 250px;
       height: 250px;
       bottom: 10px;
-      left: -10px;
+      left: 20px;
     }
   }
 

@@ -7,7 +7,7 @@ const Summons = () => {
     <Container>
       <div className='container-hidden-image'>
         <div className='hidden-image'>
-          <img src='' alt='/' />
+          <img src='' alt='' />
         </div>
       </div>
       <StyleHeader>
@@ -197,7 +197,7 @@ const StyleHeader = styled.div`
   animation-name: react-reveal-607813993386296-1;
 
   .text-header h2 {
-    font-size: 1.9em;
+    font-size: 1.8em;
     width: 100%;
     max-width: 1100px;
     text-align: center;
