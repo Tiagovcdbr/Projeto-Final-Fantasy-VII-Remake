@@ -718,16 +718,16 @@ const StyleHeader = styled.div`
     margin: 0 auto;
     top: 10rem;    
     width: 660px;
-    height: 300px;
+    height: 240px;
     -webkit-transition: all .33s ease-in-out;
     transition: all .33s ease-in-out;
   }
 
-  @media(max-width: 1900px) {
+  @media(max-width: 1850px) {
     .bg-history {
       position: relative;
       top: 15rem;
-      height: 320px;
+      height: 240px;
     }
   }
 
@@ -735,7 +735,7 @@ const StyleHeader = styled.div`
     .bg-history {
       position: relative;
       top: 300px;
-      height: 300px;
+      height: 240px;
     }
   }
 
@@ -743,7 +743,7 @@ const StyleHeader = styled.div`
     .bg-history {
       position: relative;
       top: 200px;
-      height: 300px;
+      height: 240px;
     }
   }
 
@@ -751,7 +751,7 @@ const StyleHeader = styled.div`
     .bg-history {
       position: relative;
       top: 150px;
-      height: 300px;
+      height: 240px;
     }
   }
 
@@ -760,7 +760,7 @@ const StyleHeader = styled.div`
       width: 100%;
       position: relative;
       top: 80px;
-      height: 280px;
+      height: 220px;
     }
   }
 
@@ -769,14 +769,14 @@ const StyleHeader = styled.div`
       width: 100%;
       position: relative;
       top: 80px;
-      height: 280px;
+      height: 220px;
     }
   }
 
   @media(max-width: 550px) {
     .bg-history {
       top: 50px;
-      height: 350px;
+      height: 280px;
     }
   }
 

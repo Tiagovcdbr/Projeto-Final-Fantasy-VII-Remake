@@ -126,7 +126,7 @@ const Container = styled.div`
 
   .video-bg_2 {
     position: absolute;
-    top: 326rem;
+    top: 437.8rem;
     width: 100%;
     height: 0.60%;
     background-color: #000;
