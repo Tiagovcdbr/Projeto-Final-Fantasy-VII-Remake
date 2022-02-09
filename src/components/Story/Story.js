@@ -114,7 +114,7 @@ const StyleHeader = styled.div`
   position: absolute;
   width: 100%;
   bottom: 0;
-  bottom: -630px;
+  bottom: -628px;
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;

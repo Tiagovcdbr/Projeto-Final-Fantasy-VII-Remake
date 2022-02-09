@@ -10,6 +10,7 @@ import AllyCommands from './AllyCommands/AllyCommands';
 import LimitBreaks from './LimitBreaks/LimitBreaks';
 import Materia from './Materia/Materia';
 import Summons from './Summons/Summons';
+import SummonsPage from './SummonsPage/SummonsPage';
 
 const Mechanics = () => {
   return (
@@ -28,6 +29,7 @@ const Mechanics = () => {
       <LimitBreaks />
       <Materia />
       <Summons />
+      <SummonsPage />
     </Container>
   )
 };

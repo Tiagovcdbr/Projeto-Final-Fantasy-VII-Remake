@@ -22,6 +22,8 @@ import Hojo from '../pages/Sections/Characters/Hojo/Hojo';
 import Menu from '../pages/Menu/Menu';
 import Rufus from '../pages/Sections/Characters/Rufus/Rufus';
 
+import Ifrit from '../pages/Sections/Mechanics/SummonsPage/Ifrit/Ifrit';
+
 const Routes = () => {
   return (
     <BrowserRouter>
@@ -30,7 +32,7 @@ const Routes = () => {
         <Route component={Home} path="/home" exact />
         <Route component={Characters} path="/main" exact />
         <Route component={Mechanics} path="/mechanics" exact />
-
+               {/* Rotas dos Characters */}
         <Route component={Cloud} path="/cloud" exact />
         <Route component={Aerith} path="/aerith" exact />
         <Route component={Barret} path="/barret" exact />
@@ -47,6 +49,8 @@ const Routes = () => {
         <Route component={Hojo} path="/hojo" exact />
         <Route component={Sephiroth} path="/sephiroth" exact />
         <Route component={Rufus} path="/rufus" exact />
+                { /* Rotas das Summons */}
+        <Route component={Ifrit} path="/ifrit" exact />
       </Switch>
     </BrowserRouter>
   )
