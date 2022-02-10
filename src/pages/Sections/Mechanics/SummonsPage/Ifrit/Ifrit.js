@@ -95,7 +95,7 @@ const Ifrit = () => {
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <img src='/assets/summons/Ifrit_from_FFVII_Remake.png' alt='/' />
+              <img src='/assets/summons/Ifrit_from_FFVII_Remake.png' alt='' />
             </span>
           </div>
           <div className='character-text'>

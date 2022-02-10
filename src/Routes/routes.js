@@ -23,6 +23,14 @@ import Menu from '../pages/Menu/Menu';
 import Rufus from '../pages/Sections/Characters/Rufus/Rufus';
 
 import Ifrit from '../pages/Sections/Mechanics/SummonsPage/Ifrit/Ifrit';
+import Shiva from '../pages/Sections/Mechanics/SummonsPage/Shiva/Shiva';
+import Leviathan from '../pages/Sections/Mechanics/SummonsPage/Leviathan/Leviathan';
+import Bahamut from '../pages/Sections/Mechanics/SummonsPage/Bahamut/Bahamut';
+import FatChocobo from '../pages/Sections/Mechanics/SummonsPage/FatChocobo/FatChocobo';
+import ChocoboMoogle from '../pages/Sections/Mechanics/SummonsPage/ChocoboMoogle/ChocoboMoogle';
+import Chick from '../pages/Sections/Mechanics/SummonsPage/Chick/Chick';
+import Cactuar from '../pages/Sections/Mechanics/SummonsPage/Cactuar/Cactuar';
+import Carbuncle from '../pages/Sections/Mechanics/SummonsPage/Carbuncle/Carbuncle';
 
 const Routes = () => {
   return (
@@ -51,6 +59,14 @@ const Routes = () => {
         <Route component={Rufus} path="/rufus" exact />
                 { /* Rotas das Summons */}
         <Route component={Ifrit} path="/ifrit" exact />
+        <Route component={Shiva} path="/shiva" exact />
+        <Route component={Leviathan} path="/leviathan" exact />
+        <Route component={Bahamut} path="/bahamut" exact />
+        <Route component={FatChocobo} path="/fatchocobo" exact />
+        <Route component={ChocoboMoogle} path="/chocobomoogle" exact />
+        <Route component={Chick} path="/chick" exact />
+        <Route component={Cactuar} path="/cactuar" exact />
+        <Route component={Carbuncle} path="/carbuncle" exact />
       </Switch>
     </BrowserRouter>
   )

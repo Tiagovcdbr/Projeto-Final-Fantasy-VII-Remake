@@ -16,7 +16,7 @@ const Mechanics = () => {
   return (
     <Container>
       <audio
-        src={"/assets/audio/Final Fantasy VII Remake_Boss Theme.m4a"}
+        src={"/assets/audio/Final Fantasy VII Remake Those Who Fight Battle ost.m4a"}
         autoplay='1'
         loop                
       />
