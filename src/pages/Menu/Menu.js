@@ -25,8 +25,7 @@ const Menu = () => {
       <audio
         src={"/assets/audio/Final Fantasy 7 Remake Menu Music.mp3"}
         autoplay='1'
-        loop
-                      
+        loop                    
       />
       <div className='container-page'>
         <div className='bg-image'>
@@ -98,8 +97,8 @@ const Container = styled.div`
     .bg-image img {
       width: 100%;
       height: 1000px;
+    }
   }
-}
 
   .video-bg {
     position: absolute;
@@ -265,7 +264,7 @@ const Container = styled.div`
       flex-direction: column;
       flex-wrap: wrap;
       width: 100%;
-      right: 40px;
+      right: 100px;
     }
   }
 
@@ -290,18 +289,25 @@ const Container = styled.div`
       right: 70px;
       max-width: 300px;
       font-size: 12px;
+    }
   }
 
-  @media(max-width: 400px) {
+  @media(max-width: 390px) {
+    .text-area {
+      right: 10px;
+      max-width: 300px;
+      font-size: 12px;
+    }
+  }
+
+  @media(max-width: 325px) {
     .text-area {
       display: none;
+    }
   }
 
   .text {
     height: 65px;
-    background: -webkit-linear-gradient(top,rgba(5,37,78,.5),rgba(5,37,78,.5) 85%,rgba(5,37,78,0));
-    background: linear-gradient(140deg,rgba(5,37,78,.5) 0,rgba(5,37,78,.5) 75%,rgba(5,37,78,0));
-
     text-shadow: 4px 2px 2px 4px #ffffff;
 
     span {
@@ -314,13 +320,6 @@ const Container = styled.div`
     .text {
       right: 40px;
       height: 130px;
-    }
-  }
-
-  @media(max-width: 475px) {
-    .text {
-      right: 40px;
-      height: 210px;
     }
   }
 

@@ -140,14 +140,13 @@ const Container = styled.div`
 
   @media(max-width: 1850px) {
     .video-bg_2 {
-      bottom: 0;
-      margin-top: -189px;
+      top: 314.2rem;      
     }
   }
 
   @media(max-width: 750px) {
     .video-bg_2 {
-      margin-top: -262px;
+      margin-top: -74px;
     }
   }
 
@@ -159,6 +158,11 @@ const Container = styled.div`
 
   .container-hidden-image {
     margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media(max-width: 1850px) {
     width: 100%;
     height: 100%;
   }
@@ -729,11 +733,19 @@ const StyleHeader = styled.div`
     }
   }
 
-  @media(max-width: 790px) {
+  @media(max-width: 810px) {
     .bg-history {
       position: relative;
       top: 200px;
-      height: 300px;
+      height: 200px;
+    }
+  }
+
+  @media(max-width: 790px) {
+    .bg-history {
+      position: relative;
+      top: 150px;
+      height: 180px;
     }
   }
 

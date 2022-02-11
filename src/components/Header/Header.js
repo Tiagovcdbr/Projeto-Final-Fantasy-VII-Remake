@@ -6,47 +6,49 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return(
-      <ContainerBar>
+    <ContainerBar>
       <div className='square-logo'>
         <img src='/assets/images/square_logo.png' alt='' />
       </div>
-        <div className='bar-items'>
-          <img src='/assets/images/cart2.png' alt='' />
-          <img src='assets/images/login.png' alt='' />      
-          <h2>Support</h2>
-          <h2>Store</h2>
-          <h2>News</h2>
-          <h2>Top Games</h2>
+      <div className='bar-items'>
+        <img src='/assets/images/cart2.png' alt='' />
+        <img src='assets/images/login.png' alt='' />      
+        <h2>Support</h2>
+        <h2>Store</h2>
+        <h2>News</h2>
+        <h2>Top Games</h2>
+      </div>
+      <ContainerHeader>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='' />
+        </Link>
+      <ContainerItems>
+        <img src='/assets/images/logo_white.png' alt='' />
+          <div id='itemsHeader' className='header-items'>
+            <Link to="home" style={{ textDecoration: 'none' }}>
+              <h2>Story</h2>
+            </Link>
+            <Link to="/main" style={{ textDecoration: 'none' }}>
+              <h2>Characters</h2>
+            </Link>
+            <Link to="/mechanics" style={{ textDecoration: 'none' }}>
+              <h2>Mechanics</h2>
+            </Link>
+            <Link to="/media" style={{ textDecoration: 'none' }}>
+              <h2>Media</h2>
+            </Link>                  
+              <h2>Download Demo</h2>
+            <h3>Intergrade</h3>
+          </div>
+      </ContainerItems>
+      </ContainerHeader>
+      <ContainerDown>
+        <div className='side-bar'>
+          <h2>Buy Now</h2>
+          <img src='assets/images/capa.png' alt='' />
         </div>
-        <ContainerHeader>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='' />
-          </Link>
-          <ContainerItems>
-            <img src='/assets/images/logo_white.png' alt='' />
-              <div id='itemsHeader' className='header-items'>
-                <Link to="home" style={{ textDecoration: 'none' }}>
-                  <h2>Story</h2>
-                </Link>
-                <Link to="/main" style={{ textDecoration: 'none' }}>
-                  <h2>Characters</h2>
-                </Link>
-                <Link to="/mechanics" style={{ textDecoration: 'none' }}>
-                  <h2>Mechanics</h2>
-                </Link>                  
-                  <h2>Media</h2>
-                  <h2>Download Demo</h2>
-                <h3>Intergrade</h3>
-              </div>
-          </ContainerItems>
-         </ContainerHeader>
-          <ContainerDown>
-            <div className='side-bar'>
-              <h2>Buy Now</h2>
-              <img src='assets/images/capa.png' alt='' />
-            </div>
-          </ContainerDown>
-      </ContainerBar>
+      </ContainerDown>
+    </ContainerBar>
   )
 };
 
@@ -268,7 +270,7 @@ const ContainerItems = styled.div`
         }
 
         &:hover {         
-          transition-duration: .1s;
+          transition: all .2s ease-in-out;
           border-left: 2px solid #fff;
           border-top: 2px solid #fff;
           border-bottom: 2px solid #fff;
@@ -301,14 +303,14 @@ const ContainerItems = styled.div`
           content: "";
           position: absolute;
           top: 0;
-          left: -5px;
+          left: -15px;
           width: 2px;
           background-color: #000;
           height: 100%;
         }
 
         &:hover {         
-          transition-duration: .1s;
+          transition: all .2s ease-in-out;
           border-left: 2px solid #fff;
           border-top: 2px solid #fff;
           border-bottom: 2px solid #fff;

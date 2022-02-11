@@ -58,7 +58,7 @@ const About = () => {
         allowfullscreen="1"
         loop    
           />
-      </StyleHeader>        
+      </StyleHeader>     
     </Container>
   )
 };
@@ -87,7 +87,7 @@ const Container = styled.div`
 
   @media(max-width: 1850px) {
     .video-bg_2 {
-      bottom: -27.2rem;
+      bottom: -27.5rem;
     }
   }
 

@@ -31,6 +31,7 @@ import ChocoboMoogle from '../pages/Sections/Mechanics/SummonsPage/ChocoboMoogle
 import Chick from '../pages/Sections/Mechanics/SummonsPage/Chick/Chick';
 import Cactuar from '../pages/Sections/Mechanics/SummonsPage/Cactuar/Cactuar';
 import Carbuncle from '../pages/Sections/Mechanics/SummonsPage/Carbuncle/Carbuncle';
+import Media from '../pages/Sections/Media/Media';
 
 const Routes = () => {
   return (
@@ -40,6 +41,7 @@ const Routes = () => {
         <Route component={Home} path="/home" exact />
         <Route component={Characters} path="/main" exact />
         <Route component={Mechanics} path="/mechanics" exact />
+        <Route component={Media} path="/media" exact />
                {/* Rotas dos Characters */}
         <Route component={Cloud} path="/cloud" exact />
         <Route component={Aerith} path="/aerith" exact />

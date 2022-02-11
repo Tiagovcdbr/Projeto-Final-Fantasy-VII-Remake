@@ -791,6 +791,12 @@ const ContainerCharacter = styled.div`
     }
   }
 
+  @media(max-width: 880px) {
+    .character-art {
+      right: -180px;
+    }
+  }
+
   @media(max-width: 670px) {
     .character-art {
       right: -250px;
