@@ -28,7 +28,160 @@ const Trailers = () => {
         <div className='container-trailer'>
           <div className='session-trailer'>
             <div className='trailers'>
-                
+              <div className='video-thumb'>
+                <div className='video-still'>
+                  <img className='video-thumb-still' src='/assets/trailers/trailer_themesong.jpg' alt='' />
+                </div>                
+                <div className='play-btn-house'>
+                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                </div>
+                <span className='border-decoration-top-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-top-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+              </div>
+
+              <div className='video-thumb'>
+                <div className='video-still'>
+                  <img className='video-thumb-still' src='/assets/trailers/trailer_hollow_making.jpg' alt='' />
+                </div>                
+                <div className='play-btn-house'>
+                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                </div>
+                <span className='border-decoration-top-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-top-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+              </div>
+
+              <div className='video-thumb'>
+                <div className='video-still'>
+                  <img className='video-thumb-still' src='/assets/trailers/the-game-awards-2019-trailer-still.jpg' alt='' />
+                </div>                
+                <div className='play-btn-house'>
+                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                </div>
+                <span className='border-decoration-top-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-top-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+              </div>
+
+              <div className='video-thumb'>
+                <div className='video-still'>
+                  <img className='video-thumb-still' src='/assets/trailers/tokyo-game-show-trailer-still.jpg' alt='' />
+                </div>                
+                <div className='play-btn-house'>
+                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                </div>
+                <span className='border-decoration-top-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-top-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+              </div>
+
+              <div className='video-thumb'>
+                <div className='video-still'>
+                  <img className='video-thumb-still' src='/assets/trailers/e3-short-trailer-still.jpg' alt='' />
+                </div>                
+                <div className='play-btn-house'>
+                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                </div>
+                <span className='border-decoration-top-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-top-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+              </div>
+
+              <div className='video-thumb'>
+                <div className='video-still'>
+                  <img className='video-thumb-still' src='/assets/trailers/e3-long-trailer-still.jpg' alt='' />
+                </div>                
+                <div className='play-btn-house'>
+                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                </div>
+                <span className='border-decoration-top-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-top-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-left'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+                <span className='border-decoration-bottom-right'>
+                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                </span>
+              </div>
+
+              <div className='video-thumb'>
+              <div className='video-still'>
+                <img className='video-thumb-still' src='/assets/trailers/ffvii-remake-teaser-trailer-still.jpg' alt='' />
+              </div>                
+              <div className='play-btn-house'>
+                <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+              </div>
+              <span className='border-decoration-top-left'>
+                <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+              </span>
+              <span className='border-decoration-top-right'>
+                <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+              </span>
+              <span className='border-decoration-bottom-left'>
+                <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+              </span>
+              <span className='border-decoration-bottom-right'>
+                <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+              </span>
+            </div>
+
             </div>
           </div>
         </div>
@@ -72,7 +225,7 @@ const Container = styled.div`
 
   .hidden-image img {    
     width: 100%;
-    height: 100%;    
+    height: 1400px;    
   }
 
   @media(max-width: 1850px) {
@@ -157,10 +310,9 @@ const StyleHeader = styled.div`
       }
   }
 
-  @media(max-width: 1900px) {
+  @media(max-width: 1850px) {
     .text-header {
       position: relative;
-      margin-top: -500px;
     }
   }
 
@@ -236,9 +388,9 @@ const StyleHeader = styled.div`
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    width: 100%;
+    width: 100%;    
     max-width: 1100px;
-    margin: 0px auto;
+    margin: 10px auto;
     padding: 0px 20px;
   }
 
@@ -260,4 +412,137 @@ const StyleHeader = styled.div`
     justify-content: space-around;
   }
 
+  .video-thumb {
+    margin-right: 40px;
+    width: calc(50% - 40px);
+    margin-bottom: 70px;
+
+    padding: 0;
+    max-width: 470px;
+    margin: 30px 20px;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    cursor: pointer;
+    border: 2px solid #1e9de3;
+    transition: all .33s ease-in-out;
+  }
+
+  .video-still {
+    display: block !important;
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;    
+  }
+
+  .video-thumb-still {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 1px;
+    display: block;
+  }
+
+  .play-btn-house {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    bottom: calc(0% - 35px);
+    left: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: #377e9a;
+    padding: 10px;
+  }
+
+  .play-btn {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-right: 1px solid #46a3be;
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  .trailer-title {
+    text-transform: uppercase;
+    font-family: Arial,sans-serif;
+    text-shadow: none;
+    font-weight: 700;
+    font-size: .95em;
+    color: #fff;
+  }
+
+  .border-decoration-top-left {
+
+    position: absolute;
+    display: block !important;
+    height: 39px;
+    width: 39px;
+    top: -21.5px;
+    left: -23.5px;
+    transform: rotate(0deg);
+  }
+
+  .border-decoration {
+    border-style: none;
+  }
+
+  .border-decoration-top-right {
+
+    position: absolute;
+    display: block !important;
+    height: 39px;
+    top: -22.5px;
+    right: -21.5px;
+    transform: rotate(90deg);
+  }
+
+.border-decoration {
+    border-style: none;
+  }
+
+  .border-decoration-bottom-left {
+
+    position: absolute;
+    display: block !important;
+    height: 39px;
+    width: 39px;
+    bottom: -21.9px;
+    left: -22.7px;
+    transform: rotate(270deg);
+  }
+
+.border-decoration {
+    border-style: none;
+  }
+
+  .border-decoration-bottom-right {
+
+    position: absolute;
+    display: block !important;
+    height: 39px;
+    width: 39px;
+    bottom: -20.5px;
+    right: -23.5px;
+    transform: rotate(180deg);
+}
+
+.border-decoration {
+    border-style: none;
+  }
 `;
