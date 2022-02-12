@@ -22,13 +22,13 @@ const SummonsPage = () => {
             </div>
             <div className='border-bottom'>
               <span className='left-diamond'>
-                <img src='/assets/images/diamond_side_left.png' alt='/' />
+                <img src='/assets/images/diamond_side_left.png' alt='' />
               </span>
               <span className='center-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
+                <img src='/assets/images/diamond.png' alt='' />
                </span>
               <span className='right-diamond'>
-                <img src='/assets/images/diamond_side_right.png' alt='/' />
+                <img src='/assets/images/diamond_side_right.png' alt='' />
               </span>
            </div>
            <div className='container-characters'>
@@ -179,6 +179,7 @@ const Container = styled.div`
 
     @media(max-width: 1850px) {
       .hidden-image img {
+        z-index: 1;
         width: 100%;
         height: 100%;
       }
@@ -538,7 +539,7 @@ const StyleHeader = styled.div`
     text-align: center;
   }
 
-  { /*  .villains {
+   /*  .villains {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -705,7 +706,7 @@ const StyleHeader = styled.div`
       background-color: rgb(31, 156, 134);
       transition: all .33s ease-in-out;
     }
-  }  */}
+  }  */
 
   .bg-history {
     position: relative;

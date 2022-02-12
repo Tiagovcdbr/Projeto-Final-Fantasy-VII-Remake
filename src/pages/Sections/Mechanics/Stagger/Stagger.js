@@ -58,7 +58,7 @@ const Container = styled.div`
   max-height: 1100px;
   position: relative;
 
-{/*    .video-bg_2 {
+/*    .video-bg_2 {
     position: absolute;
     
     width: 100%;
@@ -119,7 +119,7 @@ const Container = styled.div`
     .video-bg_2 {
       bottom: -3.5rem;
     }
-  }  */}
+  }  */
 
   .container-hidden-image {
 

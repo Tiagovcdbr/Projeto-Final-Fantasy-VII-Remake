@@ -231,15 +231,21 @@ const Container = styled.div`
   @media(max-width: 1850px) {
     .hidden-image img {
       width: 100%;
-      height: 900px;
-      
+      height: 1400px;      
     }
   }
 
   @media(max-width: 1100px) {
     .hidden-image img {
       width: 100%;
-      height: 900px;
+      height: 1400px;
+    }
+  }
+
+  @media(max-width: 800px) {
+    .hidden-image img {
+      width: 100%;
+      height: 1900px;
     }
   }
 
@@ -316,12 +322,6 @@ const StyleHeader = styled.div`
     }
   }
 
-  @media(max-width: 1100px) {
-    .text-header h2 {
-      display: none;
-    }
-  }
-
   .border-bottom {
     margin-top: 250px;
     height: 2px;
@@ -394,10 +394,16 @@ const StyleHeader = styled.div`
     padding: 0px 20px;
   }
 
+  @media(max-width: 840px) {
+    .container-trailer {
+      position: relative;
+      max-width: 900px;
+    }
+  }
+
   .session-trailer {
     width: 100%;
     position: relative;
-    margin-top: 0;
     -webkit-transition: all .33s ease-in-out;
     transition: all .33s ease-in-out;
     text-align: center;
@@ -414,7 +420,7 @@ const StyleHeader = styled.div`
 
   .video-thumb {
     margin-right: 40px;
-    width: calc(50% - 40px);
+    width: calc(47% - 38px);
     margin-bottom: 70px;
 
     padding: 0;
@@ -426,6 +432,49 @@ const StyleHeader = styled.div`
     cursor: pointer;
     border: 2px solid #1e9de3;
     transition: all .33s ease-in-out;
+  }
+
+  @media(max-width: 800px) {
+    .video-thumb {
+      transition: all .33s ease-in-out;
+      position: relative;
+      display: block; 
+      margin: 70px auto;
+    }
+  }
+
+  @media(max-width: 590px) {
+    .video-thumb {
+      transition: all .33s ease-in-out;
+      width: 400px;
+    }
+  }
+
+  @media(max-width: 440px) {
+    .video-thumb {
+      transition: all .33s ease-in-out;
+      width: 300px;
+    }
+  }
+
+  @media(max-width: 340px) {
+    .video-thumb {
+      transition: all .33s ease-in-out;
+      width: 250px;
+    }
+  }
+
+  @media(max-width: 290px) {
+    .video-thumb {
+      transition: all .33s ease-in-out;
+      width: 200px;
+    }
+  }
+
+  @media(max-width: 240px) {
+    .video-thumb {
+      display: none;
+    }
   }
 
   .video-still {
@@ -485,6 +534,12 @@ const StyleHeader = styled.div`
     font-weight: 700;
     font-size: .95em;
     color: #fff;
+  }
+
+  @media(max-width: 800px) {
+    .trailer-title {
+      font-size: 14px;
+    }
   }
 
   .border-decoration-top-left {

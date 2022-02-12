@@ -61,7 +61,7 @@ const Container = styled.div`
   position: relative;
   margin-top: 142px;
 
-{/*    .video-bg_2 {
+/*    .video-bg_2 {
     position: absolute;
     
     width: 100%;
@@ -122,7 +122,7 @@ const Container = styled.div`
     .video-bg_2 {
       bottom: -3.5rem;
     }
-  }  */}
+  }  */
 
   .container-hidden-image {
 
