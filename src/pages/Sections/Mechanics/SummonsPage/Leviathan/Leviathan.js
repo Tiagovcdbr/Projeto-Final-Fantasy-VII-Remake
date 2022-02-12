@@ -235,7 +235,7 @@ const Container = styled.div`
     }
   }
 
-  @media(max-width: 750px) {
+    @media(max-width: 750px) {
       .hidden-image img {
         width: 100%;
         height: 1385px;
@@ -566,7 +566,7 @@ const StyleHeader = styled.div`
     text-align: center;
   }
 
-  { /* .villains {
+   /* .villains {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -733,7 +733,7 @@ const StyleHeader = styled.div`
       background-color: rgb(31, 156, 134);
       transition: all .33s ease-in-out;
     }
-  }  */}
+  }  */
 `;
 
 const ContainerCharacter = styled.div`
@@ -764,10 +764,8 @@ const ContainerCharacter = styled.div`
     transition: opacity 1.4s ease-in-out 1.6s,-webkit-transform 1.4s ease-in-out 1.6s;
     transition: transform 1.4s ease-in-out 1.6s,opacity 1.4s ease-in-out 1.6s;
     transition: transform 1.4s ease-in-out 1.6s,opacity 1.4s ease-in-out 1.6s,-webkit-transform 1.4s ease-in-out 1.6s;
-    top: -5px
     margin-top: -50px;
-    z-index: 0;
-    
+    z-index: 0;    
     position: absolute;
   }
 

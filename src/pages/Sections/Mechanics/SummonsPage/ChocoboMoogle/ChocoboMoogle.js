@@ -568,7 +568,7 @@ const StyleHeader = styled.div`
     text-align: center;
   }
 
-  { /* .villains {
+   /* .villains {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -735,7 +735,7 @@ const StyleHeader = styled.div`
       background-color: rgb(31, 156, 134);
       transition: all .33s ease-in-out;
     }
-  }  */}
+  }  */
 `;
 
 const ContainerCharacter = styled.div`
