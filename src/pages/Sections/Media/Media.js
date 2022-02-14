@@ -3,14 +3,15 @@ import Header from '../../../components/Header/Header';
 
 import styled from 'styled-components';
 import Trailers from './Trailers/Trailers';
-import ScreenShoots from './ScreenShots/ScreenShoots';
+import ScreenShots from './ScreenShots/ScreenShots';
+
 
 const Media = () => {
   return (
     <Container>
       <Header />
       <Trailers />
-      <ScreenShoots />
+      <ScreenShots />
     </Container>
   )
 }

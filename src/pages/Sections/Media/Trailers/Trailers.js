@@ -245,7 +245,7 @@ const Container = styled.div`
   @media(max-width: 800px) {
     .hidden-image img {
       width: 100%;
-      height: 1900px;
+      height: 2180px;
     }
   }
 
@@ -253,7 +253,15 @@ const Container = styled.div`
     .hidden-image img {
       max-width: 800px;
       width: 100%;
-      height: 860px;
+      height: 2180px;
+    }
+  }
+
+  @media(max-width: 590px) {
+    .hidden-image img {
+      max-width: 800px;
+      width: 100%;
+      height: 2212px;
     }
   }
 
@@ -437,6 +445,7 @@ const StyleHeader = styled.div`
   @media(max-width: 800px) {
     .video-thumb {
       transition: all .33s ease-in-out;
+      width: 400px;
       position: relative;
       display: block; 
       margin: 70px auto;
