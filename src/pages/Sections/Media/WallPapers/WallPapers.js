@@ -255,6 +255,10 @@ const StyleHeader = styled.div`
   animation-name: react-reveal-607813993386296-1;
   background-color: #000;
 
+  @media(max-width: 500px) {
+    margin-top: -300px;
+  }
+
   .text-header h2 {
     font-size: 1.7em;
     width: 100%;
@@ -404,6 +408,10 @@ const Container  = styled.div`
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
+
+    @media(max-width: 400px) {
+      margin-left: 90px;
+    }
   }
 
   .text-name {
@@ -415,6 +423,15 @@ const Container  = styled.div`
     font-weight: 600;
     -moz-box-pack: center;
     text-transform: uppercase;
+
+    @media(max-width: 400px) {
+      font-size: 14px;
+      margin-left: 14px;
+    }
+
+    @media(max-width: 305px) {
+      font-size: 14px;
+    }
   }
 
   .wallpaper-thumb-wrapper {
@@ -435,10 +452,35 @@ const Container  = styled.div`
   .wallpaper-thumb {
     max-width: 100%;
     margin-top: 20px;
+
+    @media(max-width: 400px) {
+      width: 300px;
+    }
+
+    @media(max-width: 305px) {
+      width: 250px;
+      margin-left: 20px;
+    }
   }
 
   .wallpaper-size-wrapper {
     display: flex;
+
+    @media(max-width: 400px) {
+      .text-container,
+      .download-link {
+        font-size: 14px;
+        margin-left: 20px;
+      }
+    }
+
+    @media(max-width: 305px) {
+      .text-container,
+      .download-link {
+        font-size: 12px;
+        margin-left: 20px;
+      }
+    }
   }
 
   .wallpaper-container-desktop, 
@@ -450,6 +492,13 @@ const Container  = styled.div`
     margin-top: 10px;
     font-weight: 700;
   }
+
+  @media(max-width: 305px) {
+      .wallpaper-container-desktop {
+        margin-left: 30px;
+        margin-top: -30px
+      }
+    }
 
   .info-resolution {
     box-sizing: border-box;
@@ -465,6 +514,12 @@ const Container  = styled.div`
   .wallpaper-mobile-size {
     margin-left: 30%;
     margin-top: 10px;
+  }
+
+  @media(max-width: 305px) {
+    .wallpaper-mobile-size {
+      margin-left: 30px;
+    }
   }
 
   .wallpaper-mobile-size,
