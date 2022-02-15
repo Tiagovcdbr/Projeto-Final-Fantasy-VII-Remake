@@ -209,7 +209,7 @@ export default ScreenShots;
 
 const Container = styled.div`
   width: 100%;
-  min-height: 730px;
+  min-height: 770px;
   height: 100%;
   color: #fff;
   background: #000;

@@ -248,7 +248,7 @@ const ContainerItems = styled.div`
       white-space: nowrap;
       margin: 16px 18px;
       padding: 1px 8px;     
-      font-size: 15px;
+      font-size: 14px;
       text-transform: uppercase;
       align-items: center;
       justify-content: center;
