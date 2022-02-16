@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Trailers from './Trailers/Trailers';
 import ScreenShots from './ScreenShots/ScreenShots';
 import WallPapers from './WallPapers/WallPapers';
+import Avatars from './Avatars/Avatars';
 
 
 const Media = () => {
@@ -14,6 +15,7 @@ const Media = () => {
       <Trailers />
       <ScreenShots />
       <WallPapers />
+      <Avatars />
     </Container>
   )
 }

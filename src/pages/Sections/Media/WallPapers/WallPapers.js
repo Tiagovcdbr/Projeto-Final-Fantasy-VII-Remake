@@ -307,6 +307,14 @@ const StyleHeader = styled.div`
   @media(max-width: 1850px) {
     .text-header {
       position: relative;
+      margin-top: -30px;
+    }
+  }
+
+  @media(max-width: 834px) {
+    .text-header {
+      position: relative;
+      margin-top: -2px;
     }
   }
 

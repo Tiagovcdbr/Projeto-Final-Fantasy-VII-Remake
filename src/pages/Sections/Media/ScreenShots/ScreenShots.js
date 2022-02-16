@@ -231,6 +231,10 @@ const Container = styled.div`
     margin-top: 82rem;
   }
 
+  @media(max-width: 290px) {
+    margin-top: 58rem;
+  }
+
   .text-header h2 {
     font-size: 1.7em;
     width: 100%;

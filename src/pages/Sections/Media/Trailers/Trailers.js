@@ -56,7 +56,7 @@ const Trailers = () => {
                 </div>                
                 <div className='play-btn-house'>
                   <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Behind The Scenes</h3>
                 </div>
                 <span className='border-decoration-top-left'>
                   <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
@@ -78,7 +78,7 @@ const Trailers = () => {
                 </div>                
                 <div className='play-btn-house'>
                   <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                  <h3 className='trailer-title'>Trailer for The Game Awards 2019</h3>
                 </div>
                 <span className='border-decoration-top-left'>
                   <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
@@ -100,7 +100,7 @@ const Trailers = () => {
                 </div>                
                 <div className='play-btn-house'>
                   <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                  <h3 className='trailer-title'>TOKYO GAME SHOW 2019 TRAILER</h3>
                 </div>
                 <span className='border-decoration-top-left'>
                   <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
@@ -122,7 +122,7 @@ const Trailers = () => {
                 </div>                
                 <div className='play-btn-house'>
                   <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                  <h3 className='trailer-title'>Trailer for FFVII A Symphonic Reunion</h3>
                 </div>
                 <span className='border-decoration-top-left'>
                   <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
@@ -144,7 +144,7 @@ const Trailers = () => {
                 </div>                
                 <div className='play-btn-house'>
                   <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                  <h3 className='trailer-title'>E3 2019 Trailer</h3>
                 </div>
                 <span className='border-decoration-top-left'>
                   <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
@@ -166,7 +166,7 @@ const Trailers = () => {
               </div>                
               <div className='play-btn-house'>
                 <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                <h3 className='trailer-title'>Teaser Trailer</h3>
               </div>
               <span className='border-decoration-top-left'>
                 <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
@@ -538,7 +538,7 @@ const StyleHeader = styled.div`
 
   .trailer-title {
     text-transform: uppercase;
-    font-family: Arial,sans-serif;
+    font-family: MyriadPro-Cond,Arial,sans-serif;
     text-shadow: none;
     font-weight: 700;
     font-size: .95em;
