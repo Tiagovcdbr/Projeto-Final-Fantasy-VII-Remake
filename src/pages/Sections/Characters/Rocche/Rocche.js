@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 
 import Header from '../../../../components/Header/Header';
@@ -28,19 +30,23 @@ const Rocche = () => {
       </div>
     <StyleHeader>
         <div className='text-header'>
-          <h2>Characters</h2>
+          <Fade left>
+            <h2>Characters</h2>
+          </Fade>
         </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-           </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-       </div>
+          <Fade left>
+            <div className='border-bottom'>
+              <span className='left-diamond'>
+                <img src='/assets/images/diamond_side_left.png' alt='/' />
+              </span>
+              <span className='center-diamond'>
+                <img src='/assets/images/diamond.png' alt='/' />
+              </span>
+              <span className='right-diamond'>
+                <img src='/assets/images/diamond_side_right.png' alt='/' />
+              </span>
+            </div>
+          </Fade>
        <div className='container-characters'>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
@@ -132,59 +138,67 @@ const Rocche = () => {
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <img src='/assets/images/characters_full_rocche.png' alt='/' />
+              <Fade left>
+                <img src='/assets/images/characters_full_rocche.png' alt='/' />
+              </Fade>
             </span>
           </div>
           <div className='character-text'>
-            <h2 className='character-name'>
-              <span className='first-name'>Rocche</span>
-              &nbsp;
-            </h2>
-            <div className='character-bio'>A 3-C SOLDIER operator who loves bikes, speed, and anyone capable of going toe-to-toe with him. A demon on wheels, he is ostracized by many in the organization due to his antics and general disregard for anyone's safety.
-              <span className='top-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-              <span className='bottom-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-            </div> 
+            <Fade left>
+              <h2 className='character-name'>
+                <span className='first-name'>Rocche</span>
+                &nbsp;
+              </h2>
+            </Fade>
+              <Fade left>
+                <div className='character-bio'>A 3-C SOLDIER operator who loves bikes, speed, and anyone capable of going toe-to-toe with him. A demon on wheels, he is ostracized by many in the organization due to his antics and general disregard for anyone's safety.
+                  <span className='top-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                  <span className='bottom-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                </div>
+              </Fade> 
             <div className='character-screenshots' >
-              <div className='space'>
-                <div className='video-thumb-screenshot'>
-                  <div className='video-still-house'>
-                    <img className='video-thumb-still' src='/assets/images/chara_rocche_screen_01.jpg' alt='/' />
+              <Zoom>
+                <div className='space'>
+                  <div className='video-thumb-screenshot'>
+                    <div className='video-still-house'>
+                      <img className='video-thumb-still' src='/assets/images/chara_rocche_screen_01.jpg' alt='/' />
+                    </div>
+                    <span className='video-border-top-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-top-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
                   </div>
-                  <span className='video-border-top-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-top-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                </div>
-                <div className='video-thumb-screenshot-2'>
-                  <div className='video-still-house'>
-                    <img className='video-thumb-still' src='/assets/images/chara_rocche_screen_02.jpg' alt='/' />
+                  <div className='video-thumb-screenshot-2'>
+                    <div className='video-still-house'>
+                      <img className='video-thumb-still' src='/assets/images/chara_rocche_screen_02.jpg' alt='/' />
+                    </div>
+                    <span className='video-border-top-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-top-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
                   </div>
-                  <span className='video-border-top-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-top-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                </div>
-              </div> 
+                </div> 
+              </Zoom>
             </div>          
           </div>
         </div>

@@ -9,6 +9,7 @@ const Menu = () => {
 
   return (
     <Container>
+    
       <video
         className='video-bg'
         src={"/assets/video/lifestream.mp4"}
@@ -31,13 +32,11 @@ const Menu = () => {
       <div className='container-page'>
         <div className='bg-image'>
           <img src='/assets/images/ff7_remake_bg_menu.png' alt='' />           
-              <div className='logo-image'>
-                <Fade right>
+              <div className='logo-image'>                
                   <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
-                </Fade>
               </div>            
             <div className='text-area'>
-              <Fade right>
+              
                 <div className='text'>                
                   <span> Todo conteúdo utilizado nesse projeto acadêmico, são reservados as empresas
                   SQUARE ENIX & Sony Computer Entertainment Inc.</span><br /><br />                
@@ -51,7 +50,7 @@ const Menu = () => {
                   <span>PlayStation" e o logotipo "PS" são marcas registradas e 
                     "PS4" é uma marca comercial da Sony Computer Entertainment Inc.</span>                
                 </div>
-              </Fade>
+             
             </div>            
          </div>
           <div className='button-menu'>
@@ -59,7 +58,7 @@ const Menu = () => {
               <button id="btn">Start</button>
             </Link>
           </div>
-      </div>
+        </div>
     </Container>
   )
 };
@@ -71,11 +70,11 @@ const Container = styled.div`
   height: 100%;
 
   animation-fill-mode: both;
-  animation-duration: 1000ms;
-  animation-delay: 0ms;
-  animation-iteration-count: 1;
-  opacity: 1;
-  animation-name: react-reveal-607813993386296-1;
+  animation-duration: 5000ms;
+  animation-delay: 500ms;
+  animation-iteration-count: 8;
+  opacity: 8;
+  animation-name: react-reveal;
   background-color: #000;
 
   @media(max-width: 1850px) {

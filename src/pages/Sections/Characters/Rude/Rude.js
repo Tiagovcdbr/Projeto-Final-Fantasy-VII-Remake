@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 
 import Header from '../../../../components/Header/Header';
@@ -28,19 +30,23 @@ const Rude = () => {
       </div>
     <StyleHeader>
         <div className='text-header'>
-          <h2>Characters</h2>
+          <Fade left>
+            <h2>Characters</h2>
+          </Fade>
         </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-           </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-       </div>
+        <Fade left>
+          <div className='border-bottom'>
+            <span className='left-diamond'>
+              <img src='/assets/images/diamond_side_left.png' alt='/' />
+            </span>
+            <span className='center-diamond'>
+              <img src='/assets/images/diamond.png' alt='/' />
+            </span>
+            <span className='right-diamond'>
+              <img src='/assets/images/diamond_side_right.png' alt='/' />
+            </span>
+          </div>
+        </Fade>
        <div className='container-characters'>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
@@ -132,65 +138,75 @@ const Rude = () => {
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <img src='/assets/images/characters_full_rude.png' alt='/' />
+              <Fade left>
+                <img src='/assets/images/characters_full_rude.png' alt='/' />
+              </Fade>
             </span>
           </div>
           <div className='character-text'>
-            <h2 className='character-name'>
-              <span className='first-name'>Rude</span>
-              &nbsp;
-            </h2>
-            <div className='character-bio'>A member of the Turks―a special task force within Shinra's General Affairs Division. Rude is an intimidating presence with his shaved head, sunglasses, and massive frame. He speaks only when absolutely necessary and prefers to use his bare fists and physical prowess to subdue his enemies.
-              <span className='top-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-              <span className='bottom-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-            </div> 
+            <Fade left>
+              <h2 className='character-name'>
+                <span className='first-name'>Rude</span>
+                &nbsp;
+              </h2>
+            </Fade>
+              <Fade left>
+                <div className='character-bio'>A member of the Turks―a special task force within Shinra's General Affairs Division. Rude is an intimidating presence with his shaved head, sunglasses, and massive frame. He speaks only when absolutely necessary and prefers to use his bare fists and physical prowess to subdue his enemies.
+                  <span className='top-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                  <span className='bottom-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                </div>
+              </Fade> 
             <div className='character-screenshots' >
-              <div className='space'>
-                <div className='video-thumb-screenshot'>
-                  <div className='video-still-house'>
-                    <img className='video-thumb-still' src='/assets/images/chara_rude_screen_01.jpg' alt='/' />
+              <Zoom>
+                <div className='space'>
+                  <div className='video-thumb-screenshot'>
+                    <div className='video-still-house'>
+                      <img className='video-thumb-still' src='/assets/images/chara_rude_screen_01.jpg' alt='/' />
+                    </div>
+                    <span className='video-border-top-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-top-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
                   </div>
-                  <span className='video-border-top-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-top-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                </div>
-                <div className='video-thumb-screenshot-2'>
-                  <div className='video-still-house'>
-                    <img className='video-thumb-still' src='/assets/images/chara_rude_screen_02.jpg' alt='/' />
+                  <div className='video-thumb-screenshot-2'>
+                    <div className='video-still-house'>
+                      <img className='video-thumb-still' src='/assets/images/chara_rude_screen_02.jpg' alt='/' />
+                    </div>
+                    <span className='video-border-top-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-top-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
                   </div>
-                  <span className='video-border-top-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-top-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                </div>
-              </div> 
+                </div> 
+              </Zoom>
             </div>          
           </div>
         </div>
         <div className='character-profile'>
           <span className='image-background'>
-            <img src='/assets/images/characters_profile_rude.png' alt='Tifa' />
+            <Fade right>
+              <img src='/assets/images/characters_profile_rude.png' alt='Tifa' />
+            </Fade>
           </span>
         </div>
     </ContainerCharacter>     
@@ -280,6 +296,7 @@ const StyleHeader = styled.div`
   width: 100%;
   bottom: 0;
   top: 182px;
+  
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;
@@ -769,6 +786,13 @@ const ContainerCharacter = styled.div`
     margin-left: calc(100% - 1100px);
     position: relative;
     transition: 0.5s ease-in-out;
+
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-607813993386296-1;
   }
 
   .character-art {
@@ -838,6 +862,13 @@ const ContainerCharacter = styled.div`
     transition: opacity .4s ease-in-out .55s,-webkit-transform .4s ease-in-out .55s;
     transition: transform .4s ease-in-out .55s,opacity .4s ease-in-out .55s;
     transition: transform .4s ease-in-out .55s,opacity .4s ease-in-out .55s,-webkit-transform .4s ease-in-out .55s;
+
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-607813993386296-1;
   }
 
   @media(max-width: 930px) {
@@ -949,6 +980,13 @@ const ContainerCharacter = styled.div`
   .character-screenshots {
       width: 90%;
       margin-top: 80px;
+
+      animation-fill-mode: both;
+      animation-duration: 1000ms;
+      animation-delay: 0ms;
+      animation-iteration-count: 1;
+      opacity: 1;
+      animation-name: react-reveal-607813993386296-1;
     }
 
     .space {
@@ -1113,6 +1151,15 @@ const ContainerCharacter = styled.div`
       transform: rotate(180deg);
     }
 
+    .image-background {
+      animation-fill-mode: both;
+      animation-duration: 1000ms;
+      animation-delay: 0ms;
+      animation-iteration-count: 1;
+      opacity: 1;
+      animation-name: react-reveal-607813993386296-1;
+    }
+
     .character-profile {
       position: absolute;
       width: 50%;
@@ -1120,6 +1167,13 @@ const ContainerCharacter = styled.div`
       left: 0;
       max-width: 817px;
       z-index: -1;
+
+      animation-fill-mode: both;
+      animation-duration: 1000ms;
+      animation-delay: 0ms;
+      animation-iteration-count: 1;
+      opacity: 1;
+      animation-name: react-reveal-607813993386296-1;
     }
 
     @media(max-width: 1100px) {

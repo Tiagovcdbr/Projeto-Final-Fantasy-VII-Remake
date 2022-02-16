@@ -12,12 +12,12 @@ const Trailers = () => {
       </div>
     </div>
       <StyleHeader>
-        <Fade right>
+        <Fade left>
           <div className='text-header'>
             <h2>Trailers</h2>
           </div>
         </Fade>
-        <Fade right>
+        <Fade left>
           <div className='border-bottom'>
             <span className='left-diamond'>
               <img src='/assets/images/diamond_side_left.png' alt='' />

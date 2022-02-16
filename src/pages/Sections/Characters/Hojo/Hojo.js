@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 
 import Header from '../../../../components/Header/Header';
@@ -28,19 +30,23 @@ const Hojo = () => {
       </div>
     <StyleHeader>
         <div className='text-header'>
-          <h2>Characters</h2>
+          <Fade left>
+            <h2>Characters</h2>
+          </Fade>
         </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-           </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-       </div>
+          <Fade left>
+          <div className='border-bottom'>
+            <span className='left-diamond'>
+              <img src='/assets/images/diamond_side_left.png' alt='/' />
+            </span>
+            <span className='center-diamond'>
+              <img src='/assets/images/diamond.png' alt='/' />
+            </span>
+            <span className='right-diamond'>
+              <img src='/assets/images/diamond_side_right.png' alt='/' />
+            </span>
+          </div>
+        </Fade>
        <div className='container-characters'>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
@@ -132,59 +138,67 @@ const Hojo = () => {
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <img src='/assets/images/characters_full_hojo.png' alt='/' />
+              <Fade left>
+                <img src='/assets/images/characters_full_hojo.png' alt='/' />
+              </Fade>
             </span>
           </div>
           <div className='character-text'>
-            <h2 className='character-name'>
-              <span className='first-name'>Professor</span>
-              &nbsp;Hojo
-            </h2>
-            <div className='character-bio'>Director of Shinra Electric Power Company’s Research and Development Division. He develops various biological weapons, without a care for ethics or morals. If it’s for the sake of his work, he won’t hesitate to take a human life for his experiments. In his previous collaborative research work he performed special surgery on soldiers, increasing their physical power and succeeded in giving birth to SOLDIERs.
-              <span className='top-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-              <span className='bottom-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-            </div> 
+            <Fade left>
+              <h2 className='character-name'>
+                <span className='first-name'>Professor</span>
+                &nbsp;Hojo
+              </h2>
+            </Fade>
+              <Fade left>
+                <div className='character-bio'>Director of Shinra Electric Power Company’s Research and Development Division. He develops various biological weapons, without a care for ethics or morals. If it’s for the sake of his work, he won’t hesitate to take a human life for his experiments. In his previous collaborative research work he performed special surgery on soldiers, increasing their physical power and succeeded in giving birth to SOLDIERs.
+                  <span className='top-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                  <span className='bottom-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                </div>
+              </Fade> 
             <div className='character-screenshots' >
-              <div className='space'>
-                <div className='video-thumb-screenshot'>
-                  <div className='video-still-house'>
-                    <img className='video-thumb-still' src='/assets/images/chara_hojo_screen_01.jpg' alt='/' />
+              <Zoom>
+                <div className='space'>
+                  <div className='video-thumb-screenshot'>
+                    <div className='video-still-house'>
+                      <img className='video-thumb-still' src='/assets/images/chara_hojo_screen_01.jpg' alt='/' />
+                    </div>
+                    <span className='video-border-top-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-top-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
                   </div>
-                  <span className='video-border-top-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-top-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                </div>
-                <div className='video-thumb-screenshot-2'>
-                  <div className='video-still-house'>
-                    <img className='video-thumb-still' src='/assets/images/chara_hojo_screen_02.jpg' alt='/' />
+                  <div className='video-thumb-screenshot-2'>
+                    <div className='video-still-house'>
+                      <img className='video-thumb-still' src='/assets/images/chara_hojo_screen_02.jpg' alt='/' />
+                    </div>
+                    <span className='video-border-top-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-top-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
                   </div>
-                  <span className='video-border-top-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-top-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
                 </div>
-              </div> 
+              </Zoom> 
             </div>          
           </div>
         </div>
@@ -280,6 +294,7 @@ const StyleHeader = styled.div`
   width: 100%;
   bottom: 0;
   top: 182px;
+  
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;

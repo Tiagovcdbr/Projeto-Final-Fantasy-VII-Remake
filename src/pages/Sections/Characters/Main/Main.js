@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Fade from 'react-reveal/Fade';
 import Header from '../../../../components/Header/Header';
 import styled from 'styled-components';
 
@@ -27,20 +28,25 @@ const Main = () => {
         </div>
         <StyleHeader>
             <div className='text-header'>
-              <h2>Characters</h2>
+              <Fade left>
+                <h2>Characters</h2>
+              </Fade>
             </div>
-            <div className='border-bottom'>
-              <span className='left-diamond'>
-                <img src='/assets/images/diamond_side_left.png' alt='/' />
-              </span>
-              <span className='center-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-               </span>
-              <span className='right-diamond'>
-                <img src='/assets/images/diamond_side_right.png' alt='/' />
-              </span>
-           </div>
+            <Fade left>
+              <div className='border-bottom'>
+                <span className='left-diamond'>
+                  <img src='/assets/images/diamond_side_left.png' alt='/' />
+                </span>
+                <span className='center-diamond'>
+                  <img src='/assets/images/diamond.png' alt='/' />
+                </span>
+                <span className='right-diamond'>
+                  <img src='/assets/images/diamond_side_right.png' alt='/' />
+                </span>
+            </div>
+           </Fade>
            <div className='container-characters'>
+           <Fade left>
               <div className='heroes'>
                 <div className='character-thumbnail-0'>
                   <Link to="/cloud" style={{ textDecoration: 'none' }}>
@@ -83,75 +89,80 @@ const Main = () => {
                   </Link>
                 </div>
                   <div className='division'></div>
-                <div className='villains'>
-                <div className='character-thumbnail-villain-8'>
-                  <Link to="/sephiroth" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/chara_thumb_sephiroth.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-villain-9'>
-                  <Link to="/reno" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/chara_thumb_reno.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-villain-10'>
-                  <Link to="/rude" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/chara_thumb_rude.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-villain-11'>
-                  <Link to="/president" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/chara_thumb_shinra.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-villain-12'>
-                  <Link to="/heidegger" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/chara_thumb_heidegger.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-villain-13'>
-                  <Link to="/rocche" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/chara_thumb_rocche.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-villain-14'>
-                  <Link to="/hojo" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/chara_thumb_hojo.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-villain-15'>
-                  <Link to="/rufus" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/characters_full_rufus.png' alt='' />
-                  </Link>
-                </div>
+                <Fade right>
+                  <div className='villains'>
+                    <div className='character-thumbnail-villain-8'>
+                      <Link to="/sephiroth" style={{ textDecoration: 'none' }}>
+                        <img src='assets/cards/chara_thumb_sephiroth.png' alt='' />
+                      </Link>
+                    </div>
+                    <div className='character-thumbnail-villain-9'>
+                      <Link to="/reno" style={{ textDecoration: 'none' }}>
+                        <img src='assets/cards/chara_thumb_reno.png' alt='' />
+                      </Link>
+                    </div>
+                    <div className='character-thumbnail-villain-10'>
+                      <Link to="/rude" style={{ textDecoration: 'none' }}>
+                        <img src='assets/cards/chara_thumb_rude.png' alt='' />
+                      </Link>
+                    </div>
+                    <div className='character-thumbnail-villain-11'>
+                      <Link to="/president" style={{ textDecoration: 'none' }}>
+                        <img src='assets/cards/chara_thumb_shinra.png' alt='' />
+                      </Link>
+                    </div>
+                    <div className='character-thumbnail-villain-12'>
+                      <Link to="/heidegger" style={{ textDecoration: 'none' }}>
+                        <img src='assets/cards/chara_thumb_heidegger.png' alt='' />
+                      </Link>
+                    </div>
+                    <div className='character-thumbnail-villain-13'>
+                      <Link to="/rocche" style={{ textDecoration: 'none' }}>
+                        <img src='assets/cards/chara_thumb_rocche.png' alt='' />
+                      </Link>
+                    </div>
+                    <div className='character-thumbnail-villain-14'>
+                      <Link to="/hojo" style={{ textDecoration: 'none' }}>
+                        <img src='assets/cards/chara_thumb_hojo.png' alt='' />
+                      </Link>
+                    </div>
+                    <div className='character-thumbnail-villain-15'>
+                      <Link to="/rufus" style={{ textDecoration: 'none' }}>
+                        <img src='assets/cards/characters_full_rufus.png' alt='' />
+                      </Link>
+                    </div>
+                  </div>
+                </Fade>
+              </div>
+            </Fade>
+           </div>
+           <Fade left> 
+            <div className='bg-history'>
+            <div className='info-history'>
+              <div className='top-border'>
+                <span className='left-diamond'>
+                  <img src='/assets/images/diamond.png' alt='/' />
+                </span>
+                <span className='right-diamond'>
+                  <img src='/assets/images/diamond.png' alt='/' />
+                </span>            
+              </div>          
+                <div className='text-history'>
+
+                  <span>This section shows all the characters that exist in the game, click on the image 
+                  to access its information and get to know a little about these outstanding characters.</span>
+                            
+                  <span>of this incredible game that is Final Fantasy VII Remake, being the first part of 
+                  an extensive game you will have many surprises and you will remember exciting moments</span> 
+  
+                  <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project 
+                  covers up to the party’s escape from Midgar, and goes deeper into the events occurring 
+                  in Midgar than the original FINAL FANTASY VII.</span> 
+            
                 </div>
               </div>
-           </div> 
-           <div className='bg-history'>
-           <div className='info-history'>
-             <div className='top-border'>
-               <span className='left-diamond'>
-                 <img src='/assets/images/diamond.png' alt='/' />
-               </span>
-               <span className='right-diamond'>
-                 <img src='/assets/images/diamond.png' alt='/' />
-               </span>            
-             </div>          
-               <div className='text-history'>
-
-                 <span>This section shows all the characters that exist in the game, click on the image 
-                 to access its information and get to know a little about these outstanding characters.</span>
-                          
-                 <span>of this incredible game that is Final Fantasy VII Remake, being the first part of 
-                 an extensive game you will have many surprises and you will remember exciting moments</span> 
- 
-                 <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project 
-                 covers up to the party’s escape from Midgar, and goes deeper into the events occurring 
-                 in Midgar than the original FINAL FANTASY VII.</span> 
-          
-               </div>
-             </div>
-         </div>       
+            </div>
+         </Fade>       
         </StyleHeader>
     </Container>    
   )
@@ -163,6 +174,13 @@ export default Main;
 const Container = styled.div`
   width: 100%;
   height: 100%;
+
+  animation-fill-mode: both;
+  animation-duration: 3000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
 
   .video-bg_2 {
     position: absolute;

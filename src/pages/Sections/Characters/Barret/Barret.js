@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 
 import Header from '../../../../components/Header/Header';
@@ -28,19 +30,23 @@ const Barret = () => {
       </div>
     <StyleHeader>
         <div className='text-header'>
-          <h2>Characters</h2>
+          <Fade left>
+            <h2>Characters</h2>
+          </Fade>
         </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-           </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-       </div>
+          <Fade left>
+          <div className='border-bottom'>
+            <span className='left-diamond'>
+              <img src='/assets/images/diamond_side_left.png' alt='/' />
+            </span>
+            <span className='center-diamond'>
+              <img src='/assets/images/diamond.png' alt='/' />
+            </span>
+            <span className='right-diamond'>
+              <img src='/assets/images/diamond_side_right.png' alt='/' />
+            </span>
+          </div>
+        </Fade>
        <div className='container-characters'>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
@@ -132,65 +138,75 @@ const Barret = () => {
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <img src='/assets/images/characters_full_barret.png' alt='/' />
+              <Fade left>
+                <img src='/assets/images/characters_full_barret.png' alt='/' />
+              </Fade>
             </span>
           </div>
           <div className='character-text'>
-            <h2 className='character-name'>
-              <span className='first-name'>Barret</span>
-              &nbsp;Wallace
-            </h2>
-            <div className='character-bio'>The leader of an independent Avalanche cell in Midgar, Barret was disavowed by the old guard for his extreme methods that attracted too much attention. He subsequently came to Midgar, where he resolved to continue to pursue his vendetta against Shinra with a small but trusted group of followers. When not fighting against the corporation, he and his comrades serve in the neighborhood watch and keep the people safe─including his daughter Marlene, who he dotes on as a loving father.
-              <span className='top-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-              <span className='bottom-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-            </div> 
+            <Fade left>
+              <h2 className='character-name'>
+                <span className='first-name'>Barret</span>
+                &nbsp;Wallace
+              </h2>
+            </Fade>
+              <Fade left>
+                <div className='character-bio'>The leader of an independent Avalanche cell in Midgar, Barret was disavowed by the old guard for his extreme methods that attracted too much attention. He subsequently came to Midgar, where he resolved to continue to pursue his vendetta against Shinra with a small but trusted group of followers. When not fighting against the corporation, he and his comrades serve in the neighborhood watch and keep the people safe─including his daughter Marlene, who he dotes on as a loving father.
+                  <span className='top-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                  <span className='bottom-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                </div> 
+              </Fade>
             <div className='character-screenshots' >
-              <div className='space'>
-                <div className='video-thumb-screenshot'>
-                  <div className='video-still-house'>
-                    <img className='video-thumb-still' src='/assets/images/chara_barret_screen_01.jpg' alt='/' />
+              <Zoom>
+                <div className='space'>
+                  <div className='video-thumb-screenshot'>
+                    <div className='video-still-house'>
+                      <img className='video-thumb-still' src='/assets/images/chara_barret_screen_01.jpg' alt='/' />
+                    </div>
+                    <span className='video-border-top-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-top-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
                   </div>
-                  <span className='video-border-top-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-top-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                </div>
-                <div className='video-thumb-screenshot-2'>
-                  <div className='video-still-house'>
-                    <img className='video-thumb-still' src='/assets/images/chara_barret_screen_02.jpg' alt='/' />
+                  <div className='video-thumb-screenshot-2'>
+                    <div className='video-still-house'>
+                      <img className='video-thumb-still' src='/assets/images/chara_barret_screen_02.jpg' alt='/' />
+                    </div>
+                    <span className='video-border-top-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-top-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-left'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
+                    <span className='video-border-bottom-right'>
+                      <img src='/assets/images/trailer_frame_corner.png' alt='/' />
+                    </span>
                   </div>
-                  <span className='video-border-top-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-top-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-left'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                  <span className='video-border-bottom-right'>
-                    <img src='/assets/images/trailer_frame_corner.png' alt='/' />
-                  </span>
-                </div>
-              </div> 
+                </div> 
+              </Zoom>
             </div>          
           </div>
         </div>
         <div className='character-profile'>
           <span className='image-background'>
-            <img src='/assets/images/characters_profile_barret.png' alt='Barret' />
+            <Fade right>
+              <img src='/assets/images/characters_profile_barret.png' alt='Barret' />
+            </Fade>
           </span>
         </div>
     </ContainerCharacter>     
@@ -769,7 +785,14 @@ const ContainerCharacter = styled.div`
     margin-left: calc(100% - 1100px);
     position: relative;
     transition: 0.5s ease-in-out;
-  }
+
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-607813993386296-1;
+}
 
   .character-art {
     width: 50%;
@@ -838,6 +861,13 @@ const ContainerCharacter = styled.div`
     transition: opacity .4s ease-in-out .55s,-webkit-transform .4s ease-in-out .55s;
     transition: transform .4s ease-in-out .55s,opacity .4s ease-in-out .55s;
     transition: transform .4s ease-in-out .55s,opacity .4s ease-in-out .55s,-webkit-transform .4s ease-in-out .55s;
+
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-607813993386296-1;
   }
 
   @media(max-width: 930px) {
@@ -1120,6 +1150,13 @@ const ContainerCharacter = styled.div`
       left: 0;
       max-width: 817px;
       z-index: -1;
+
+      animation-fill-mode: both;
+      animation-duration: 1000ms;
+      animation-delay: 0ms;
+      animation-iteration-count: 1;
+      opacity: 1;
+      animation-name: react-reveal-607813993386296-1;
     }
 
     @media(max-width: 1100px) {

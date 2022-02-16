@@ -1,6 +1,7 @@
 
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const Main = () => {
   return (
@@ -20,13 +21,13 @@ const Main = () => {
       />
       <ContainerLogo>
         <div className='logo'>
-          <Fade right>
+          <Fade left>
             <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='logo' />
           </Fade>
         </div>
       </ContainerLogo>
       <ContentTraillers>
-      <Fade left>
+      <Zoom>
         <div className='video-thumb'>
           <div className='video-still'>
             <img className='trailler-1' src='/assets/images/the-game-awards-2019-trailer-still.jpg' alt='/' />
@@ -90,7 +91,7 @@ const Main = () => {
             <img className='video-border-decoration' src='/assets/images/trailer_frame_corner.png' alt='/' />
           </div>
           </div>
-        </Fade>
+        </Zoom>
       </ContentTraillers>
     </Container>
   )
@@ -146,20 +147,21 @@ const Container = styled.section`
 
 `
 
-const ContainerLogo = styled.div`  
+const ContainerLogo = styled.div`
+
+  animation-fill-mode: both;
+  animation-duration: 3000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
+
   .logo img {
     position: absolute;
     width: 44rem;
     right: 0;
     margin-right: 170px;
     margin-top: 200px;
-    
-    animation-fill-mode: both;
-    animation-duration: 1000ms;
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    opacity: 1;
-    animation-name: react-reveal-607813993386296-1;
   }
 
   @media(max-width: 1100px) {
@@ -227,7 +229,7 @@ const ContentTraillers = styled.div`
   right: 0;
 
   animation-fill-mode: both;
-  animation-duration: 1000ms;
+  animation-duration: 3000ms;
   animation-delay: 0ms;
   animation-iteration-count: 1;
   opacity: 1;
