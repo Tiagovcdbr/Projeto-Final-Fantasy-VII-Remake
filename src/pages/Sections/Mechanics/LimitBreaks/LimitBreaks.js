@@ -1,6 +1,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const LimitBreaks = () => {
   return (
@@ -12,37 +14,43 @@ const LimitBreaks = () => {
       </div>
       <StyleHeader>
         <div className='text-header'>
-          <h2>LIMIT BREAKS</h2>
+          <Fade left>
+            <h2>LIMIT BREAKS</h2>
+          </Fade>
         </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-          </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-        </div>
-        <div className='bg-history'>
-          <div className='info-history'>
-            <div className='top-border'>
+          <Fade left>
+            <div className='border-bottom'>
               <span className='left-diamond'>
+                <img src='/assets/images/diamond_side_left.png' alt='/' />
+              </span>
+              <span className='center-diamond'>
                 <img src='/assets/images/diamond.png' alt='/' />
               </span>
               <span className='right-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>            
-            </div>          
-              <div className='text-history'>
-                <span>As you take damage over the course of a battle, 
-                your limit gauge will gradually fill, eventually 
-                enabling you to execute powerful abilities unique 
-                to each character.</span>         
-              </div>
+                <img src='/assets/images/diamond_side_right.png' alt='/' />
+              </span>
             </div>
-        </div>
+          </Fade>
+          <Zoom>
+            <div className='bg-history'>
+              <div className='info-history'>
+                <div className='top-border'>
+                  <span className='left-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                  <span className='right-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>            
+                </div>          
+                  <div className='text-history'>
+                    <span>As you take damage over the course of a battle, 
+                    your limit gauge will gradually fill, eventually 
+                    enabling you to execute powerful abilities unique 
+                    to each character.</span>         
+                  </div>
+                </div>
+            </div>
+        </Zoom>
       </StyleHeader>        
     </Container>
   )
@@ -55,6 +63,13 @@ const Container = styled.div`
   height: 80%;
   max-height: 1100px;
   position: relative;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
 
 /*    .video-bg_2 {
     position: absolute;

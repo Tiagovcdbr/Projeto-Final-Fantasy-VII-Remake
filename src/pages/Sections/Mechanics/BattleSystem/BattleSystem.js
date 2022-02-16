@@ -1,6 +1,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const BattleSystem = () => {
   return (
@@ -12,19 +14,24 @@ const BattleSystem = () => {
       </div>
       <StyleHeader>
         <div className='text-header'>
-          <h2>BATTLE SYSTEM</h2>
+          <Fade left>
+            <h2>BATTLE SYSTEM</h2>
+          </Fade>
         </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-          </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-        </div>
+          <Fade left>
+            <div className='border-bottom'>
+              <span className='left-diamond'>
+                <img src='/assets/images/diamond_side_left.png' alt='/' />
+              </span>
+              <span className='center-diamond'>
+                <img src='/assets/images/diamond.png' alt='/' />
+              </span>
+              <span className='right-diamond'>
+                <img src='/assets/images/diamond_side_right.png' alt='/' />
+              </span>
+            </div>
+          </Fade>
+          <Zoom>
         <div className='bg-history'>
           <div className='info-history'>
             <div className='top-border'>
@@ -46,7 +53,8 @@ const BattleSystem = () => {
          
               </div>
             </div>
-        </div>
+          </div>
+        </Zoom>
       </StyleHeader>        
     </Container>
   )
@@ -60,6 +68,13 @@ const Container = styled.div`
   max-height: 1100px;
   position: relative;
   margin-top: 142px;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
 
 /*    .video-bg_2 {
     position: absolute;

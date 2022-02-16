@@ -296,6 +296,7 @@ const StyleHeader = styled.div`
   width: 100%;
   bottom: 0;
   top: 182px;
+  
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;

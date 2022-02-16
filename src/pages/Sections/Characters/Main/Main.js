@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import Header from '../../../../components/Header/Header';
 import styled from 'styled-components';
 
@@ -136,7 +137,7 @@ const Main = () => {
               </div>
             </Fade>
            </div>
-           <Fade left> 
+           <Zoom> 
             <div className='bg-history'>
             <div className='info-history'>
               <div className='top-border'>
@@ -162,7 +163,7 @@ const Main = () => {
                 </div>
               </div>
             </div>
-         </Fade>       
+         </Zoom>       
         </StyleHeader>
     </Container>    
   )

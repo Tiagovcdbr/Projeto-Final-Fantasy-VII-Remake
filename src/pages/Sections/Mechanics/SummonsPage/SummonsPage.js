@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const SummonsPage = () => {
   return (    
@@ -18,92 +20,100 @@ const SummonsPage = () => {
         </div>
         <StyleHeader>
             <div className='text-header'>
-              <h2>SUMMONS SESSION</h2>
+              <Fade left>
+                <h2>SUMMONS SESSION</h2>
+              </Fade>
             </div>
-            <div className='border-bottom'>
-              <span className='left-diamond'>
-                <img src='/assets/images/diamond_side_left.png' alt='' />
-              </span>
-              <span className='center-diamond'>
-                <img src='/assets/images/diamond.png' alt='' />
-               </span>
-              <span className='right-diamond'>
-                <img src='/assets/images/diamond_side_right.png' alt='' />
-              </span>
-           </div>
-           <div className='container-characters'>
-              <div className='heroes'>
-                <div className='character-thumbnail-0'>
-                  <Link to="/ifrit" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/Ifrit_from_FFVII_Remake.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-1'>
-                  <Link to="/shiva" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/shiva.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-2'>
-                  <Link to="/leviathan" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/Leviathan_FFVII_Remake.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-3'>
-                  <Link to="/bahamut" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/bahamut.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-4'>
-                  <Link to="/fatchocobo" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/fatchocobo.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-5'>
-                  <Link to="/chocobomoogle" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/Chocobo_&_Moogle_FFVIIR.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-6'>
-                  <Link to="/chick" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/chocobo-chick-summon-from-ffvii-remake-article_m-1.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-7'>
-                  <Link to="/cactuar" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/Cactuar_from_FFVII_Remake.png' alt='' />
-                  </Link>
-                </div>
-                <div className='character-thumbnail-8'>
-                  <Link to="/carbuncle" style={{ textDecoration: 'none' }}>
-                    <img src='assets/cards/carbuncle-summon-from-ffvii-remake-article_m-1.png' alt='' />
-                  </Link>
-                </div>
-                  <div className='division'></div>
+              <Fade left>
+                <div className='border-bottom'>
+                  <span className='left-diamond'>
+                    <img src='/assets/images/diamond_side_left.png' alt='' />
+                  </span>
+                  <span className='center-diamond'>
+                    <img src='/assets/images/diamond.png' alt='' />
+                  </span>
+                  <span className='right-diamond'>
+                    <img src='/assets/images/diamond_side_right.png' alt='' />
+                  </span>
               </div>
-           </div> 
-           <div className='bg-history'>
-           <div className='info-history'>
-             <div className='top-border'>
-               <span className='left-diamond'>
-                 <img src='/assets/images/diamond.png' alt='/' />
-               </span>
-               <span className='right-diamond'>
-                 <img src='/assets/images/diamond.png' alt='/' />
-               </span>            
-             </div>          
-               <div className='text-history'>
+            </Fade>
+           <div className='container-characters'>
+            <Fade bottom>
+                <div className='heroes'>
+                  <div className='character-thumbnail-0'>
+                    <Link to="/ifrit" style={{ textDecoration: 'none' }}>
+                      <img src='assets/cards/Ifrit_from_FFVII_Remake.png' alt='' />
+                    </Link>
+                  </div>
+                  <div className='character-thumbnail-1'>
+                    <Link to="/shiva" style={{ textDecoration: 'none' }}>
+                      <img src='assets/cards/shiva.png' alt='' />
+                    </Link>
+                  </div>
+                  <div className='character-thumbnail-2'>
+                    <Link to="/leviathan" style={{ textDecoration: 'none' }}>
+                      <img src='assets/cards/Leviathan_FFVII_Remake.png' alt='' />
+                    </Link>
+                  </div>
+                  <div className='character-thumbnail-3'>
+                    <Link to="/bahamut" style={{ textDecoration: 'none' }}>
+                      <img src='assets/cards/bahamut.png' alt='' />
+                    </Link>
+                  </div>
+                  <div className='character-thumbnail-4'>
+                    <Link to="/fatchocobo" style={{ textDecoration: 'none' }}>
+                      <img src='assets/cards/fatchocobo.png' alt='' />
+                    </Link>
+                  </div>
+                  <div className='character-thumbnail-5'>
+                    <Link to="/chocobomoogle" style={{ textDecoration: 'none' }}>
+                      <img src='assets/cards/Chocobo_&_Moogle_FFVIIR.png' alt='' />
+                    </Link>
+                  </div>
+                  <div className='character-thumbnail-6'>
+                    <Link to="/chick" style={{ textDecoration: 'none' }}>
+                      <img src='assets/cards/chocobo-chick-summon-from-ffvii-remake-article_m-1.png' alt='' />
+                    </Link>
+                  </div>
+                  <div className='character-thumbnail-7'>
+                    <Link to="/cactuar" style={{ textDecoration: 'none' }}>
+                      <img src='assets/cards/Cactuar_from_FFVII_Remake.png' alt='' />
+                    </Link>
+                  </div>
+                  <div className='character-thumbnail-8'>
+                    <Link to="/carbuncle" style={{ textDecoration: 'none' }}>
+                      <img src='assets/cards/carbuncle-summon-from-ffvii-remake-article_m-1.png' alt='' />
+                    </Link>
+                  </div>
+                    <div className='division'></div>
+                </div>
+              </Fade>
+           </div>
+            <Zoom> 
+              <div className='bg-history'>
+              <div className='info-history'>
+                <div className='top-border'>
+                  <span className='left-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                  <span className='right-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>            
+                </div>          
+                  <div className='text-history'>
 
-                 <span>Equip summoning materia to call a legendary entity into battle. 
-                 The summoned creature will also provide stat bonuses for the character 
-                 equipped with their materia. This special materia can only be set to 
-                 a specific slot in a character's weapon.</span>
-                          
-                 <span>Summons are fearsome creatures that are the embodiment of 
-                 ancient knowledge, condensed into materia.</span> 
-          
-               </div>
-             </div>
-         </div>     
+                    <span>Equip summoning materia to call a legendary entity into battle. 
+                    The summoned creature will also provide stat bonuses for the character 
+                    equipped with their materia. This special materia can only be set to 
+                    a specific slot in a character's weapon.</span>
+                              
+                    <span>Summons are fearsome creatures that are the embodiment of 
+                    ancient knowledge, condensed into materia.</span> 
+              
+                  </div>
+                </div>
+            </div>
+          </Zoom>     
         </StyleHeader>
         <video
           className='video-bg_2'
@@ -123,6 +133,13 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   margin-top: -142px;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
 
   .video-bg_2 {
     position: absolute;

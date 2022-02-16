@@ -1,6 +1,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const AllyCommands = () => {
   return (
@@ -12,38 +14,44 @@ const AllyCommands = () => {
       </div>
       <StyleHeader>
         <div className='text-header'>
-          <h2>ALLY COMMANDS</h2>
+          <Fade left>
+            <h2>ALLY COMMANDS</h2>
+          </Fade>
         </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-          </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-        </div>
-        <div className='bg-history'>
-          <div className='info-history'>
-            <div className='top-border'>
+          <Fade left>
+            <div className='border-bottom'>
               <span className='left-diamond'>
+                <img src='/assets/images/diamond_side_left.png' alt='/' />
+              </span>
+              <span className='center-diamond'>
                 <img src='/assets/images/diamond.png' alt='/' />
               </span>
               <span className='right-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>            
-            </div>          
-              <div className='text-history'>
-                <span>You can take full control of other party members 
-                during battle with the press of a button, and you can 
-                also instruct them to carry out certain actions by 
-                using the L2/R2 buttons to access their command menus 
-                in Tactical Mode.</span>         
-              </div>
+                <img src='/assets/images/diamond_side_right.png' alt='/' />
+              </span>
             </div>
-        </div>
+          </Fade>
+          <Zoom>
+            <div className='bg-history'>
+              <div className='info-history'>
+                <div className='top-border'>
+                  <span className='left-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                  <span className='right-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>            
+                </div>          
+                  <div className='text-history'>
+                    <span>You can take full control of other party members 
+                    during battle with the press of a button, and you can 
+                    also instruct them to carry out certain actions by 
+                    using the L2/R2 buttons to access their command menus 
+                    in Tactical Mode.</span>         
+                  </div>
+                </div>
+            </div>
+        </Zoom>
       </StyleHeader>        
     </Container>
   )

@@ -1,6 +1,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const TacticalMode = () => {
   return (
@@ -12,40 +14,45 @@ const TacticalMode = () => {
       </div>
       <StyleHeader>
         <div className='text-header'>
-          <h2>TACTICAL MODE</h2>
+          <Fade left>
+            <h2>TACTICAL MODE</h2>
+          </Fade>
         </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-          </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-        </div>
-        <div className='bg-history'>
-          <div className='info-history'>
-            <div className='top-border'>
+          <Fade left>
+            <div className='border-bottom'>
               <span className='left-diamond'>
+                <img src='/assets/images/diamond_side_left.png' alt='/' />
+              </span>
+              <span className='center-diamond'>
                 <img src='/assets/images/diamond.png' alt='/' />
               </span>
               <span className='right-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>            
-            </div>          
-              <div className='text-history'>
-                <span>When accessing your commands menu in battle, time slows down 
-                dramatically, giving you the freedom to develop and carry out a plan 
-                of attack. Take this opportunity to use your ATB charges to employ 
-                a variety of abilities, magic, items, and limit breaks. Adapt to the 
-                strengths and weaknesses of your enemies, and take control of the 
-                tide of battle.</span>
-         
+                <img src='/assets/images/diamond_side_right.png' alt='/' />
+              </span>
+            </div>
+          </Fade>
+          <Zoom>
+            <div className='bg-history'>
+              <div className='info-history'>
+                <div className='top-border'>
+                  <span className='left-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>
+                  <span className='right-diamond'>
+                    <img src='/assets/images/diamond.png' alt='/' />
+                  </span>            
+                </div>          
+                  <div className='text-history'>
+                    <span>When accessing your commands menu in battle, time slows down 
+                    dramatically, giving you the freedom to develop and carry out a plan 
+                    of attack. Take this opportunity to use your ATB charges to employ 
+                    a variety of abilities, magic, items, and limit breaks. Adapt to the 
+                    strengths and weaknesses of your enemies, and take control of the 
+                    tide of battle.</span>         
               </div>
             </div>
-        </div>
+          </div>
+        </Zoom>
       </StyleHeader>        
     </Container>
   )
@@ -58,6 +65,13 @@ const Container = styled.div`
   height: 80%;
   max-height: 1100px;
   position: relative;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
 
 /*    .video-bg_2 {
     position: absolute;
