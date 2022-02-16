@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 
 const Trailers = () => {
@@ -11,30 +12,179 @@ const Trailers = () => {
       </div>
     </div>
       <StyleHeader>
-        <div className='text-header'>
-          <h2>Trailers</h2>
-        </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='' />
-          </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='' />
-          </span>
-        </div>
+        <Fade right>
+          <div className='text-header'>
+            <h2>Trailers</h2>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className='border-bottom'>
+            <span className='left-diamond'>
+              <img src='/assets/images/diamond_side_left.png' alt='' />
+            </span>
+            <span className='center-diamond'>
+              <img src='/assets/images/diamond.png' alt='' />
+            </span>
+            <span className='right-diamond'>
+              <img src='/assets/images/diamond_side_right.png' alt='' />
+            </span>
+          </div>
+        </Fade>
         <div className='container-trailer'>
           <div className='session-trailer'>
             <div className='trailers'>
-              <div className='video-thumb'>
+              <Fade left>
+                <div className='video-thumb'>
+                  <div className='video-still'>
+                    <img className='video-thumb-still' src='/assets/trailers/trailer_themesong.jpg' alt='' />
+                  </div>                
+                  <div className='play-btn-house'>
+                    <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                    <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                  </div>
+                  <span className='border-decoration-top-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-top-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className='video-thumb'>
+                  <div className='video-still'>
+                    <img className='video-thumb-still' src='/assets/trailers/trailer_hollow_making.jpg' alt='' />
+                  </div>                
+                  <div className='play-btn-house'>
+                    <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                    <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Behind The Scenes</h3>
+                  </div>
+                  <span className='border-decoration-top-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-top-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className='video-thumb'>
+                  <div className='video-still'>
+                    <img className='video-thumb-still' src='/assets/trailers/the-game-awards-2019-trailer-still.jpg' alt='' />
+                  </div>                
+                  <div className='play-btn-house'>
+                    <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                    <h3 className='trailer-title'>Trailer for The Game Awards 2019</h3>
+                  </div>
+                  <span className='border-decoration-top-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-top-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className='video-thumb'>
+                  <div className='video-still'>
+                    <img className='video-thumb-still' src='/assets/trailers/tokyo-game-show-trailer-still.jpg' alt='' />
+                  </div>                
+                  <div className='play-btn-house'>
+                    <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                    <h3 className='trailer-title'>TOKYO GAME SHOW 2019 TRAILER</h3>
+                  </div>
+                  <span className='border-decoration-top-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-top-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className='video-thumb'>
+                  <div className='video-still'>
+                    <img className='video-thumb-still' src='/assets/trailers/e3-short-trailer-still.jpg' alt='' />
+                  </div>                
+                  <div className='play-btn-house'>
+                    <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                    <h3 className='trailer-title'>Trailer for FFVII A Symphonic Reunion</h3>
+                  </div>
+                  <span className='border-decoration-top-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-top-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className='video-thumb'>
+                  <div className='video-still'>
+                    <img className='video-thumb-still' src='/assets/trailers/e3-long-trailer-still.jpg' alt='' />
+                  </div>                
+                  <div className='play-btn-house'>
+                    <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
+                    <h3 className='trailer-title'>E3 2019 Trailer</h3>
+                  </div>
+                  <span className='border-decoration-top-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-top-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-left'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                  <span className='border-decoration-bottom-right'>
+                    <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
+                  </span>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className='video-thumb'>
                 <div className='video-still'>
-                  <img className='video-thumb-still' src='/assets/trailers/trailer_themesong.jpg' alt='' />
+                  <img className='video-thumb-still' src='/assets/trailers/ffvii-remake-teaser-trailer-still.jpg' alt='' />
                 </div>                
                 <div className='play-btn-house'>
                   <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Trailer</h3>
+                  <h3 className='trailer-title'>Teaser Trailer</h3>
                 </div>
                 <span className='border-decoration-top-left'>
                   <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
@@ -48,143 +198,12 @@ const Trailers = () => {
                 <span className='border-decoration-bottom-right'>
                   <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
                 </span>
-              </div>
-
-              <div className='video-thumb'>
-                <div className='video-still'>
-                  <img className='video-thumb-still' src='/assets/trailers/trailer_hollow_making.jpg' alt='' />
-                </div>                
-                <div className='play-btn-house'>
-                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>FINAL FANTASY VII REMAKE Theme Song Behind The Scenes</h3>
                 </div>
-                <span className='border-decoration-top-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-top-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-              </div>
-
-              <div className='video-thumb'>
-                <div className='video-still'>
-                  <img className='video-thumb-still' src='/assets/trailers/the-game-awards-2019-trailer-still.jpg' alt='' />
-                </div>                
-                <div className='play-btn-house'>
-                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>Trailer for The Game Awards 2019</h3>
-                </div>
-                <span className='border-decoration-top-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-top-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-              </div>
-
-              <div className='video-thumb'>
-                <div className='video-still'>
-                  <img className='video-thumb-still' src='/assets/trailers/tokyo-game-show-trailer-still.jpg' alt='' />
-                </div>                
-                <div className='play-btn-house'>
-                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>TOKYO GAME SHOW 2019 TRAILER</h3>
-                </div>
-                <span className='border-decoration-top-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-top-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-              </div>
-
-              <div className='video-thumb'>
-                <div className='video-still'>
-                  <img className='video-thumb-still' src='/assets/trailers/e3-short-trailer-still.jpg' alt='' />
-                </div>                
-                <div className='play-btn-house'>
-                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>Trailer for FFVII A Symphonic Reunion</h3>
-                </div>
-                <span className='border-decoration-top-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-top-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-              </div>
-
-              <div className='video-thumb'>
-                <div className='video-still'>
-                  <img className='video-thumb-still' src='/assets/trailers/e3-long-trailer-still.jpg' alt='' />
-                </div>                
-                <div className='play-btn-house'>
-                  <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                  <h3 className='trailer-title'>E3 2019 Trailer</h3>
-                </div>
-                <span className='border-decoration-top-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-top-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-left'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-                <span className='border-decoration-bottom-right'>
-                  <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-                </span>
-              </div>
-
-              <div className='video-thumb'>
-              <div className='video-still'>
-                <img className='video-thumb-still' src='/assets/trailers/ffvii-remake-teaser-trailer-still.jpg' alt='' />
-              </div>                
-              <div className='play-btn-house'>
-                <img className='play-btn' src='/assets/images/play_btn.png' alt='' />
-                <h3 className='trailer-title'>Teaser Trailer</h3>
-              </div>
-              <span className='border-decoration-top-left'>
-                <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-              </span>
-              <span className='border-decoration-top-right'>
-                <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-              </span>
-              <span className='border-decoration-bottom-left'>
-                <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-              </span>
-              <span className='border-decoration-bottom-right'>
-                <img className='border-decoration' src='/assets/images/trailer_frame_corner.png' alt='' />
-              </span>
-            </div>
-
+              </Fade>
             </div>
           </div>
-        </div>
+         </div>
+        
       </StyleHeader>
     </Container>
   )
@@ -195,6 +214,14 @@ export default Trailers;
 const Container = styled.div`
   width: 100%;
   height: 100%;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
+  background-color: #000;
 
   @media(max-width: 1850px) {
     width: 100%;
@@ -264,7 +291,6 @@ const Container = styled.div`
       height: 2212px;
     }
   }
-
 `;
 
 const StyleHeader = styled.div`
@@ -273,7 +299,7 @@ const StyleHeader = styled.div`
   position: absolute;
   top: 11.4rem;  
   animation-fill-mode: both;
-  animation-duration: 1000ms;
+  animation-duration: 3000ms;
   animation-delay: 0ms;
   animation-iteration-count: 1;
   opacity: 1;

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 
 const Story = () => {
@@ -12,50 +13,56 @@ const Story = () => {
       </div>
       <StyleHeader>
         <div className='text-header'>
+        <Fade left>
           <h2>Story</h2>
+        </Fade>
         </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-          </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-        </div>
-        <div className='bg-history'>
-          <div className='info-history'>
-            <div className='top-border'>
-              <span className='left-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-              <span className='right-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>            
-            </div>          
-              <div className='text-history'>
-                <span>Mako─the lifeblood of the planet and the fuel that powers the city of Midgar...</span>
-                         
-                <span>By exploiting this resource through their Mako Reactors, the Shinra Electric Power
-                Company has all but seized control of the entire world. A ragtag group of idealists, known
-                as Avalanche, are one of the last bastions of resistance.</span> 
+        <Fade left>
+          <div className='border-bottom'>
+            <span className='left-diamond'>
+              <img src='/assets/images/diamond_side_left.png' alt='/' />
+            </span>
+            <span className='center-diamond'>
+              <img src='/assets/images/diamond.png' alt='/' />
+            </span>
+            <span className='right-diamond'>
+              <img src='/assets/images/diamond_side_right.png' alt='/' />
+            </span>
+          </div>
+        </Fade>
+        <Fade left>
+          <div className='bg-history'>
+            <div className='info-history'>
+              <div className='top-border'>
+                <span className='left-diamond'>
+                  <img src='/assets/images/diamond.png' alt='/' />
+                </span>
+                <span className='right-diamond'>
+                  <img src='/assets/images/diamond.png' alt='/' />
+                </span>            
+              </div>          
+                <div className='text-history'>
+                  <span>Mako─the lifeblood of the planet and the fuel that powers the city of Midgar...</span>
+                          
+                  <span>By exploiting this resource through their Mako Reactors, the Shinra Electric Power
+                  Company has all but seized control of the entire world. A ragtag group of idealists, known
+                  as Avalanche, are one of the last bastions of resistance.</span> 
 
-                <span>Cloud, an elite SOLDIER operative turned mercenary, takes part in an Avalanche operation 
-                to destroy Mako Reactor 1 in the city of Midgar.</span> 
+                  <span>Cloud, an elite SOLDIER operative turned mercenary, takes part in an Avalanche operation 
+                  to destroy Mako Reactor 1 in the city of Midgar.</span> 
 
-                <span>The bombing plunges the city into fiery chaos, and amidst the raging inferno, Cloud is 
-                tormented by visions of a bitter enemy long thought dead.</span> 
+                  <span>The bombing plunges the city into fiery chaos, and amidst the raging inferno, Cloud is 
+                  tormented by visions of a bitter enemy long thought dead.</span> 
 
-                <span>After this hallucination fades, he meets a young woman selling flowers, who offers him a single yellow blossom. </span>   
-                       
-                <span>In that instant, a host of swirling shadows surround them.</span>  
+                  <span>After this hallucination fades, he meets a young woman selling flowers, who offers him a single yellow blossom. </span>   
+                        
+                  <span>In that instant, a host of swirling shadows surround them.</span>  
 
-                <span>Once more begins a story that will shape the destiny of an entire world.</span>          
+                  <span>Once more begins a story that will shape the destiny of an entire world.</span>          
               </div>
             </div>
-        </div>
+          </div>
+        </Fade>
       </StyleHeader>        
     </Container>
   )
@@ -67,6 +74,13 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 65rem;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
 
   .container-hidden-image {
     margin: 0;

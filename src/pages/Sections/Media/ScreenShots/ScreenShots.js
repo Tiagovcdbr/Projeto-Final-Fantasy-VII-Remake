@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 import Carousel from '../../../../lib/components/Carousel';
 
@@ -157,25 +158,28 @@ const ScreenShots = () => {
 
   return (
     <Container>
-    <div className='text-header'>
-      <h2>ScreenShots</h2>
-    </div>
-    <div className='border-bottom'>
-      <span className='left-diamond'>
-        <img src='/assets/images/diamond_side_left.png' alt='' />
-      </span>
-      <span className='center-diamond'>
-         <img src='/assets/images/diamond.png' alt='' />
-      </span>
-      <span className='right-diamond'>
-        <img src='/assets/images/diamond_side_right.png' alt='' />
-      </span>
-    </div>
-
+    <Fade right>
+      <div className='text-header'>
+        <h2>ScreenShots</h2>
+        </div>      
+      <div className='border-bottom'>
+        <span className='left-diamond'>
+          <img src='/assets/images/diamond_side_left.png' alt='' />
+        </span>
+        <span className='center-diamond'>
+          <img src='/assets/images/diamond.png' alt='' />
+        </span>
+        <span className='right-diamond'>
+          <img src='/assets/images/diamond_side_right.png' alt='' />
+        </span>
+      </div>
+    </Fade>
+      
+  <Fade left>
     <div style={{ textAlign: "center" }}>   
-    <div style={{
-      padding: "0 20px"
-    }}>
+      <div style={{
+        padding: "0 20px"
+      }}>
       <Carousel className=""
         data={data}
         time={3000}
@@ -197,10 +201,11 @@ const ScreenShots = () => {
           maxWidth: "950px",
           maxHeight: "500px",
           margin: "40px auto",
-        }}
-      />
+          }}
+        />
+      </div>
     </div>
-  </div>
+  </Fade>
     </Container>
   )
 }
@@ -214,6 +219,15 @@ const Container = styled.div`
   color: #fff;
   background: #000;
   margin-top: -4px;
+  overflow:hidden;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
+  background-color: #000;
 
   @media(max-width: 1850px) {
     margin-top: 56.2rem;

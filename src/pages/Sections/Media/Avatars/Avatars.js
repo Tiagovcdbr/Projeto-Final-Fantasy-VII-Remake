@@ -1,102 +1,110 @@
 import React from 'react'
 
+import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 
 const Avatars = () => {
   return (
     <StyleHeader>
-      <div className='text-header'>
-        <h2>Avatars</h2>
-      </div>
-      <div className='border-bottom'>
-        <span className='left-diamond'>
-          <img src='/assets/images/diamond_side_left.png' alt='' />
-        </span>
-        <span className='center-diamond'>
-          <img src='/assets/images/diamond.png' alt='' />
-        </span>
-        <span className='right-diamond'>
-          <img src='/assets/images/diamond_side_right.png' alt='' />
-        </span>
-      </div>
-      <Container>
-        <div className='download-section'>
-          <div className='react-reveal'>
-            <div className='avatar-content'>
-                    {/* Session Cloud Avatar   */}
-              <div className='avatar-content-wrapper'>
-                <div className='text-name'>Cloud Strife Pack</div>
-                <div className='avatar'>
-                  <span className='avatar-thumb-wrapper'>
-                    <img className='avatar-thumb' src='/assets/avatars/avatar_pack_cloud.jpg' alt='' />
-                  </span>
+      <Fade left>
+        <div className='text-header'>
+          <h2>Avatars</h2>
+        </div>
+        </Fade>
+        <Fade left>
+          <div className='border-bottom'>
+            <span className='left-diamond'>
+              <img src='/assets/images/diamond_side_left.png' alt='' />
+            </span>
+            <span className='center-diamond'>
+              <img src='/assets/images/diamond.png' alt='' />
+            </span>
+            <span className='right-diamond'>
+              <img src='/assets/images/diamond_side_right.png' alt='' />
+            </span>
+          </div>
+        </Fade>
+        
+        <Container>
+          <div className='download-section'>
+           <Fade right>
+            <div className='react-reveal'>
+              <div className='avatar-content'>
+                      {/* Session Cloud Avatar   */}              
+                  <div className='avatar-content-wrapper'>
+                    <div className='text-name'>Cloud Strife Pack</div>
+                    <div className='avatar'>
+                      <span className='avatar-thumb-wrapper'>
+                        <img className='avatar-thumb' src='/assets/avatars/avatar_pack_cloud.jpg' alt='' />
+                      </span>
+                    </div>
+                    <div className='info-download'>
+                      <a className='download-link' href='/assets/avatars/avatar_pack_cloud.jpg' download="">400 X 400</a>
+                    </div>
+                  </div>
+                        {/* Session Barret Avatar   */}
+                <div className='avatar-content-wrapper'>
+                  <div className='text-name'>Barret Wallace Pack</div>
+                  <div className='avatar'>
+                    <span className='avatar-thumb-wrapper'>
+                      <img className='avatar-thumb' src='/assets/avatars/avatar_pack_barret.jpg' alt='' />
+                    </span>
+                  </div>
+                  <div className='info-download'>
+                    <a className='download-link' href='/assets/avatars/avatar_pack_barret.jpg' download="">400 X 400</a>
+                  </div>
                 </div>
-                <div className='info-download'>
-                  <a className='download-link' href='/assets/avatars/avatar_pack_cloud.jpg' download="">400 X 400</a>
+                          {/* Session Tifa Avatar   */}
+                <div className='avatar-content-wrapper'>
+                  <div className='text-name'>Tifa Lockhart Pack</div>
+                  <div className='avatar'>
+                    <span className='avatar-thumb-wrapper'>
+                      <img className='avatar-thumb' src='/assets/avatars/avatar_pack_tifa.jpg' alt='' />
+                    </span>
+                  </div>
+                  <div className='info-download'>
+                    <a className='download-link' href='/assets/avatars/avatar_pack_tifa.jpg' download="">400 X 400</a>
+                  </div>
                 </div>
-              </div>
-                      {/* Session Barret Avatar   */}
-              <div className='avatar-content-wrapper'>
-                <div className='text-name'>Barret Wallace Pack</div>
-                <div className='avatar'>
-                  <span className='avatar-thumb-wrapper'>
-                    <img className='avatar-thumb' src='/assets/avatars/avatar_pack_barret.jpg' alt='' />
-                  </span>
+                              {/* Session Aerith Avatar   */}
+                <div className='avatar-content-wrapper'>
+                  <div className='text-name'>Aerith Gainsborough Pack</div>
+                  <div className='avatar'>
+                    <span className='avatar-thumb-wrapper'>
+                      <img className='avatar-thumb' src='/assets/avatars/avatar_pack_aerith.jpg' alt='' />
+                    </span>
+                  </div>
+                  <div className='info-download'>
+                    <a className='download-link' href='/assets/avatars/avatar_pack_aerith.jpg' download="">400 X 400</a>
+                  </div>
                 </div>
-                <div className='info-download'>
-                  <a className='download-link' href='/assets/avatars/avatar_pack_barret.jpg' download="">400 X 400</a>
+                            {/* Session Sephiroth Avatar   */}
+                <div className='avatar-content-wrapper'>
+                  <div className='text-name'>Sephiroth Pack</div>
+                  <div className='avatar'>
+                    <span className='avatar-thumb-wrapper'>
+                      <img className='avatar-thumb' src='/assets/avatars/avatar_pack_sephiroth.jpg' alt='' />
+                    </span>
+                  </div>
+                  <div className='info-download'>
+                    <a className='download-link' href='/assets/avatars/avatar_pack_sephiroth.jpg' download="">400 X 400</a>
+                  </div>
                 </div>
-              </div>
-                        {/* Session Tifa Avatar   */}
-              <div className='avatar-content-wrapper'>
-                <div className='text-name'>Tifa Lockhart Pack</div>
-                <div className='avatar'>
-                  <span className='avatar-thumb-wrapper'>
-                    <img className='avatar-thumb' src='/assets/avatars/avatar_pack_tifa.jpg' alt='' />
-                  </span>
-                </div>
-                <div className='info-download'>
-                  <a className='download-link' href='/assets/avatars/avatar_pack_tifa.jpg' download="">400 X 400</a>
-                </div>
-              </div>
-                            {/* Session Aerith Avatar   */}
-              <div className='avatar-content-wrapper'>
-                <div className='text-name'>Aerith Gainsborough Pack</div>
-                <div className='avatar'>
-                  <span className='avatar-thumb-wrapper'>
-                    <img className='avatar-thumb' src='/assets/avatars/avatar_pack_aerith.jpg' alt='' />
-                  </span>
-                </div>
-                <div className='info-download'>
-                  <a className='download-link' href='/assets/avatars/avatar_pack_aerith.jpg' download="">400 X 400</a>
-                </div>
-              </div>
-                          {/* Session Sephiroth Avatar   */}
-              <div className='avatar-content-wrapper'>
-                <div className='text-name'>Sephiroth Pack</div>
-                <div className='avatar'>
-                  <span className='avatar-thumb-wrapper'>
-                    <img className='avatar-thumb' src='/assets/avatars/avatar_pack_sephiroth.jpg' alt='' />
-                  </span>
-                </div>
-                <div className='info-download'>
-                  <a className='download-link' href='/assets/avatars/avatar_pack_sephiroth.jpg' download="">400 X 400</a>
-                </div>
-              </div>
-                            {/* Session Red XIII Avatar  */}
-              <div className='avatar-content-wrapper'>
-                <div className='text-name'>Red XIII Pack</div>
-                <div className='avatar'>
-                  <span className='avatar-thumb-wrapper'>
-                    <img className='avatar-thumb' src='/assets/avatars/avatar_pack_redxiii.jpg' alt='' />
-                  </span>
-                </div>
-                <div className='info-download'>
-                  <a className='download-link' href='/assets/avatars/avatar_pack_redxiii.jpg' download="">400 X 400</a>
+                              {/* Session Red XIII Avatar  */}
+                <div className='avatar-content-wrapper'>
+                  <div className='text-name'>Red XIII Pack</div>
+                  <div className='avatar'>
+                    <span className='avatar-thumb-wrapper'>
+                      <img className='avatar-thumb' src='/assets/avatars/avatar_pack_redxiii.jpg' alt='' />
+                    </span>
+                  </div>
+                  <div className='info-download'>
+                    <a className='download-link' href='/assets/avatars/avatar_pack_redxiii.jpg' download="">400 X 400</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Fade>
         </div>
       </Container>
     </StyleHeader>
@@ -109,12 +117,6 @@ const StyleHeader = styled.div`
   width: 100%; 
   margin-top: 89.4rem; 
   position: relative; 
-  animation-fill-mode: both;
-  animation-duration: 1000ms;
-  animation-delay: 0ms;
-  animation-iteration-count: 1;
-  opacity: 1;
-  animation-name: react-reveal-607813993386296-1;
   background-color: #000;
 
   @media(max-width: 834px) {
@@ -264,6 +266,15 @@ const Container = styled.div`
   max-width: 1100px;
   margin: 0px auto;
   padding: 0px 20px;
+  background-color: #000;
+  overflow: hidden;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
   background-color: #000;
 
   .download-section {

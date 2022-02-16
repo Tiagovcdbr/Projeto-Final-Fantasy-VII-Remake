@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 
 const About = () => {
@@ -11,46 +12,53 @@ const About = () => {
         </div>
       </div>
       <StyleHeader>
-        <div className='text-header'>
-          <h2>What is FINAL FANTASY VII Remake?</h2>
-        </div>
-        <div className='border-bottom'>
-          <span className='left-diamond'>
-            <img src='/assets/images/diamond_side_left.png' alt='/' />
-          </span>
-          <span className='center-diamond'>
-            <img src='/assets/images/diamond.png' alt='/' />
-          </span>
-          <span className='right-diamond'>
-            <img src='/assets/images/diamond_side_right.png' alt='/' />
-          </span>
-        </div>
-        <div className='bg-history'>
-          <div className='info-history'>
-            <div className='top-border'>
-              <span className='left-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>
-              <span className='right-diamond'>
-                <img src='/assets/images/diamond.png' alt='/' />
-              </span>            
-            </div>          
-              <div className='text-history'>
-                <span>The world has fallen under the control of the Shinra Electric Power Company, a 
-                shadowy corporation controlling the planet’s very life force as mako energy.</span>
-                         
-                <span>In the sprawling city of Midgar, an anti-Shinra organization calling themselves 
-                Avalanche have stepped up their resistance. Cloud Strife, a former member of Shinra’s 
-                elite SOLDIER unit now turned mercenary, lends his aid to the group, unaware of the epic 
-                consequences that await him.</span> 
+        <Fade left>
+          <div className='text-header'>
+            <h2>What is FINAL FANTASY VII Remake?</h2>
+          </div>
+        </Fade>
 
-                <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project 
-                covers up to the party’s escape from Midgar, and goes deeper into the events occurring 
-                in Midgar than the original FINAL FANTASY VII.</span> 
-         
+        <Fade left>
+          <div className='border-bottom'>
+            <span className='left-diamond'>
+              <img src='/assets/images/diamond_side_left.png' alt='/' />
+            </span>
+            <span className='center-diamond'>
+              <img src='/assets/images/diamond.png' alt='/' />
+            </span>
+            <span className='right-diamond'>
+              <img src='/assets/images/diamond_side_right.png' alt='/' />
+            </span>
+          </div>
+        </Fade>
+
+        <Fade left>
+          <div className='bg-history'>
+            <div className='info-history'>
+              <div className='top-border'>
+                <span className='left-diamond'>
+                  <img src='/assets/images/diamond.png' alt='/' />
+                </span>
+                <span className='right-diamond'>
+                  <img src='/assets/images/diamond.png' alt='/' />
+                </span>            
+              </div>          
+                <div className='text-history'>
+                  <span>The world has fallen under the control of the Shinra Electric Power Company, a 
+                  shadowy corporation controlling the planet’s very life force as mako energy.</span>
+                          
+                  <span>In the sprawling city of Midgar, an anti-Shinra organization calling themselves 
+                  Avalanche have stepped up their resistance. Cloud Strife, a former member of Shinra’s 
+                  elite SOLDIER unit now turned mercenary, lends his aid to the group, unaware of the epic 
+                  consequences that await him.</span> 
+
+                  <span>The story of this first, standalone game in the FINAL FANTASY VII REMAKE project 
+                  covers up to the party’s escape from Midgar, and goes deeper into the events occurring 
+                  in Midgar than the original FINAL FANTASY VII.</span>           
+                </div>
               </div>
-            </div>
-        </div>
+          </div>
+        </Fade>
         <video
         className='video-bg_2'
         src={"/assets/video/lifestream.mp4"}

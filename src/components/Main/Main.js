@@ -1,5 +1,6 @@
 
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 const Main = () => {
   return (
@@ -9,8 +10,7 @@ const Main = () => {
         src={"/assets/video/video.mp4"}
         autoplay='1'
         allowfullscreen="1"
-        loop
-        
+        loop        
       />
       <audio
         src={"/assets/audio/FFVII REMAKE - Opening-Intro-Bombing Mission Theme.mp3"}
@@ -20,10 +20,13 @@ const Main = () => {
       />
       <ContainerLogo>
         <div className='logo'>
-          <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='logo' />
+          <Fade right>
+            <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='logo' />
+          </Fade>
         </div>
       </ContainerLogo>
       <ContentTraillers>
+      <Fade left>
         <div className='video-thumb'>
           <div className='video-still'>
             <img className='trailler-1' src='/assets/images/the-game-awards-2019-trailer-still.jpg' alt='/' />
@@ -86,7 +89,8 @@ const Main = () => {
           <div className='video-border-decoration-bottom-right'>
             <img className='video-border-decoration' src='/assets/images/trailer_frame_corner.png' alt='/' />
           </div>
-        </div>
+          </div>
+        </Fade>
       </ContentTraillers>
     </Container>
   )
@@ -99,6 +103,13 @@ const Container = styled.section`
   object-fit: cover;
   width: 100%;
   opacity: 1;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
 
   .video-bg {
     position: absolute;
@@ -141,7 +152,14 @@ const ContainerLogo = styled.div`
     width: 44rem;
     right: 0;
     margin-right: 170px;
-    margin-top: 200px;   
+    margin-top: 200px;
+    
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-607813993386296-1;
   }
 
   @media(max-width: 1100px) {
@@ -207,6 +225,13 @@ const ContentTraillers = styled.div`
   bottom: 0;
   max-width: 1090px;
   right: 0;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
   
     .video-thumb {
       display: inline-block;

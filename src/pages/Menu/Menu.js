@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 
 const Menu = () => {
@@ -29,24 +30,28 @@ const Menu = () => {
       />
       <div className='container-page'>
         <div className='bg-image'>
-          <img src='/assets/images/ff7_remake_bg_menu.png' alt='' />
-            <div className='logo-image'>
-              <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
-            </div>
+          <img src='/assets/images/ff7_remake_bg_menu.png' alt='' />           
+              <div className='logo-image'>
+                <Fade right>
+                  <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
+                </Fade>
+              </div>            
             <div className='text-area'>
-              <div className='text'>
-              <span> Todo conteúdo utilizado nesse projeto acadêmico, são reservados as empresas
-              SQUARE ENIX & Sony Computer Entertainment Inc.</span><br /><br />
+              <Fade right>
+                <div className='text'>                
+                  <span> Todo conteúdo utilizado nesse projeto acadêmico, são reservados as empresas
+                  SQUARE ENIX & Sony Computer Entertainment Inc.</span><br /><br />                
 
-                <span>Projeto clone do site Final Fantasy VII Remake feito por um 
-                grande fã do jogo e franquia</span>
+                  <span>Projeto clone do site Final Fantasy VII Remake feito por um 
+                  grande fã do jogo e franquia</span>
 
-                <span> © 1997, 2020 SQUARE ENIX CO., LTD. Todos os direitos 
-                e conteudos são reservados a empresa SQUARE ENIX</span><br /><br />
+                  <span> © 1997, 2020 SQUARE ENIX CO., LTD. Todos os direitos 
+                  e conteudos são reservados a empresa SQUARE ENIX</span><br /><br />
 
-                <span>PlayStation" e o logotipo "PS" são marcas registradas e 
-                  "PS4" é uma marca comercial da Sony Computer Entertainment Inc.</span>
-              </div>
+                  <span>PlayStation" e o logotipo "PS" são marcas registradas e 
+                    "PS4" é uma marca comercial da Sony Computer Entertainment Inc.</span>                
+                </div>
+              </Fade>
             </div>            
          </div>
           <div className='button-menu'>
@@ -64,6 +69,14 @@ export default Menu;
 const Container = styled.div`
   width: 100%;
   height: 100%;
+
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-607813993386296-1;
+  background-color: #000;
 
   @media(max-width: 1850px) {
     width: 100%;
@@ -309,6 +322,13 @@ const Container = styled.div`
   .text {
     height: 65px;
     text-shadow: 4px 2px 2px 4px #ffffff;
+
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal-607813993386296-1;
 
     span {
       color: #fff;

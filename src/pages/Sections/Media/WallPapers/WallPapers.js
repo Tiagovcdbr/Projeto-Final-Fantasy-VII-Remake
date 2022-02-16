@@ -1,25 +1,31 @@
 import React from 'react'
 
 import styled from 'styled-components'
+import Fade from 'react-reveal/Fade';
 
 const WallPapers = () => {
   return (
       <StyleHeader>
-        <div className='text-header'>
+        <Fade left>
+          <div className='text-header'>
             <h2>Wallpapers</h2>
           </div>
-          <div className='border-bottom'>
-            <span className='left-diamond'>
-              <img src='/assets/images/diamond_side_left.png' alt='' />
-            </span>
-            <span className='center-diamond'>
-              <img src='/assets/images/diamond.png' alt='' />
-            </span>
-            <span className='right-diamond'>
-              <img src='/assets/images/diamond_side_right.png' alt='' />
-            </span>
-          </div>
+        </Fade>
+          <Fade left>
+            <div className='border-bottom'>
+              <span className='left-diamond'>
+                <img src='/assets/images/diamond_side_left.png' alt='' />
+              </span>
+              <span className='center-diamond'>
+                <img src='/assets/images/diamond.png' alt='' />
+              </span>
+              <span className='right-diamond'>
+                <img src='/assets/images/diamond_side_right.png' alt='' />
+              </span>
+            </div>
+           </Fade>
           <Container>
+          <Fade left>
             <div className='react-reveal'>
             { /* Section Cloud  */}
               <div className='wallpaper-item-wrapper'>
@@ -236,7 +242,8 @@ const WallPapers = () => {
                     </div>
                   </div>
                 </div>
-            </div>
+              </div>
+            </Fade>
           </Container>        
       </StyleHeader>
   )
