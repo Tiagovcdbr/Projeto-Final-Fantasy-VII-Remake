@@ -128,7 +128,7 @@ const StyleHeader = styled.div`
   position: absolute;
   width: 100%;
   bottom: 0;
-  bottom: -628px;
+  bottom: -599px;
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;
@@ -269,7 +269,7 @@ const StyleHeader = styled.div`
   .bg-history {
     position: relative;
     margin: 0 auto;
-    top: 35.5em;    
+    top: 38.5em;    
     width: 660px;
     height: 370px;
     -webkit-transition: all .33s ease-in-out;
