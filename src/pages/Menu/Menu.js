@@ -101,6 +101,7 @@ const Container = styled.div`
     height: 100%;
 
     img {
+      height: 1030px;
       width: 100%;
     }
   }
@@ -108,7 +109,7 @@ const Container = styled.div`
   @media(max-width: 1900px) {
     .bg-image img {
       width: 100%;
-      height: 1000px;
+      height: 1030px;
     }
   }
 
@@ -158,7 +159,7 @@ const Container = styled.div`
       position: absolute;
       height: 0.50%;
       bottom: 0;
-      margin-bottom: -163px;
+      margin-bottom: -190px;
     }
   }
 
