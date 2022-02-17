@@ -188,7 +188,7 @@ const Container = styled.div`
             linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   }
 
-  @media(max-width: 1850px) {
+  @media(max-width: 1900px) {
     .video-bg_2 {
       bottom: -27.5rem;
     }

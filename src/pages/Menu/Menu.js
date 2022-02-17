@@ -83,7 +83,7 @@ const Container = styled.div`
 
   .container-page {
     width: 100%;
-    height: 100%;
+    height: 1038px;
     transition: all .33s ease-in-out;
     object-fit: cover;
     -o-object-fit: cover;
@@ -132,7 +132,7 @@ const Container = styled.div`
     width: 100%;
     height: 0.50%;
     bottom: 0;
-    margin-bottom: -109px;
+    margin-bottom: -138px;
     background-color: #000;
 
     object-fit: cover;
@@ -142,13 +142,23 @@ const Container = styled.div`
             linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   }
 
+  @media(max-width: 1900px) {
+    .video-bg_2 {
+      width: 100%;
+      position: absolute;
+      height: 0.50%;
+      bottom: 0;
+      margin-bottom: -193px;
+    }
+  }
+
   @media(max-width: 1850px) {
     .video-bg_2 {
       width: 100%;
       position: absolute;
       height: 0.50%;
       bottom: 0;
-      margin-bottom: -159px;
+      margin-bottom: -163px;
     }
   }
 

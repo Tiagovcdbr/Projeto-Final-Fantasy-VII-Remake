@@ -90,7 +90,7 @@ const Container = styled.div`
 
   @media(max-width: 1900px) {
     .container-hidden-image {
-      margin-top: -50px;
+      margin-top: -60px;
     }
   }
 
@@ -184,7 +184,7 @@ const StyleHeader = styled.div`
   @media(max-width: 1900px) {
     .text-header {
       position: relative;
-      margin-top: -40px;
+      margin-top: -30px;
     }
   }
 
@@ -269,9 +269,9 @@ const StyleHeader = styled.div`
   .bg-history {
     position: relative;
     margin: 0 auto;
-    top: 38.5em;    
+    top: 35.5em;    
     width: 660px;
-    height: 400px;
+    height: 370px;
     -webkit-transition: all .33s ease-in-out;
     transition: all .33s ease-in-out;
 
@@ -281,8 +281,8 @@ const StyleHeader = styled.div`
   @media(max-width: 1900px) {
     .bg-history {
       position: relative;
-      top: 446px;
-      height: 400px;
+      top: 420px;
+      height: 360px;
     }
   }
 

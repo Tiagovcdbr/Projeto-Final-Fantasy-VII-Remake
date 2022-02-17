@@ -134,13 +134,6 @@ const Container = styled.div`
   height: 100%;
   margin-top: -142px;
 
-  animation-fill-mode: both;
-  animation-duration: 1000ms;
-  animation-delay: 0ms;
-  animation-iteration-count: 1;
-  opacity: 1;
-  animation-name: react-reveal-607813993386296-1;
-
   .video-bg_2 {
     position: absolute;
     top: 437.8rem;
@@ -155,9 +148,15 @@ const Container = styled.div`
             linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   }
 
+  @media(max-width: 1900px) {
+    .video-bg_2 {
+      top: 327.4rem;      
+    }
+  }
+
   @media(max-width: 1850px) {
     .video-bg_2 {
-      top: 314.2rem;      
+      top: 314.1rem;      
     }
   }
 
@@ -179,7 +178,7 @@ const Container = styled.div`
     height: 100%;
   }
 
-  @media(max-width: 1850px) {
+  @media(max-width: 1900px) {
     width: 100%;
     height: 100%;
   }
@@ -229,7 +228,7 @@ const StyleHeader = styled.div`
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 371rem;
+  top: 370.9rem;
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;
@@ -288,10 +287,16 @@ const StyleHeader = styled.div`
     }
   }
 
-  @media(max-width: 1850px) {
+  @media(max-width: 1900px) {
     position: absolute;
     bottom: 0;
-    margin-top: -91.5rem;
+    margin-top: -91.5rem;     
+  }
+
+  @media(max-width: 1850px) {
+    position: absolute;
+    bottom: 0; 
+    margin-top: -91.5rem;   
   }
 
   @media(max-width: 750px) {

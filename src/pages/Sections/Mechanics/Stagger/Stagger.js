@@ -370,7 +370,7 @@ const StyleHeader = styled.div`
     transition: all .33s ease-in-out;
   }
 
-  @media(max-width: 1850px) {
+  @media(max-width: 1900px) {
     .bg-history {
       position: relative;
       top: 16rem;
