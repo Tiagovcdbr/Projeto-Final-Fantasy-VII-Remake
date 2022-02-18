@@ -177,13 +177,16 @@ const ContainerItems = styled.div`
 
     @media(max-width: 1420px) {
         img {
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          margin-top: -250px;
+        }
+      }
+
+      @media(max-width: 1170px) {
+        img {
           width: 250px;
           height: 90px;
-          margin: 0 140px;
+          margin-top: 1px;
+          margin-left: 100px;
         }
       }
 
@@ -238,6 +241,10 @@ const ContainerItems = styled.div`
     .header-items {
       display: flex;
 
+      @media(max-width: 1420px) {
+        margin-left: -7rem;
+      }
+
       h2 {
       cursor: pointer;
       display: flex;
@@ -263,7 +270,7 @@ const ContainerItems = styled.div`
           position: absolute;
           top: 0;
           margin-left: -150px;
-          margin-top: 57px;
+          margin-top: 56px;
           width: 2px;
           background-color: #000;
           height: 45px;
@@ -319,11 +326,7 @@ const ContainerItems = styled.div`
         }                
     }
 
-      @media(max-width: 1420px) {
-        h2, h3 {
-          display: none;
-        }         
-
+      @media(max-width: 1420px) {      
         img {
           width: 250px;
           height: 80px;
@@ -333,7 +336,19 @@ const ContainerItems = styled.div`
           justify-content: center;
         }
       }
-    }    
+    }
+    
+    @media(max-width: 1172px) {
+      .header-items h2 {
+        display: none;
+      }
+    }
+
+    @media(max-width: 1172px) {
+      .header-items h3 {
+        display: none;
+      }
+    }
 `
 
 export const ContainerDown = styled.div`
