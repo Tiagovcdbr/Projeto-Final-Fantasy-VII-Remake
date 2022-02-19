@@ -2,14 +2,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Fade from 'react-reveal/Fade';
+import useSound from 'use-sound';
+
 import styled from 'styled-components';
 
 const Menu = () => {
+  const [play] = useSound('/assets/audio/FF7CursorSaveLoad.mp3');
 
   return (
-    <Container>
-    
+    <Container>    
       <video
         className='video-bg'
         src={"/assets/video/lifestream.mp4"}
@@ -54,7 +55,7 @@ const Menu = () => {
             </div>            
          </div>
           <div className='button-menu'>
-            <Link to="/home" style={{ textDecoration: 'none' }}>
+            <Link to="/home" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
               <button id="btn">Start</button>
             </Link>
           </div>

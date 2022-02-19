@@ -1,10 +1,14 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import useSound from 'use-sound';
 
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const [play] = useSound('/assets/audio/FF7CursorReady.mp3')
+  const [back] = useSound('/assets/audio/FF7CursorBack.mp3')
+
   return(
     <ContainerBar>
       <div className='square-logo'>
@@ -19,22 +23,22 @@ const Header = () => {
         <h2>Top Games</h2>
       </div>
       <ContainerHeader>
-        <Link to="/" style={{ textDecoration: 'none' }}>
+        <Link to="/" style={{ textDecoration: 'none' }} onClick={back}>
           <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='' />
         </Link>
       <ContainerItems>
         <img src='/assets/images/logo_white.png' alt='' />
           <div id='itemsHeader' className='header-items'>
-            <Link to="home" style={{ textDecoration: 'none' }}>
+            <Link to="home" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
               <h2>Story</h2>
             </Link>
-            <Link to="/main" style={{ textDecoration: 'none' }}>
+            <Link to="/main" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
               <h2>Characters</h2>
             </Link>
-            <Link to="/mechanics" style={{ textDecoration: 'none' }}>
+            <Link to="/mechanics" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
               <h2>Mechanics</h2>
             </Link>
-            <Link to="/media" style={{ textDecoration: 'none' }}>
+            <Link to="/media" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
               <h2>Media</h2>
             </Link>                  
               <h2>Download Demo</h2>
@@ -262,7 +266,7 @@ const ContainerItems = styled.div`
       font-weight: 600;
       color: #ffffff;
       padding-left: 10px;
-      opacity: 3s;
+      transition: opacity .33s ease-in-out;
       background: linear-gradient(90deg,#000 0,#000 85%,transparent);
 
       &::before {
@@ -277,7 +281,7 @@ const ContainerItems = styled.div`
         }
 
         &:hover {         
-          transition: all .2s ease-in-out;
+                   
           border-left: 2px solid #fff;
           border-top: 2px solid #fff;
           border-bottom: 2px solid #fff;
@@ -317,7 +321,7 @@ const ContainerItems = styled.div`
         }
 
         &:hover {         
-          transition: all .2s ease-in-out;
+          transition: opacity .33s ease-in-out;
           border-left: 2px solid #fff;
           border-top: 2px solid #fff;
           border-bottom: 2px solid #fff;
@@ -361,7 +365,7 @@ export const ContainerDown = styled.div`
   text-transform: uppercase;
   color: #fff;
   cursor: pointer;
-  transition: all .22s ease-in-out;
+  transition: all .33s ease-in-out;
   -webkit-transition: all .22s ease-in-out;
 
   .side-bar {
