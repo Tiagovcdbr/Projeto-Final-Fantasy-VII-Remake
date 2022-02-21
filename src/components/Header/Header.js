@@ -1,9 +1,9 @@
 
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import useSound from 'use-sound';
 
-import { Link } from 'react-router-dom';
+import { Link, Switch } from 'react-router-dom';
 
 const Header = () => {
   const [play] = useSound('/assets/audio/FF7CursorReady.mp3')
@@ -29,18 +29,29 @@ const Header = () => {
       <ContainerItems>
         <img src='/assets/images/logo_white.png' alt='' />
           <div id='itemsHeader' className='header-items'>
-            <Link to="home" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
+          <Switch>
+            <Link to="home" return={Component} style={{ textDecoration: 'none' }} onClick={play}>
               <h2>Story</h2>
             </Link>
-            <Link to="/main" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
+          </Switch>
+
+          <Switch>
+            <Link to="/main" return={Component} style={{ textDecoration: 'none' }} onClick={play}>
               <h2>Characters</h2>
             </Link>
-            <Link to="/mechanics" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
+          </Switch>
+
+          <Switch>
+            <Link to="/mechanics" return={Component} style={{ textDecoration: 'none' }} onClick={play}>
               <h2>Mechanics</h2>
             </Link>
-            <Link to="/media" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
+          </Switch>
+
+          <Switch>
+            <Link to="/media" return={Component} style={{ textDecoration: 'none' }}  onClick={play}>
               <h2>Media</h2>
-            </Link>                  
+            </Link>  
+          </Switch>                           
               <h2>Download Demo</h2>
             <h3>Intergrade</h3>
           </div>

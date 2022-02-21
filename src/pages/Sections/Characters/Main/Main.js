@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Link, Switch } from 'react-router-dom';
 
 import useSound from 'use-sound';
 
@@ -54,87 +54,119 @@ const Main = () => {
            <Fade left>
               <div className='heroes'>
                 <div className='character-thumbnail-0'>
-                  <Link to="/cloud" style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
+                <Switch>
+                  <Link to="/cloud" return={Component} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
                     <img src='assets/cards/chara_thumb_cloud.png' alt='' />
                   </Link>
+                </Switch>
                 </div>
                 <div className='character-thumbnail-1'>
-                  <Link to="/aerith" style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
+                <Switch>
+                  <Link to="/aerith" return={Component} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
                     <img src='assets/cards/chara_thumb_aerith.png' alt='' />
                   </Link>
+                </Switch>
                 </div>
                 <div className='character-thumbnail-2'>
-                  <Link to="/tifa" style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
+                <Switch>
+                  <Link to="/tifa" return={Component} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
                     <img src='assets/cards/chara_thumb_tifa.png' alt='' />
                   </Link>
+                </Switch>
                 </div>
                 <div className='character-thumbnail-3'>
-                  <Link to="/barret" style={{ textDecoration: 'none' }} onClick={effect}>
+                <Switch>
+                  <Link to="/barret" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_barret.png' alt='' />
                   </Link>
+                </Switch>
                 </div>
                 <div className='character-thumbnail-4'>
-                  <Link to="/redxiii" style={{ textDecoration: 'none' }} onClick={effect}>
+                <Switch>
+                  <Link to="/redxiii" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_redxiii.png' alt='' />
                   </Link>
+                </Switch>
                 </div>
                 <div className='character-thumbnail-5'>
-                  <Link to="/jessie" style={{ textDecoration: 'none' }} onClick={effect}>
+                <Switch>
+                  <Link to="/jessie" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_jessie.png' alt='' />
                   </Link>
+                </Switch>
                 </div>
                 <div className='character-thumbnail-6'>
-                  <Link to="/wedge" style={{ textDecoration: 'none' }} onClick={effect}>
+                <Switch>
+                  <Link to="/wedge" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_wedge.png' alt='' />
                   </Link>
+                </Switch>
                 </div>
                 <div className='character-thumbnail-7'>
-                  <Link to="/biggs" style={{ textDecoration: 'none' }} onClick={effect}>
+                <Switch>
+                  <Link to="/biggs" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_biggs.png' alt='' />
                   </Link>
+                </Switch>
                 </div>
                   <div className='division'></div>
                 <Fade right>
                   <div className='villains'>
                     <div className='character-thumbnail-villain-8'>
-                      <Link to="/sephiroth" style={{ textDecoration: 'none' }} onClick={effect}>
+                    <Switch>
+                      <Link to="/sephiroth" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_sephiroth.png' alt='' />
                       </Link>
+                    </Switch>
                     </div>
                     <div className='character-thumbnail-villain-9'>
-                      <Link to="/reno" style={{ textDecoration: 'none' }} onClick={effect}>
+                    <Switch>
+                      <Link to="/reno" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_reno.png' alt='' />
                       </Link>
+                    </Switch>
                     </div>
                     <div className='character-thumbnail-villain-10'>
-                      <Link to="/rude" style={{ textDecoration: 'none' }} onClick={effect}>
+                    <Switch>
+                      <Link to="/rude" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_rude.png' alt='' />
                       </Link>
+                    </Switch>
                     </div>
                     <div className='character-thumbnail-villain-11'>
-                      <Link to="/president" style={{ textDecoration: 'none' }} onClick={effect}>
+                    <Switch>
+                      <Link to="/president" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_shinra.png' alt='' />
                       </Link>
+                    </Switch>
                     </div>
                     <div className='character-thumbnail-villain-12'>
-                      <Link to="/heidegger" style={{ textDecoration: 'none' }} onClick={effect}>
+                    <Switch>
+                      <Link to="/heidegger" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_heidegger.png' alt='' />
                       </Link>
+                    </Switch>
                     </div>
                     <div className='character-thumbnail-villain-13'>
-                      <Link to="/rocche" style={{ textDecoration: 'none' }} onClick={effect}>
+                    <Switch>
+                      <Link to="/rocche" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_rocche.png' alt='' />
                       </Link>
+                    </Switch>
                     </div>
                     <div className='character-thumbnail-villain-14'>
-                      <Link to="/hojo" style={{ textDecoration: 'none' }} onClick={effect}>
+                    <Switch>
+                      <Link to="/hojo" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_hojo.png' alt='' />
                       </Link>
+                    </Switch>
                     </div>
                     <div className='character-thumbnail-villain-15'>
-                      <Link to="/rufus" style={{ textDecoration: 'none' }} onClick={effect}>
+                    <Switch>
+                      <Link to="/rufus" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/characters_full_rufus.png' alt='' />
                       </Link>
+                    </Switch>
                     </div>
                   </div>
                 </Fade>
