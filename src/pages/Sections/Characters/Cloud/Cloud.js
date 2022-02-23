@@ -298,7 +298,7 @@ const StyleHeader = styled.div`
   bottom: 0;
   top: 182px;
   animation-fill-mode: both;
-  animation-duration: 1000ms;
+  animation-duration: 3000ms;
   animation-delay: 0ms;
   animation-iteration-count: 1;
   opacity: 1;
@@ -802,8 +802,8 @@ const ContainerCharacter = styled.div`
     align-self: center;
     -webkit-transition: opacity 1.4s ease-in-out 1.6s,-webkit-transform 1.4s ease-in-out 1.6s;
     transition: opacity 1.4s ease-in-out 1.6s,-webkit-transform 1.4s ease-in-out 1.6s;
-    transition: transform 1.4s ease-in-out 1.6s,opacity 1.4s ease-in-out 1.6s;
-    transition: transform 1.4s ease-in-out 1.6s,opacity 1.4s ease-in-out 1.6s,-webkit-transform 1.4s ease-in-out 1.6s;
+    transition: transform 2.4s ease-in-out 2.6s,opacity 1.4s ease-in-out 2.6s;
+    transition: transform 2.4s ease-in-out 2.6s,opacity 1.4s ease-in-out 2.6s,-webkit-transform 2.4s ease-in-out 1.6s;
     top: -45px;
     z-index: 0;
     right: 10%;
@@ -1154,9 +1154,10 @@ const ContainerCharacter = styled.div`
       z-index: -1;
 
       animation-fill-mode: both;
-      animation-duration: 3000ms;
+      animation-duration: 5000ms;
       animation-delay: 0ms;
       animation-iteration-count: 1;
+      transition: all .33s ease-in-out;
       opacity: 1;
       animation-name: react-reveal-607813993386296-1;
     }

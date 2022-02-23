@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import { Link } from 'react-router-dom';
+import { Link, Switch } from 'react-router-dom';
 
 import Header from '../../../../components/Header/Header';
 
@@ -50,14 +50,18 @@ const Barret = () => {
        <div className='container-characters'>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
-              <Link to="/cloud" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/cloud" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_cloud.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-1'>
-              <Link to="/aerith" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/aerith"  style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_aerith.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-2'>
               <Link to="/tifa" style={{ textDecoration: 'none' }}>

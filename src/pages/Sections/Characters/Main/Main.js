@@ -11,6 +11,27 @@ import styled from 'styled-components';
 const Main = () => {
   const [effect] = useSound('/assets/audio/FF7CursorReady.mp3');
 
+  function Cloud(props) {
+    const Cloud = props.Cloud;
+    if (Cloud) {
+      return <Cloud />;
+    }
+  }
+
+  function Aerith(props) {
+    const Aerith = props.Aerith;
+    if (Aerith) {
+      return <Aerith />
+    }
+  }
+
+  function Tifa(props) {
+    const Tifa = props.Aerith;
+    if (Tifa) {
+      return <Tifa />
+    }
+  }
+
   return (    
     <Container>
     <video
@@ -55,21 +76,21 @@ const Main = () => {
               <div className='heroes'>
                 <div className='character-thumbnail-0'>
                 <Switch>
-                  <Link to="/cloud" return={Component} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
+                  <Link to="/cloud" return={Cloud} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
                     <img src='assets/cards/chara_thumb_cloud.png' alt='' />
                   </Link>
                 </Switch>
                 </div>
                 <div className='character-thumbnail-1'>
                 <Switch>
-                  <Link to="/aerith" return={Component} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
+                  <Link to="/aerith" return={Aerith} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
                     <img src='assets/cards/chara_thumb_aerith.png' alt='' />
                   </Link>
                 </Switch>
                 </div>
                 <div className='character-thumbnail-2'>
                 <Switch>
-                  <Link to="/tifa" return={Component} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
+                  <Link to="/tifa" return={Tifa} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
                     <img src='assets/cards/chara_thumb_tifa.png' alt='' />
                   </Link>
                 </Switch>

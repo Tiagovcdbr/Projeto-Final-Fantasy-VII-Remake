@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import { Link } from 'react-router-dom';
+import { Link, Switch } from 'react-router-dom';
 
 import Header from '../../../../components/Header/Header';
 
@@ -50,86 +50,118 @@ const Aerith = () => {
        <div className='container-characters'>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
-              <Link to="/cloud" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/cloud" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_cloud.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-1'>
-              <Link to="/aerith" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/aerith" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_aerith.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-2'>
-              <Link to="/tifa" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/tifa" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_tifa.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-3'>
-              <Link to="/barret" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/barret" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_barret.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-4'>
-              <Link to="/redxiii" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/redxiii" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_redxiii.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-5'>
-              <Link to="/jessie" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/jessie" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_jessie.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-6'>
-              <Link to="/wedge" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/wedge" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_wedge.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-7'>
-              <Link to="/biggs" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/biggs" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_biggs.png' alt='' />
               </Link>
+            </Switch>
             </div>
               <div className='division'></div>
             <div className='villains'>
             <div className='character-thumbnail-villain-8'>
-              <Link to="/sephiroth" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/sephiroth" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_sephiroth.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-villain-9'>
-              <Link to="/reno" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/reno" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_reno.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-villain-10'>
-              <Link to="/rude" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/rude" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_rude.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-villain-11'>
-              <Link to="/president" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/president" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_shinra.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-villain-12'>
-              <Link to="/heidegger" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/heidegger" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_heidegger.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-villain-13'>
-              <Link to="/rocche" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/rocche" return={Component}  style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_rocche.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-villain-14'>
-              <Link to="/hojo" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/hojo" return={Component}  style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_hojo.png' alt='' />
               </Link>
+            </Switch>
             </div>
             <div className='character-thumbnail-villain-15'>
-              <Link to="/rufus" style={{ textDecoration: 'none' }}>
+            <Switch>
+              <Link to="/rufus" return={Component}  style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/characters_full_rufus.png' alt='' />
               </Link>
+            </Switch>
             </div>
             </div>
           </div>
@@ -151,7 +183,14 @@ const Aerith = () => {
               </h2>
             </Fade>
               <Fade left>
-                <div className='character-bio'>Aerith is a flower seller who lives in the Sector 5 slums, who first meets Cloud on the streets of Midgar after the bombing of Mako Reactor 1. Shinra has kept a close eye on her ever since she was a child, as she has the ability to hear the voice of the planet. She is often found tending a modest bed of flowers at an old church in Sector 5.
+              
+                <div className='character-bio'>Aerith is a flower seller who lives in
+                 the Sector 5 slums, who first meets Cloud on the streets of Midgar 
+                 after the bombing of Mako Reactor 1. Shinra has kept a close eye on 
+                 her ever since she was a child, as she has the ability to hear the 
+                 voice of the planet. She is often found tending a modest bed of 
+                 flowers at an old church in Sector 5.
+
                   <span className='top-diamond'>
                     <img src='/assets/images/diamond.png' alt='/' />
                   </span>

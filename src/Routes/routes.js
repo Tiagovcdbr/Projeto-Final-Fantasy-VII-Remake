@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch} from 'react-router-dom';
 import Home from '../pages/Home/HomePage';
-
+          /*   Import dos Characters  */
 import Characters from '../pages/Sections/Characters/Main/Main';
 import Mechanics from '../pages/Sections/Mechanics/Mechanics';
 import Cloud from '../pages/Sections/Characters/Cloud/Cloud';
@@ -21,7 +21,7 @@ import President from '../pages/Sections/Characters/President/President';
 import Hojo from '../pages/Sections/Characters/Hojo/Hojo';
 import Menu from '../pages/Menu/Menu';
 import Rufus from '../pages/Sections/Characters/Rufus/Rufus';
-
+              /*  Import das Summons  */
 import Ifrit from '../pages/Sections/Mechanics/SummonsPage/Ifrit/Ifrit';
 import Shiva from '../pages/Sections/Mechanics/SummonsPage/Shiva/Shiva';
 import Leviathan from '../pages/Sections/Mechanics/SummonsPage/Leviathan/Leviathan';
