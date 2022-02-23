@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Fade from 'react-reveal/Fade';
@@ -51,12 +51,12 @@ const Cloud = () => {
        <div className='container-characters'>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
-              <Link to="/cloud" style={{ textDecoration: 'none' }}>
+              <Link to="/cloud" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_cloud.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-1'>
-              <Link to="/aerith" style={{ textDecoration: 'none' }}>
+              <Link to="/aerith" return={Component} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_aerith.png' alt='' />
               </Link>
             </div>
@@ -319,7 +319,7 @@ const StyleHeader = styled.div`
     text-shadow: -1px -1px 4px #ff004f,-2px -2px 4px #000;
     overflow: hidden;
     z-index: 0;
-    font-weight: 300;
+    font-weight: 500;
     background: -webkit-linear-gradient(left,rgba(8,19,32,0),#081320 25%,#081320 75%,rgba(8,19,32,0));
     background: linear-gradient(90deg,rgba(8,19,32,0) 0,#081320 25%,#081320 75%,rgba(8,19,32,0));
 

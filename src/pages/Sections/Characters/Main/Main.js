@@ -11,24 +11,45 @@ import styled from 'styled-components';
 const Main = () => {
   const [effect] = useSound('/assets/audio/FF7CursorReady.mp3');
 
-  function Cloud(props) {
-    const Cloud = props.Cloud;
-    if (Cloud) {
-      return <Cloud />;
+  function Cloud (props) {
+    const CharacterCloud = props.CharacterCloud;
+    if (CharacterCloud) {
+      return (Cloud)
     }
   }
 
   function Aerith(props) {
-    const Aerith = props.Aerith;
-    if (Aerith) {
-      return <Aerith />
+    const CharacterAerith = props.CharacterAerith;
+    if (CharacterAerith) {
+      return (Aerith)
     }
   }
 
-  function Tifa(props) {
-    const Tifa = props.Aerith;
-    if (Tifa) {
-      return <Tifa />
+  function Tifa (props) {
+    const CharacterTifa = props.CharacterTifa;
+    if (CharacterTifa) {
+      return (Tifa)
+    }
+  }
+
+  function Barret (props) {
+    const CharacterBarret = props.CharacterBarret;
+    if (CharacterBarret) {
+      return (Barret)
+    }
+  }
+
+  function RedXIII (props) {
+    const CharacterRedXIII = props.CharacterRedXIII;
+    if (CharacterRedXIII) {
+      return (RedXIII)
+    }
+  }
+
+  function Jessie (props) {
+    const CharacterJessie = props.CharacterJessie;
+    if (CharacterJessie) {
+      return (Jessie)
     }
   }
 
@@ -97,21 +118,21 @@ const Main = () => {
                 </div>
                 <div className='character-thumbnail-3'>
                 <Switch>
-                  <Link to="/barret" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                  <Link to="/barret" return={Barret} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_barret.png' alt='' />
                   </Link>
                 </Switch>
                 </div>
                 <div className='character-thumbnail-4'>
                 <Switch>
-                  <Link to="/redxiii" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                  <Link to="/redxiii" return={RedXIII} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_redxiii.png' alt='' />
                   </Link>
                 </Switch>
                 </div>
                 <div className='character-thumbnail-5'>
                 <Switch>
-                  <Link to="/jessie" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                  <Link to="/jessie" return={Jessie} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_jessie.png' alt='' />
                   </Link>
                 </Switch>
@@ -340,7 +361,7 @@ const StyleHeader = styled.div`
     text-shadow: -1px -1px 4px #ff004f,-2px -2px 4px #000;
     overflow: hidden;
     z-index: 0;
-    font-weight: 300;
+    font-weight: 500;
     background: -webkit-linear-gradient(left,rgba(8,19,32,0),#081320 25%,#081320 75%,rgba(8,19,32,0));
     background: linear-gradient(90deg,rgba(8,19,32,0) 0,#081320 25%,#081320 75%,rgba(8,19,32,0));
 
