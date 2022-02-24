@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+
 import { Link, Switch } from 'react-router-dom';
 
 import useSound from 'use-sound';
