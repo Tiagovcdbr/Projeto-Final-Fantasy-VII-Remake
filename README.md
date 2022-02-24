@@ -3,7 +3,7 @@
 #### Deploy do projeto
 https://final-fantasy-7-remake-clone.netlify.app/
 
-![Final-Fantasy-7-Remake](https://user-images.githubusercontent.com/78483210/151634432-817336bd-bf23-4dcb-90af-9df01cbe503e.jpg)
+![ff7 remake](https://user-images.githubusercontent.com/78483210/155446911-08c2f31e-42df-4948-92ca-f4f639e15dab.jpg)
 
 #### Projeto clone do site Final Fantasy Remake VII feito por fã para prática de desenvolvimento e estudos com todos os direitos reservados a Square Enix e Sony Playstation.
 
