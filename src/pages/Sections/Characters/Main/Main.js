@@ -14,42 +14,112 @@ const Main = () => {
   function Cloud (props) {
     const CharacterCloud = props.CharacterCloud;
     if (CharacterCloud) {
-      return (Cloud)
+      return <Cloud />
     }
   }
 
   function Aerith(props) {
     const CharacterAerith = props.CharacterAerith;
     if (CharacterAerith) {
-      return (Aerith)
+      return <Aerith />
     }
   }
 
   function Tifa (props) {
     const CharacterTifa = props.CharacterTifa;
     if (CharacterTifa) {
-      return (Tifa)
+      return <Tifa />
     }
   }
 
   function Barret (props) {
     const CharacterBarret = props.CharacterBarret;
     if (CharacterBarret) {
-      return (Barret)
+      return <Barret />
     }
   }
 
   function RedXIII (props) {
     const CharacterRedXIII = props.CharacterRedXIII;
     if (CharacterRedXIII) {
-      return (RedXIII)
+      return <RedXIII />
     }
   }
 
   function Jessie (props) {
     const CharacterJessie = props.CharacterJessie;
     if (CharacterJessie) {
-      return (Jessie)
+      return <Jessie />
+    }
+  }
+
+  function Wedge (props) {
+    const CharacterWedge = props.CharacterWedge;
+    if (CharacterWedge) {
+      return <Wedge />
+    }
+  }
+
+  function Biggs (props) {
+    const CharacterBiggs = props.CharacterBiggs;
+    if (CharacterBiggs) {
+      return <Biggs />
+    }
+  }
+
+  function Sephiroth (props) {
+    const CharacterSephiroth = props.CharacterSephiroth;
+    if (CharacterSephiroth) {
+      return <Sephiroth />
+    }
+  }
+
+  function Reno (props) {
+    const CharacterReno = props.CharacterReno;
+    if (CharacterReno) {
+      return <Reno />
+    }
+  }
+
+  function Rude (props) {
+    const CharacterRude = props.CharacterRude;
+    if (CharacterRude) {
+      return <Rude />
+    }
+  }
+
+  function President (props) {
+    const CharacterPresident = props.CharacterPresident;
+    if (CharacterPresident) {
+      return <President />
+    }
+  }
+
+  function Heidegger (props) {
+    const CharacterHeidegger = props.CharacterHeidegger;
+    if (CharacterHeidegger) {
+      return <Heidegger />
+    }
+  }
+
+  function Rocche (props) {
+    const CharacterRocche = props.CharacterRocche;
+    if (CharacterRocche) {
+      return <Rocche />
+    }
+  }
+
+  function Hojo (props) {
+    const CharacterHojo = props.CharacterHojo;
+    if (CharacterHojo) {
+      return <Hojo />
+    }
+  }
+
+  function Rufus (props) {
+    const CharacterRufus = props.CharacterRufus;
+    if (CharacterRufus) {
+      return <Rufus />
     }
   }
 
@@ -97,7 +167,7 @@ const Main = () => {
               <div className='heroes'>
                 <div className='character-thumbnail-0'>
                 <Switch>
-                  <Link to="/cloud" return={Cloud} style={{ textDecoration: 'none' }} spy={true} onClick={effect}>
+                  <Link to="/cloud" return={Cloud} style={{ textDecoration: 'none' }} repeatOnClick={true} spy={true} onClick={effect}>
                     <img src='assets/cards/chara_thumb_cloud.png' alt='' />
                   </Link>
                 </Switch>
@@ -139,14 +209,14 @@ const Main = () => {
                 </div>
                 <div className='character-thumbnail-6'>
                 <Switch>
-                  <Link to="/wedge" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                  <Link to="/wedge" return={Wedge} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_wedge.png' alt='' />
                   </Link>
                 </Switch>
                 </div>
                 <div className='character-thumbnail-7'>
                 <Switch>
-                  <Link to="/biggs" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                  <Link to="/biggs" return={Biggs} style={{ textDecoration: 'none' }} onClick={effect}>
                     <img src='assets/cards/chara_thumb_biggs.png' alt='' />
                   </Link>
                 </Switch>
@@ -156,56 +226,56 @@ const Main = () => {
                   <div className='villains'>
                     <div className='character-thumbnail-villain-8'>
                     <Switch>
-                      <Link to="/sephiroth" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                      <Link to="/sephiroth" return={Sephiroth} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_sephiroth.png' alt='' />
                       </Link>
                     </Switch>
                     </div>
                     <div className='character-thumbnail-villain-9'>
                     <Switch>
-                      <Link to="/reno" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                      <Link to="/reno" return={Reno} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_reno.png' alt='' />
                       </Link>
                     </Switch>
                     </div>
                     <div className='character-thumbnail-villain-10'>
                     <Switch>
-                      <Link to="/rude" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                      <Link to="/rude" return={Rude} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_rude.png' alt='' />
                       </Link>
                     </Switch>
                     </div>
                     <div className='character-thumbnail-villain-11'>
                     <Switch>
-                      <Link to="/president" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                      <Link to="/president" return={President} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_shinra.png' alt='' />
                       </Link>
                     </Switch>
                     </div>
                     <div className='character-thumbnail-villain-12'>
                     <Switch>
-                      <Link to="/heidegger" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                      <Link to="/heidegger" return={Heidegger} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_heidegger.png' alt='' />
                       </Link>
                     </Switch>
                     </div>
                     <div className='character-thumbnail-villain-13'>
                     <Switch>
-                      <Link to="/rocche" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                      <Link to="/rocche" return={Rocche} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_rocche.png' alt='' />
                       </Link>
                     </Switch>
                     </div>
                     <div className='character-thumbnail-villain-14'>
                     <Switch>
-                      <Link to="/hojo" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                      <Link to="/hojo" return={Hojo} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/chara_thumb_hojo.png' alt='' />
                       </Link>
                     </Switch>
                     </div>
                     <div className='character-thumbnail-villain-15'>
                     <Switch>
-                      <Link to="/rufus" return={Component} style={{ textDecoration: 'none' }} onClick={effect}>
+                      <Link to="/rufus" return={Rufus} style={{ textDecoration: 'none' }} onClick={effect}>
                         <img src='assets/cards/characters_full_rufus.png' alt='' />
                       </Link>
                     </Switch>

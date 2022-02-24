@@ -6,6 +6,7 @@ import useSound from 'use-sound';
 import { Link, Switch } from 'react-router-dom';
 
 const Header = () => {
+
   const [play] = useSound('/assets/audio/FF7CursorReady.mp3')
   const [back] = useSound('/assets/audio/FF7CursorBack.mp3')
 
