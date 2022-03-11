@@ -145,11 +145,11 @@ const Main = () => {
         </div>
         <StyleHeader>
             <div className='text-header'>
-              <Fade left>
+              <Fade left duration={2000}>
                 <h2>Characters</h2>
               </Fade>
             </div>
-            <Fade left>
+            <Fade left duration={2000}>
               <div className='border-bottom'>
                 <span className='left-diamond'>
                   <img src='/assets/images/diamond_side_left.png' alt='/' />
@@ -163,11 +163,11 @@ const Main = () => {
             </div>
            </Fade>
            <div className='container-characters'>
-           <Fade left>
+           <Fade top duration={2500} >
               <div className='heroes'>
                 <div className='character-thumbnail-0'>
                 <Switch>
-                  <Link to="/cloud" return={Cloud} style={{ textDecoration: 'none' }} repeatOnClick={true} spy={true} onClick={effect}>
+                  <Link to="/cloud" return={Cloud} style={{ textDecoration: 'none' }} duration={2500} repeatOnClick={true} spy={true} onClick={effect}>
                     <img src='assets/cards/chara_thumb_cloud.png' alt='' />
                   </Link>
                 </Switch>

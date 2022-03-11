@@ -30,11 +30,11 @@ const Cloud = () => {
       </div>
     <StyleHeader>
         <div className='text-header'>
-          <Fade left>
+          <Fade left duration={2500}>
             <h2>Characters</h2>
           </Fade>
         </div>
-        <Fade left>
+        <Fade left duration={2500}>
           <div className='border-bottom'>
             <span className='left-diamond'>
               <img src='/assets/images/diamond_side_left.png' alt='/' />
@@ -49,6 +49,7 @@ const Cloud = () => {
        </Fade>
 
        <div className='container-characters'>
+        <Fade left duration={2000}>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
               <Link to="/cloud" return={Component} style={{ textDecoration: 'none' }}>
@@ -134,7 +135,8 @@ const Cloud = () => {
             </div>
             </div>
           </div>
-       </div>  
+        </Fade>
+       </div>   
        <ContainerCharacter>
         <div className='container'>
           <div className='character-art'>

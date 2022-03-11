@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Zoom } from "react-awesome-reveal";
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 
@@ -13,11 +14,11 @@ const Story = () => {
       </div>
       <StyleHeader>
         <div className='text-header'>
-        <Fade left>
+        <Fade left duration={2500}>
           <h2>Story</h2>
         </Fade>
         </div>
-        <Fade left>
+        <Fade left duration={2500}>
           <div className='border-bottom'>
             <span className='left-diamond'>
               <img src='/assets/images/diamond_side_left.png' alt='/' />
@@ -30,7 +31,7 @@ const Story = () => {
             </span>
           </div>
         </Fade>
-        <Fade left>
+        <Zoom duration={3000}>
           <div className='bg-history'>
             <div className='info-history'>
               <div className='top-border'>
@@ -62,7 +63,7 @@ const Story = () => {
               </div>
             </div>
           </div>
-        </Fade>
+        </Zoom>
       </StyleHeader>        
     </Container>
   )

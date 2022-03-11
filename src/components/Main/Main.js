@@ -21,13 +21,13 @@ const Main = () => {
       />
       <ContainerLogo>
         <div className='logo'>
-          <Fade left>
+          <Fade left duration={3000}>
             <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='logo' />
           </Fade>
         </div>
       </ContainerLogo>
       <ContentTraillers>
-      <Zoom>
+      <Zoom duration={2500}>
         <div className='video-thumb'>
           <div className='video-still'>
             <img className='trailler-1' src='/assets/images/the-game-awards-2019-trailer-still.jpg' alt='/' />

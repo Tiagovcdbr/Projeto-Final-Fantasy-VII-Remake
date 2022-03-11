@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import useSound from 'use-sound';
 
 import styled from 'styled-components';
+import { Fade, Zoom } from 'react-reveal';
 
 const Menu = () => {
   const [play] = useSound('/assets/audio/FF7CursorSaveLoad.mp3');
@@ -33,12 +34,16 @@ const Menu = () => {
       <div className='container-page'>
         <div className='bg-image'>
           <img src='/assets/images/ff7_remake_bg_menu.png' alt='' />           
-              <div className='logo-image'>                
+              <div className='logo-image'>
+                <Zoom duration={2500}>                
                   <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
+                </Zoom>
               </div>            
             <div className='text-area'>
               
-                <div className='text'>                
+              <Fade left duration={3000}> 
+                <div className='text'>
+                               
                   <span> Todo conteúdo utilizado nesse projeto acadêmico, são reservados as empresas
                   SQUARE ENIX & Sony Computer Entertainment Inc.</span><br /><br />                
 
@@ -49,14 +54,17 @@ const Menu = () => {
                   e conteudos são reservados a empresa SQUARE ENIX</span><br /><br />
 
                   <span>PlayStation" e o logotipo "PS" são marcas registradas e 
-                    "PS4" é uma marca comercial da Sony Computer Entertainment Inc.</span>                
+                    "PS4" é uma marca comercial da Sony Computer Entertainment Inc.</span>
+                                
                 </div>
-             
+              </Fade>
             </div>            
          </div>
           <div className='button-menu'>
             <Link to="/home" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
-              <button id="btn">Start</button>
+              <Fade right duration={2000}>
+                <button duration={3500} id="btn">Start</button>
+              </Fade>
             </Link>
           </div>
         </div>
