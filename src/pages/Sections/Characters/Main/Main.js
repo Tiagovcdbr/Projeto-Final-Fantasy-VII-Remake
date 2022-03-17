@@ -145,11 +145,11 @@ const Main = () => {
         </div>
         <StyleHeader>
             <div className='text-header'>
-              <Fade left duration={2000}>
+              <Fade left duration={2500}>
                 <h2>Characters</h2>
               </Fade>
             </div>
-            <Fade left duration={2000}>
+            <Fade left duration={2500}>
               <div className='border-bottom'>
                 <span className='left-diamond'>
                   <img src='/assets/images/diamond_side_left.png' alt='/' />
@@ -163,7 +163,7 @@ const Main = () => {
             </div>
            </Fade>
            <div className='container-characters'>
-           <Fade top duration={2500} >
+           <Fade top duration={3000} >
               <div className='heroes'>
                 <div className='character-thumbnail-0'>
                 <Switch>
@@ -222,7 +222,7 @@ const Main = () => {
                 </Switch>
                 </div>
                   <div className='division'></div>
-                <Fade right>
+                <Fade top duration={3000}>
                   <div className='villains'>
                     <div className='character-thumbnail-villain-8'>
                     <Switch>
@@ -285,7 +285,7 @@ const Main = () => {
               </div>
             </Fade>
            </div>
-           <Zoom> 
+           <Zoom duration={3500}> 
             <div className='bg-history'>
             <div className='info-history'>
               <div className='top-border'>

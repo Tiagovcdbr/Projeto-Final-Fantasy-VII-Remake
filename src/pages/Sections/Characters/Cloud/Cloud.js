@@ -8,6 +8,111 @@ import { Link } from 'react-router-dom';
 import Header from '../../../../components/Header/Header';
 
 const Cloud = () => {
+
+  function Aerith(props) {
+    const CharacterAerith = props.CharacterAerith;
+    if (CharacterAerith) {
+      return <Aerith />
+    }
+  }
+
+  function Tifa (props) {
+    const CharacterTifa = props.CharacterTifa;
+    if (CharacterTifa) {
+      return <Tifa />
+    }
+  }
+
+  function Barret (props) {
+    const CharacterBarret = props.CharacterBarret;
+    if (CharacterBarret) {
+      return <Barret />
+    }
+  }
+
+  function RedXIII (props) {
+    const CharacterRedXIII = props.CharacterRedXIII;
+    if (CharacterRedXIII) {
+      return <RedXIII />
+    }
+  }
+
+  function Jessie (props) {
+    const CharacterJessie = props.CharacterJessie;
+    if (CharacterJessie) {
+      return <Jessie />
+    }
+  }
+
+  function Wedge (props) {
+    const CharacterWedge = props.CharacterWedge;
+    if (CharacterWedge) {
+      return <Wedge />
+    }
+  }
+
+  function Biggs (props) {
+    const CharacterBiggs = props.CharacterBiggs;
+    if (CharacterBiggs) {
+      return <Biggs />
+    }
+  }
+
+  function Sephiroth (props) {
+    const CharacterSephiroth = props.CharacterSephiroth;
+    if (CharacterSephiroth) {
+      return <Sephiroth />
+    }
+  }
+
+  function Reno (props) {
+    const CharacterReno = props.CharacterReno;
+    if (CharacterReno) {
+      return <Reno />
+    }
+  }
+
+  function Rude (props) {
+    const CharacterRude = props.CharacterRude;
+    if (CharacterRude) {
+      return <Rude />
+    }
+  }
+
+  function President (props) {
+    const CharacterPresident = props.CharacterPresident;
+    if (CharacterPresident) {
+      return <President />
+    }
+  }
+
+  function Heidegger (props) {
+    const CharacterHeidegger = props.CharacterHeidegger;
+    if (CharacterHeidegger) {
+      return <Heidegger />
+    }
+  }
+
+  function Rocche (props) {
+    const CharacterRocche = props.CharacterRocche;
+    if (CharacterRocche) {
+      return <Rocche />
+    }
+  }
+
+  function Hojo (props) {
+    const CharacterHojo = props.CharacterHojo;
+    if (CharacterHojo) {
+      return <Hojo />
+    }
+  }
+
+  function Rufus (props) {
+    const CharacterRufus = props.CharacterRufus;
+    if (CharacterRufus) {
+      return <Rufus />
+    }
+  }
   return (
     <Container>
       <Header />
@@ -49,7 +154,7 @@ const Cloud = () => {
        </Fade>
 
        <div className='container-characters'>
-        <Fade left duration={2000}>
+        <Fade top duration={3500}>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
               <Link to="/cloud" return={Component} style={{ textDecoration: 'none' }}>
@@ -57,79 +162,79 @@ const Cloud = () => {
               </Link>
             </div>
             <div className='character-thumbnail-1'>
-              <Link to="/aerith" return={Component} style={{ textDecoration: 'none' }}>
+              <Link to="/aerith" return={Aerith} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_aerith.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-2'>
-              <Link to="/tifa" style={{ textDecoration: 'none' }}>
+              <Link to="/tifa" return={Tifa} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_tifa.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-3'>
-              <Link to="/barret" style={{ textDecoration: 'none' }}>
+              <Link to="/barret" return={Barret} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_barret.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-4'>
-              <Link to="/redxiii" style={{ textDecoration: 'none' }}>
+              <Link to="/redxiii" return={RedXIII} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_redxiii.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-5'>
-              <Link to="/jessie" style={{ textDecoration: 'none' }}>
+              <Link to="/jessie" return={Jessie} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_jessie.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-6'>
-              <Link to="/wedge" style={{ textDecoration: 'none' }}>
+              <Link to="/wedge" return={Wedge} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_wedge.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-7'>
-              <Link to="/biggs" style={{ textDecoration: 'none' }}>
+              <Link to="/biggs" return={Biggs} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_biggs.png' alt='' />
               </Link>
             </div>
               <div className='division'></div>
             <div className='villains'>
             <div className='character-thumbnail-villain-8'>
-              <Link to="/sephiroth" style={{ textDecoration: 'none' }}>
+              <Link to="/sephiroth" return={Sephiroth} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_sephiroth.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-villain-9'>
-              <Link to="/reno" style={{ textDecoration: 'none' }}>
+              <Link to="/reno" return={Reno} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_reno.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-villain-10'>
-              <Link to="/rude" style={{ textDecoration: 'none' }}>
+              <Link to="/rude" return={Rude} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_rude.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-villain-11'>
-              <Link to="/president" style={{ textDecoration: 'none' }}>
+              <Link to="/president" return={President} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_shinra.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-villain-12'>
-              <Link to="/heidegger" style={{ textDecoration: 'none' }}>
+              <Link to="/heidegger" return={Heidegger} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_heidegger.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-villain-13'>
-              <Link to="/rocche" style={{ textDecoration: 'none' }}>
+              <Link to="/rocche" return={Rocche} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_rocche.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-villain-14'>
-              <Link to="/hojo" style={{ textDecoration: 'none' }}>
+              <Link to="/hojo" return={Hojo} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/chara_thumb_hojo.png' alt='' />
               </Link>
             </div>
             <div className='character-thumbnail-villain-15'>
-              <Link to="/rufus" style={{ textDecoration: 'none' }}>
+              <Link to="/rufus" return={Rufus} style={{ textDecoration: 'none' }}>
                 <img src='assets/cards/characters_full_rufus.png' alt='' />
               </Link>
             </div>
@@ -141,20 +246,26 @@ const Cloud = () => {
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <Fade left>
+              <Fade left duration={3000}>
                 <img src='/assets/images/characters_full_cloud.png' alt='/' />
               </Fade>
             </span>
           </div>
           <div className='character-text'>
-            <Fade right>
+            <Fade right duration={2500}>
               <h2 className='character-name'>
                 <span className='first-name'>Cloud</span>
                 &nbsp;strife
               </h2>
             </Fade>
-              <Fade left>
-                <div className='character-bio'>An ex-SOLDIER: first class, Cloud came to Midgar to start a new chapter of his life as a mercenary. At the invitation of his childhood friend,   Tifa, he accepted a job with Avalanche. He may bring his buster sword to bear against Shinra troopers, but he does not care for plight of the planet. For him, this is a job and nothing more.
+              <Fade bottom duration={2500}>
+                <div className='character-bio'>An ex-SOLDIER: first class, 
+                Cloud came to Midgar to start a new chapter of his life as 
+                a mercenary. At the invitation of his childhood friend, 
+                Tifa, he accepted a job with Avalanche. He may bring his 
+                buster sword to bear against Shinra troopers, but he does 
+                not care for plight of the planet. For him, this is a job 
+                and nothing more.
                   <span className='top-diamond'>
                     <img src='/assets/images/diamond.png' alt='/' />
                   </span>
@@ -164,7 +275,7 @@ const Cloud = () => {
                 </div> 
               </Fade>
             <div className='character-screenshots' >
-              <Zoom>
+              <Zoom duration={3000}>
                 <div className='space'>
                   <div className='video-thumb-screenshot'>
                     <div className='video-still-house'>
@@ -207,7 +318,7 @@ const Cloud = () => {
         </div>
         <div className='character-profile'>
           <span className='image-background'>
-            <Fade right>
+            <Fade right duration={2500}>
               <img src='/assets/images/characters_profile_cloud.png' alt='Cloud' />
             </Fade>
           </span>

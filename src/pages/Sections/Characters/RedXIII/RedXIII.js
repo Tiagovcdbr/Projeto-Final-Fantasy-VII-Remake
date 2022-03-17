@@ -30,11 +30,11 @@ const RedXIII = () => {
       </div>
     <StyleHeader>
         <div className='text-header'>
-          <Fade left>
+          <Fade left duration={2500}>
             <h2>Characters</h2>
           </Fade>
         </div>
-          <Fade left>
+          <Fade left duration={2500}>
             <div className='border-bottom'>
               <span className='left-diamond'>
                 <img src='/assets/images/diamond_side_left.png' alt='/' />
@@ -48,6 +48,7 @@ const RedXIII = () => {
             </div>
           </Fade>
        <div className='container-characters'>
+       <Fade top duration={3500}>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
               <Link to="/cloud" style={{ textDecoration: 'none' }}>
@@ -133,24 +134,25 @@ const RedXIII = () => {
             </div>
             </div>
           </div>
+        </Fade>
        </div>  
        <ContainerCharacter>
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <Fade left>
+              <Fade left duration={3000}>
                 <img src='/assets/images/characters_full_redxiii.png' alt='/' />
               </Fade>
             </span>
           </div>
           <div className='character-text'>
-            <Fade left>
+            <Fade left duration={2500}>
               <h2 className='character-name'>
                 <span className='first-name'>Red</span>
                 &nbsp;XIII
               </h2>
             </Fade>
-              <Fade left>
+              <Fade left duration={2500}>
                 <div className='character-bio'>Red XIII is a beast with a flaming tail, crimson fur, deadly claws, and the ability to speak. At present, he is being held in capitivity as a test subject for Professor Hojo.
                   <span className='top-diamond'>
                     <img src='/assets/images/diamond.png' alt='/' />
@@ -161,7 +163,7 @@ const RedXIII = () => {
                 </div> 
               </Fade>
             <div className='character-screenshots' >
-              <Zoom>
+              <Zoom duration={3000}>
                 <div className='space'>
                   <div className='video-thumb-screenshot'>
                     <div className='video-still-house'>
@@ -204,7 +206,7 @@ const RedXIII = () => {
         </div>
         <div className='character-profile'>
           <span className='image-background'>
-            <Fade right>
+            <Fade right duration={2500}>
               <img src='/assets/images/characters_profile_redxiii.png' alt='Redxiii' />
             </Fade>
           </span>
@@ -774,14 +776,15 @@ const ContainerCharacter = styled.div`
   position: relative;
 
   .container {
+   
     max-width: 1100px;
     display: flex;
-    width: 50%;
     -moz-box-align: center;
     flex-wrap: wrap;
     padding: 0px 20px 20px;
     
     width: 100%;
+    height: 1000px;
     margin-left: calc(100% - 1100px);
     position: relative;
     transition: 0.5s ease-in-out;
@@ -796,7 +799,6 @@ const ContainerCharacter = styled.div`
 
   .character-art {
     width: 50%;
-    height: 200px;
     text-align: center;
     -ms-flex-item-align: center;
     align-self: center;

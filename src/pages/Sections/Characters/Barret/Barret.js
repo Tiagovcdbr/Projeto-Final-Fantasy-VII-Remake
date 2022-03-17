@@ -30,11 +30,11 @@ const Barret = () => {
       </div>
     <StyleHeader>
         <div className='text-header'>
-          <Fade left>
+          <Fade left duration={2000}>
             <h2>Characters</h2>
           </Fade>
         </div>
-          <Fade left>
+          <Fade left duration={2000}>
           <div className='border-bottom'>
             <span className='left-diamond'>
               <img src='/assets/images/diamond_side_left.png' alt='/' />
@@ -48,6 +48,7 @@ const Barret = () => {
           </div>
         </Fade>
        <div className='container-characters'>
+       <Fade top duration={3500}>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
             <Switch>
@@ -137,24 +138,25 @@ const Barret = () => {
             </div>
             </div>
           </div>
+        </Fade>
        </div>  
        <ContainerCharacter>
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <Fade left>
+              <Fade left duration={3000}>
                 <img src='/assets/images/characters_full_barret.png' alt='/' />
               </Fade>
             </span>
           </div>
           <div className='character-text'>
-            <Fade left>
+            <Fade right duration={2500}>
               <h2 className='character-name'>
                 <span className='first-name'>Barret</span>
                 &nbsp;Wallace
               </h2>
             </Fade>
-              <Fade left>
+              <Fade bottom duration={2500}>
                 <div className='character-bio'>The leader of an independent Avalanche cell in Midgar, Barret was disavowed by the old guard for his extreme methods that attracted too much attention. He subsequently came to Midgar, where he resolved to continue to pursue his vendetta against Shinra with a small but trusted group of followers. When not fighting against the corporation, he and his comrades serve in the neighborhood watch and keep the people safe─including his daughter Marlene, who he dotes on as a loving father.
                   <span className='top-diamond'>
                     <img src='/assets/images/diamond.png' alt='/' />
@@ -165,7 +167,7 @@ const Barret = () => {
                 </div> 
               </Fade>
             <div className='character-screenshots' >
-              <Zoom>
+              <Zoom duration={3000}>
                 <div className='space'>
                   <div className='video-thumb-screenshot'>
                     <div className='video-still-house'>
@@ -208,7 +210,7 @@ const Barret = () => {
         </div>
         <div className='character-profile'>
           <span className='image-background'>
-            <Fade right>
+            <Fade right duration={2500}>
               <img src='/assets/images/characters_profile_barret.png' alt='Barret' />
             </Fade>
           </span>

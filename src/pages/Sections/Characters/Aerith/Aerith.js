@@ -30,11 +30,11 @@ const Aerith = () => {
       </div>
     <StyleHeader>
         <div className='text-header'>
-          <Fade left>
+          <Fade left duration={2500}>
             <h2>Characters</h2>
           </Fade>
         </div>
-          <Fade left>
+          <Fade left duration={2500}>
             <div className='border-bottom'>
               <span className='left-diamond'>
                 <img src='/assets/images/diamond_side_left.png' alt='/' />
@@ -48,6 +48,7 @@ const Aerith = () => {
           </div>
         </Fade>
        <div className='container-characters'>
+       <Fade top duration={3000}>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
             <Switch>
@@ -165,24 +166,25 @@ const Aerith = () => {
             </div>
             </div>
           </div>
+        </Fade>
        </div>  
        <ContainerCharacter>
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <Fade left>
+              <Fade left duration={3000} >
                 <img src='/assets/images/characters_full_aerith.png' alt='/' />
               </Fade>
             </span>
           </div>
           <div className='character-text'>
-            <Fade left>
+            <Fade right duration={2500}>
               <h2 className='character-name'>
                 <span className='first-name'>Aerith</span>
                 &nbsp;Gainsborough
               </h2>
             </Fade>
-              <Fade left>
+              <Fade bottom duration={2500}>
               
                 <div className='character-bio'>Aerith is a flower seller who lives in
                  the Sector 5 slums, who first meets Cloud on the streets of Midgar 
@@ -200,7 +202,7 @@ const Aerith = () => {
                 </div>
               </Fade> 
             <div className='character-screenshots' >
-              <Zoom>
+              <Zoom duration={3000}>
                 <div className='space'>
                   <div className='video-thumb-screenshot'>
                     <div className='video-still-house'>
@@ -243,7 +245,7 @@ const Aerith = () => {
         </div>
         <div className='character-profile'>
           <span className='image-background'>
-            <Fade right>
+            <Fade right duration={2500}>
               <img src='/assets/images/characters_profile_aerith.png' alt='Aerith' />
             </Fade>
           </span>

@@ -30,11 +30,11 @@ const Tifa = () => {
       </div>
     <StyleHeader>
         <div className='text-header'>
-          <Fade left>
+          <Fade left duration={2500}>
             <h2>Characters</h2>
           </Fade>
         </div>
-          <Fade left>
+          <Fade left duration={2500}>
             <div className='border-bottom'>
               <span className='left-diamond'>
                 <img src='/assets/images/diamond_side_left.png' alt='/' />
@@ -48,6 +48,7 @@ const Tifa = () => {
             </div>
         </Fade>
        <div className='container-characters'>
+       <Fade top duration={3500}>
           <div className='heroes'>
             <div className='character-thumbnail-0'>
               <Link to="/cloud" style={{ textDecoration: 'none' }}>
@@ -133,24 +134,25 @@ const Tifa = () => {
             </div>
             </div>
           </div>
+        </Fade>
        </div>  
        <ContainerCharacter>
         <div className='container'>
           <div className='character-art'>
             <span className='lazy-image'>
-              <Fade left>
+              <Fade left duration={3000}>
                 <img src='/assets/images/characters_full_tifa.png' alt='/' />
               </Fade>
             </span>
           </div>
           <div className='character-text'>
-            <Fade left>
+            <Fade right duration={2500}>
               <h2 className='character-name'>
                 <span className='first-name'>Tifa</span>
                 &nbsp;Lockhart
               </h2>
             </Fade>
-              <Fade left>
+              <Fade bottom duration={2500}>
                 <div className='character-bio'>A loyal member of Avalanche─an underground organization opposed to Shinra─Tifa also runs Seventh Heaven, a popular bar in the Sector 7 slums. Although she bears a terrible grudge towards Shinra, she is not convinced that bombing mako reactors is the solution. As she struggled to reconcile her cause with her conscience, Tifa was reunited with her childhood friend, Cloud, for the first time in years...
                   <span className='top-diamond'>
                     <img src='/assets/images/diamond.png' alt='/' />
@@ -161,7 +163,7 @@ const Tifa = () => {
                 </div> 
               </Fade>
             <div className='character-screenshots' >
-              <Zoom>
+              <Zoom duration={3000}>
                 <div className='space'>
                   <div className='video-thumb-screenshot'>
                     <div className='video-still-house'>
@@ -204,7 +206,7 @@ const Tifa = () => {
         </div>
         <div className='character-profile'>
           <span className='image-background'>
-            <Fade right>
+            <Fade right duration={2500}>
               <img src='/assets/images/characters_profile_tifa.png' alt='Tifa' />
             </Fade>
           </span>

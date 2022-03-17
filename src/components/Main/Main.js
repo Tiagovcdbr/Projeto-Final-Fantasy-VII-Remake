@@ -4,8 +4,9 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
 const Main = () => {
-  return (
-    <Container>
+
+  return (    
+    <Container>    
       <video
         className='video-bg'
         src={"/assets/video/video.mp4"}
