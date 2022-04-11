@@ -387,7 +387,7 @@ const ContentTraillers = styled.div`
       height: auto;
       position: absolute;
       bottom: calc(0% - 35px);
-      left: 9%;
+      left: 12%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;

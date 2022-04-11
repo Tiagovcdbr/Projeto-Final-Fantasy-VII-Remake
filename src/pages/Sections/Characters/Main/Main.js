@@ -167,7 +167,7 @@ const Main = () => {
               <div className='heroes'>
                 <div className='character-thumbnail-0'>
                 <Switch>
-                  <Link to="/cloud" return={Cloud} style={{ textDecoration: 'none' }} duration={2500} repeatOnClick={true} spy={true} onClick={effect}>
+                  <Link to="/cloud" return={Cloud} style={{ textDecoration: 'none' }}       onClick={effect}>
                     <img src='assets/cards/chara_thumb_cloud.png' alt='' />
                   </Link>
                 </Switch>
