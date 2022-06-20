@@ -9,7 +9,7 @@ const Header = () => {
 
   const [play] = useSound('/assets/audio/FF7CursorReady.mp3')
   const [back] = useSound('/assets/audio/FF7CursorBack.mp3')
-  // Desenvolvendo o Header do Projeto // 
+  // Desenvolvendo o Header do Projeto e todos os outros //  
   return(
     <ContainerBar>
       <div className='square-logo'>
