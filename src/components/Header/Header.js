@@ -11,6 +11,7 @@ const Header = () => {
   const [back] = useSound('/assets/audio/FF7CursorBack.mp3')
   // Desenvolvendo o Header do Projeto e todos os outros //  
   return(
+
     <ContainerBar>
       <div className='square-logo'>
         <img src='/assets/images/square_logo.png' alt='' />
@@ -24,13 +25,16 @@ const Header = () => {
         <h2>News</h2>
         <h2>Top Games</h2>
       </div>
+
       <ContainerHeader>
         <Link to="/" style={{ textDecoration: 'none' }} onClick={back}>
           <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='' />
         </Link>
       <ContainerItems>
+
         <img src='/assets/images/logo_white.png' alt='' />
           <div id='itemsHeader' className='header-items'>
+
           <Switch>
             <Link to="home" return={Component} style={{ textDecoration: 'none' }} onClick={play}>
               <h2>Story</h2>
@@ -60,6 +64,7 @@ const Header = () => {
       </ContainerItems>
       </ContainerHeader>
       <ContainerDown>
+
         <div className='side-bar'>
           <h2>Buy Now</h2>
           <img src='assets/images/capa.png' alt='' />

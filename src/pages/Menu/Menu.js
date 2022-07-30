@@ -158,7 +158,7 @@ const Container = styled.div`
       position: absolute;
       height: 0.50%;
       bottom: 0;
-      margin-bottom: -193px;
+      margin-bottom: -222px; 
     }
   }
 
@@ -168,7 +168,7 @@ const Container = styled.div`
       position: absolute;
       height: 0.50%;
       bottom: 0;
-      margin-bottom: -190px;
+      /* margin-bottom: -190px; */
     }
   }
 
@@ -194,7 +194,7 @@ const Container = styled.div`
 
   @media(max-width: 560px) {
     .logo-image img {
-      width: 500px;
+      width: 450px;
       height: 350px;  
       margin: 0 auto; 
       margin-top: 100px; 
@@ -211,14 +211,13 @@ const Container = styled.div`
       transition: all .33s ease-in-out;
     }
   }
-
-  @media(max-width: 370px) {
+;
+  @media(max-width: 390px) {
     .logo-image img {
-      width: 400px;
+      width: 380px;
       height: 350px;  
       margin-left: -10px;
-      right: 50px;
-        
+      right: 50px;        
       transition: all .33s ease-in-out;
     }
   }

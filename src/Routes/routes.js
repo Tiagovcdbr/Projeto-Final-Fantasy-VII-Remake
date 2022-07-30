@@ -1,7 +1,9 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch} from 'react-router-dom';
 import Home from '../pages/Home/HomePage';
+
           /*   Import dos Characters  */
+
 import Characters from '../pages/Sections/Characters/Main/Main';
 import Mechanics from '../pages/Sections/Mechanics/Mechanics';
 import Cloud from '../pages/Sections/Characters/Cloud/Cloud';
@@ -21,7 +23,9 @@ import President from '../pages/Sections/Characters/President/President';
 import Hojo from '../pages/Sections/Characters/Hojo/Hojo';
 import Menu from '../pages/Menu/Menu';
 import Rufus from '../pages/Sections/Characters/Rufus/Rufus';
+
               /*  Import das Summons  */
+              
 import Ifrit from '../pages/Sections/Mechanics/SummonsPage/Ifrit/Ifrit';
 import Shiva from '../pages/Sections/Mechanics/SummonsPage/Shiva/Shiva';
 import Leviathan from '../pages/Sections/Mechanics/SummonsPage/Leviathan/Leviathan';
@@ -33,6 +37,8 @@ import Cactuar from '../pages/Sections/Mechanics/SummonsPage/Cactuar/Cactuar';
 import Carbuncle from '../pages/Sections/Mechanics/SummonsPage/Carbuncle/Carbuncle';
 import Media from '../pages/Sections/Media/Media';
 
+/* Criando as rotas entre personagens, summons e telas */
+
 const Routes = () => {
   return (
     <BrowserRouter>
@@ -42,7 +48,9 @@ const Routes = () => {
         <Route component={Characters} path="/main" exact />
         <Route component={Mechanics} path="/mechanics" exact />
         <Route component={Media} path="/media" exact />
+
                {/* Rotas dos Characters */}
+
         <Route component={Cloud} path="/cloud" exact />
         <Route component={Aerith} path="/aerith" exact />
         <Route component={Barret} path="/barret" exact />
@@ -59,7 +67,9 @@ const Routes = () => {
         <Route component={Hojo} path="/hojo" exact />
         <Route component={Sephiroth} path="/sephiroth" exact />
         <Route component={Rufus} path="/rufus" exact />
+
                 { /* Rotas das Summons */}
+
         <Route component={Ifrit} path="/ifrit" exact />
         <Route component={Shiva} path="/shiva" exact />
         <Route component={Leviathan} path="/leviathan" exact />
