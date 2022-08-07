@@ -21,7 +21,7 @@ const Menu = () => {
       />
       <video
         className='video-bg_2'
-        src={"/assets/video/lifestream.mp4"}
+        src={"/assets/video/Final Fantasy VII Remake Animated bg_03.mp4"}
         autoplay='1'
         allowfullscreen="1"
         loop    
@@ -33,7 +33,7 @@ const Menu = () => {
       />
       <div className='container-page'>
         <div className='bg-image'>
-          <img src='/assets/images/ff7_remake_bg_menu.png' alt='' />           
+          <img src='' alt='' />           
               <div className='logo-image'>
                 <Zoom duration={2500}>                
                   <img src='/assets/images/Final-Fantasy-VII-Remake-Logo-Transparent.png' alt='/' />
@@ -76,7 +76,7 @@ export default Menu;
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 500px;
 
   animation-fill-mode: both;
   animation-duration: 5000ms;
@@ -137,12 +137,8 @@ const Container = styled.div`
   }
 
   .video-bg_2 {
-    position: absolute;
-    
-    width: 100%;
-    height: 0.50%;
-    bottom: 0;
-    margin-bottom: -138px;
+    position: absolute;    
+    width: 100%;      
     background-color: #000;
 
     object-fit: cover;
