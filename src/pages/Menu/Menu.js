@@ -76,7 +76,7 @@ export default Menu;
 
 const Container = styled.div`
   width: 100%;
-  height: 500px;
+  height: 100%;
 
   animation-fill-mode: both;
   animation-duration: 5000ms;
@@ -88,6 +88,7 @@ const Container = styled.div`
 
   @media(max-width: 1850px) {
     width: 100%;
+    
   }
 
   .container-page {
@@ -152,19 +153,20 @@ const Container = styled.div`
     .video-bg_2 {
       width: 100%;
       position: absolute;
-      height: 0.50%;
+      /*height: 0.50%;
       bottom: 0;
-      margin-bottom: -222px; 
+      margin-bottom: -222px; */
     }
   }
 
   @media(max-width: 1850px) {
     .video-bg_2 {
+      display: flex;
       width: 100%;
-      position: absolute;
-      height: 0.50%;
-      bottom: 0;
-      /* margin-bottom: -190px; */
+      height: 1050px;
+      position: absolute;      
+      /*bottom: 0;*/
+      /*margin-bottom: -190px;*/
     }
   }
 
