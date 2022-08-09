@@ -24,6 +24,8 @@ const Menu = () => {
         src={"/assets/video/Final Fantasy VII Remake Animated bg_03.mp4"}
         autoplay='1'
         allowfullscreen="1"
+        spy={true}
+        smooth={true}
         loop    
       />
       <audio
@@ -41,7 +43,7 @@ const Menu = () => {
               </div>            
             <div className='text-area'>
               
-              <Fade left duration={3000}> 
+              <Fade left duration={3500}> 
                 <div className='text'>
                                
                   <span> Todo conteúdo utilizado nesse projeto acadêmico, são reservados as empresas
@@ -62,7 +64,7 @@ const Menu = () => {
          </div>
           <div className='button-menu'>
             <Link to="/home" style={{ textDecoration: 'none' }} spy={true} smooth={true} duration={300} onClick={play}>
-              <Fade right duration={2000}>
+              <Fade right duration={3000}>
                 <button duration={3500} id="btn">Start</button>
               </Fade>
             </Link>
@@ -87,8 +89,7 @@ const Container = styled.div`
   background-color: #000;
 
   @media(max-width: 1850px) {
-    width: 100%;
-    
+    width: 100%;    
   }
 
   .container-page {
@@ -163,7 +164,7 @@ const Container = styled.div`
     .video-bg_2 {
       display: flex;
       width: 100%;
-      height: 1050px;
+      height: 1080px;
       position: absolute;      
       /*bottom: 0;*/
       /*margin-bottom: -190px;*/
@@ -268,7 +269,7 @@ const Container = styled.div`
       position: absolute;
       display: flex;
       left:-600px;
-      bottom: 80px;
+      bottom: 140px;
       border-color: #009080;
     }
   }
