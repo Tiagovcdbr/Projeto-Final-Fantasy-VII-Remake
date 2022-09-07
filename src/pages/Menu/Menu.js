@@ -240,8 +240,11 @@ const Container = styled.div`
   }
 
   .button-menu {
-    margin-top: -25rem;
-    margin-left: 57rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: -320px;
   }
 
   .button-menu button {
@@ -266,19 +269,17 @@ const Container = styled.div`
 
   @media(max-width: 1850px) {
     .button-menu {
-      position: absolute;
-      display: flex;
-      left:-600px;
-      bottom: 140px;
+      position: relative;
+      display: flex; 
+      justify-content: space-around; 
       border-color: #009080;
     }
   }
 
   @media(max-width: 640px) {
     .button-menu {
-      position: absolute;
+      position: relative;
       display: flex;
-      left:-800px;
     }
   }
 
