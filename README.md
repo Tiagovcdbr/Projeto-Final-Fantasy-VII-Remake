@@ -1,5 +1,5 @@
 ### Projeto clone do site Final Fantasy VII Remake
-
+### O projeto vai passar por uma manutenção e realizar os ajustes necessários, caso baixe o arquivo ignore alguns erros.
 #### Deploy do projeto
 https://final-fantasy-7-remake-clone.netlify.app/
 
